@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Wall
   - Ground
   layers:
   - Default
@@ -13,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Wall
-  - Player
+  - 
+  - 
+  - 
   - 
   - 
   - 
