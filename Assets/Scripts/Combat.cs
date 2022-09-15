@@ -12,6 +12,11 @@ public class Combat : MonoBehaviour
     [SerializeField] LayerMask EnemyLayer;
     public bool Attackable,EnemyInCollider;
 
+    
+    Transform SwordAttackPoint;
+
+    
+    
     void Start()
     {
         controller = gameObject.GetComponent<Controller>();
@@ -22,6 +27,7 @@ public class Combat : MonoBehaviour
             bars = GameObject.Find("Bars").GetComponent<Bars>();
             Attackable = true;
         }
+        SwordAttackPoint = transform.Find("AttackPoint");
     }
 
     void Update()
@@ -95,5 +101,20 @@ public class Combat : MonoBehaviour
     void TakeDamage(float Damage)
     {
         bars.Health-= Damage;
+    }
+    public void AttackEnd()
+    {
+        hitEnemies = Physics2D.OverlapCircleAll(SwordAttackPoint.position, 1.2f, EnemyLayer);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (!enemy.GetComponent<NewEnemy>().isDead)
+            {
+
+                enemy.GetComponent<NewEnemy>().TakeDamage(15);
+
+            }
+        }
+
     }
 }

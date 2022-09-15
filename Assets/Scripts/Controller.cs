@@ -10,6 +10,7 @@ public class Controller : MonoBehaviour
     public float MovementSpeed = 5, DashSpeed = 10;
     public bool Moving, isGround, isDash, isAttacking, Attackable;
 
+   
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class Controller : MonoBehaviour
         PlayerRB = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         PlayerCollider = gameObject.GetComponent<Collider2D>();
+       
     }
 
     // Update is called once per frame
@@ -145,4 +147,6 @@ public class Controller : MonoBehaviour
     {
         animator.SetBool("isCrouch", true);
     }
+
+  
 }
