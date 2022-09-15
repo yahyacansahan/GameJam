@@ -5,10 +5,10 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     Rigidbody2D PlayerRB;
-    Animator animator;
+    public Animator animator;
     Collider2D PlayerCollider;
     public float MovementSpeed = 5, DashSpeed = 10;
-    public bool Moving, isGround, isDash, isAttacking;
+    public bool Moving, isGround, isDash, isAttacking, Attackable;
 
 
     // Start is called before the first frame update
@@ -43,13 +43,15 @@ public class Controller : MonoBehaviour
             animator.SetBool("Falling", false);
             animator.SetBool("isGround", true);
         }
+        else
+        {
+            animator.SetBool("isGround", false);
+        }
 
         if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Idle")
         {
             isAttacking = false;
             isDash = false;
-            PlayerCollider.isTrigger = false;
-            PlayerRB.bodyType = RigidbodyType2D.Dynamic;
         }
 
         if (!Input.GetKey(KeyCode.LeftControl))
@@ -60,20 +62,9 @@ public class Controller : MonoBehaviour
 
     void KeyEvent()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Attack(KeyCode.Z);
-        }
-        else if (Input.GetKeyDown(KeyCode.X))
-        {
-            Attack(KeyCode.X);
-        }
-        else if (Input.GetKeyDown(KeyCode.C))
-        {
-            Attack(KeyCode.C);
-        }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGround)
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGround && !isDash)
         {
             Jump();
         }
@@ -122,24 +113,6 @@ public class Controller : MonoBehaviour
         }
     }
 
-    void Attack(KeyCode keyCode)
-    {
-        isAttacking = true;
-
-        if (keyCode == KeyCode.Z)
-        {
-            animator.Play("Attack1");
-        }
-        else if (keyCode == KeyCode.X)
-        {
-            animator.Play("Attack2");
-        }
-        else if (keyCode == KeyCode.C)
-        {
-            animator.Play("Attack3");
-        }
-    }
-
     void Jump()
     {
         Debug.Log("jump");
@@ -165,8 +138,6 @@ public class Controller : MonoBehaviour
     {
         isDash = true;
         animator.Play("Dash");
-        PlayerRB.bodyType = RigidbodyType2D.Kinematic;
-        PlayerCollider.isTrigger = true;
         PlayerRB.velocity = new Vector2(DashSpeed * gameObject.transform.localScale.x, PlayerRB.velocity.y);
     }
 
@@ -174,7 +145,4 @@ public class Controller : MonoBehaviour
     {
         animator.SetBool("isCrouch", true);
     }
-
-
-
 }
