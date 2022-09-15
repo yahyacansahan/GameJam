@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    PlayerMovement hero;
+    Controller hero;
 
     [SerializeField] public float SmoothSpeed = .125f;
     [SerializeField] Vector3 offset;
 
     void Start()
     {
-        hero = FindObjectOfType<PlayerMovement>();
+        hero = FindObjectOfType<Controller>();
     }
 
     // Update is called once per frame

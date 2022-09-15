@@ -9,7 +9,7 @@ public class LightBandit : MonoBehaviour
     [SerializeField] float Farketmemenzili, Attackmenzili;
 
     Rigidbody2D Rb;
-    PlayerMovement Player;
+    Controller Player;
     Animator Animatorbandit;
 
     Vector3 LocalScale;
@@ -19,7 +19,8 @@ public class LightBandit : MonoBehaviour
     {
         Rb = GetComponent<Rigidbody2D>();
         Animatorbandit = GetComponent<Animator>();
-        Player = FindObjectOfType<PlayerMovement>();
+        Player = FindObjectOfType<Controller>();
+
         LocalScale = transform.localScale;
         
     }

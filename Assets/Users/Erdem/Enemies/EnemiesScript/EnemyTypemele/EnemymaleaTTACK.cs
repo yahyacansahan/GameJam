@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemymaleaTTACK : MonoBehaviour
 {
-    PlayerMovement Adventurer;
+    Controller Adventurer;
     Rigidbody2D Rb;
     Animator Animator2d;
     [SerializeField] Transform FootTriggers;
@@ -26,7 +26,7 @@ public class EnemymaleaTTACK : MonoBehaviour
     int attackEndCounter = 0;
     private void Start()
     {
-        Adventurer = FindObjectOfType<PlayerMovement>();
+        Adventurer = FindObjectOfType<Controller>();
         Rb = GetComponent<Rigidbody2D>();
         LocalScale = this.transform.localScale;
         Animator2d = GetComponent<Animator>();
