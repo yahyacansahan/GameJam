@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ardadeneme : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     void Start()
     {
-        
+        int x; 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
