@@ -271,6 +271,7 @@ PlayerSettings:
   AndroidAppBundleSizeToValidate: 150
   m_BuildTargetIcons: []
   m_BuildTargetPlatformIcons:
+<<<<<<< HEAD
   - m_BuildTarget: iPhone
     m_Icons:
     - m_Textures: []
@@ -368,6 +369,8 @@ PlayerSettings:
       m_Height: 1024
       m_Kind: 4
       m_SubKind: App Store
+=======
+>>>>>>> 63cb4ca9290bca16956f7d9304fde2b53e7e53a8
   - m_BuildTarget: Android
     m_Icons:
     - m_Textures: []
