@@ -49,7 +49,6 @@ public class Controller : MonoBehaviour
             isAttacking = false;
             isDash = false;
             PlayerCollider.isTrigger = false;
-            animator.SetBool("isCrouch", false);
             PlayerRB.bodyType = RigidbodyType2D.Dynamic;
         }
 

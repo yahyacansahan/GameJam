@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-=======
-  - Wall
->>>>>>> 63cb4ca9290bca16956f7d9304fde2b53e7e53a8
-  - Ground
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Wall
-  - Player
+  - 
+  - 
+  - 
   - 
   - 
   - 
