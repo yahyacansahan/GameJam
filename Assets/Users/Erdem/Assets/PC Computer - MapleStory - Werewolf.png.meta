@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: bb372f5c1540105489395c779e7ecd8e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1139
+        width: 136
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4caa461843ddb42a83b1ed69771ec9
+      internalID: -731691959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1139
+        width: 139
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe0af502a2b48d4db5cbbb853f3633a
+      internalID: -1112751389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1139
+        width: 141
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d82f594db5f5d942845a04d5a2b5901
+      internalID: -1291397410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 939
+        width: 138
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d1385190a3494a9230d4f5407f855
+      internalID: -1639019301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 939
+        width: 163
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d7d36d8bf98b942ac0881922a32be4
+      internalID: -823947021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 939
+        width: 157
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7faf3d920a690148bc26df528adcf4b
+      internalID: 1543636985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_6
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 939
+        width: 162
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c1970e5dfafb7458f124ab431b6296
+      internalID: -1279900900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 740
+        width: 173
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0079e99c5468112409efde12dc7c55ee
+      internalID: -1121819376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 816
+        width: 54
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d519ebba4535d4ba41943c25ecb801
+      internalID: 35591294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 816
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06abd89b065b5d43961ed1e4bf7b7a3
+      internalID: -1230845514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 820
+        width: 35
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79bc621c0aca0a40945dc2c4785258b
+      internalID: -270669649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_11
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 807
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71b73ac0c18c9443861590f7994a3ad
+      internalID: 1637352452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 800
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d46179b9a1cac74fb269f1ec63ccbec
+      internalID: 905982413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_13
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 800
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff926688730d9a4892f1b331b881eaf
+      internalID: -2087744215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 800
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c97d438617b61c4b9822559073dcb18
+      internalID: 1741380201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_15
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 800
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2958715b44bda334dafc41e255805b0a
+      internalID: 611016042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_16
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 780
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e610b494d3e0742a2ad5f62546744b
+      internalID: -655678597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff17fabcd0453b4f8bee63eca377695
+      internalID: 129607212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_18
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d5c2d59183fad4f845f8d2fe31901d
+      internalID: 2121094117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_19
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320102a084d8cb54f92a5cd6b73d4cee
+      internalID: 293886551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_20
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51be9fa9bed71d14098578bcf72de64d
+      internalID: -47604667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_21
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 539
+        width: 165
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e279bbe78475d8b43af9eff934b1c931
+      internalID: -1658056158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_22
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb450dc3c653c349a8dfe93e4c38bf8
+      internalID: -168451036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_23
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1479fe287fe4ab41a14bba49e043bdc
+      internalID: -1013488376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_24
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d39b2d784c7f9488fbe089e39ba111
+      internalID: 60798374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 331
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ccce9145e328849b961623c76adc8e
+      internalID: -1241143225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 331
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828946b5b26b75d4580a09584017c5d9
+      internalID: 1599110110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_27
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 331
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b49d387605f774b9f0e50684ee843d
+      internalID: 394014913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_28
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 331
+        width: 229
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c67709ff810ff140bcb19dc3d3bafb5
+      internalID: 2056497911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_29
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 331
+        width: 209
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ec94516d7c0784e8166456c5b0451e
+      internalID: 1389850146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_30
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 359
+        width: 16
+        height: 25
+      alignment: 9
+      pivot: {x: 2.0999336, y: 0.3795349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58cdd5d6db5eb94dbef0fccc0a3c8ef
+      internalID: 1476071375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_31
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 331
+        width: 230
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1138e617034bb24ea87789b2735ebf4
+      internalID: -1189465153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_32
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 331
+        width: 287
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73f2b4051540f94d8c21def7b6083da
+      internalID: 1900079305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_33
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 331
+        width: 257
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48689babc3d1fde4eb72bffe83d84d2f
+      internalID: -1631090074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_34
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 331
+        width: 200
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b356f9b452f35874687e4fcea156e7b3
+      internalID: -410331874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_35
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 331
+        width: 183
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cf654c4cc96ef4fb64a254a757f7b4
+      internalID: 2023533460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_36
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 345
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a539100d13e0d4aa8fe21c54e55617
+      internalID: -1984963264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_37
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 204
+        width: 79
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70e51bb8b3d5ff439ddf4ee7c14548b
+      internalID: -293248223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_38
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 204
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad34e0c779c497e4b9e946d3f0570b71
+      internalID: 365595165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 204
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547a5200aa98fad44bd58395f82934e7
+      internalID: -1158987824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_40
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 204
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822b1564a2858924f8a46cb7d0b824e0
+      internalID: -1719418052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_41
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 204
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7319fdefd69d4f4f99bde4a37155ef3
+      internalID: -1596853836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 27
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97d3b50cd6d8ee43953768712ec7795
+      internalID: 1204983019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_43
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 27
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e56ae5476f604f4e8cc74439bf1dfa3
+      internalID: 267007161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_44
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 32
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91f5c1ba0d772b4d8fd3f50dffbfee9
+      internalID: 1814049676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_45
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 40
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79772f851a5a7254c9147e6d6228c15c
+      internalID: 1165095456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_46
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 27
+        width: 149
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346905a6248ff06458f4931457e9c2d4
+      internalID: 325507169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_47
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 27
+        width: 150
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b1167b082cd4146b95ee02b97527e9
+      internalID: 1107167095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_48
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 27
+        width: 208
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b5aca2706e7964d87428635cc350a2
+      internalID: 286879065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_49
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 27
+        width: 213
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96eb4f79cd33b9498650eb7d736b4f6
+      internalID: 1461741091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_50
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 37
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1f65cee0dbeae419eed495554e4793
+      internalID: 2018057944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_51
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 27
+        width: 212
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ada0cd1baad1fb4e8db2dd7c94473d1
+      internalID: 1169450975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Werewolf_52
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 27
+        width: 201
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b26221c63dc6b4d88b60f9bbda0f20
+      internalID: 229574832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - MapleStory - Werewolf_31: -1189465153
+      PC Computer - MapleStory - Werewolf_36: -1984963264
+      PC Computer - MapleStory - Werewolf_10: -270669649
+      PC Computer - MapleStory - Werewolf_42: 1204983019
+      PC Computer - MapleStory - Werewolf_38: 365595165
+      PC Computer - MapleStory - Werewolf_39: -1158987824
+      PC Computer - MapleStory - Werewolf_16: -655678597
+      PC Computer - MapleStory - Werewolf_32: 1900079305
+      PC Computer - MapleStory - Werewolf_40: -1719418052
+      PC Computer - MapleStory - Werewolf_19: 293886551
+      PC Computer - MapleStory - Werewolf_20: -47604667
+      PC Computer - MapleStory - Werewolf_13: -2087744215
+      PC Computer - MapleStory - Werewolf_45: 1165095456
+      PC Computer - MapleStory - Werewolf_48: 286879065
+      PC Computer - MapleStory - Werewolf_51: 1169450975
+      PC Computer - MapleStory - Werewolf_25: -1241143225
+      PC Computer - MapleStory - Werewolf_9: -1230845514
+      PC Computer - MapleStory - Werewolf_18: 2121094117
+      PC Computer - MapleStory - Werewolf_22: -168451036
+      PC Computer - MapleStory - Werewolf_33: -1631090074
+      PC Computer - MapleStory - Werewolf_2: -1291397410
+      PC Computer - MapleStory - Werewolf_7: -1121819376
+      PC Computer - MapleStory - Werewolf_30: 1476071375
+      PC Computer - MapleStory - Werewolf_14: 1741380201
+      PC Computer - MapleStory - Werewolf_29: 1389850146
+      PC Computer - MapleStory - Werewolf_23: -1013488376
+      PC Computer - MapleStory - Werewolf_44: 1814049676
+      PC Computer - MapleStory - Werewolf_3: -1639019301
+      PC Computer - MapleStory - Werewolf_12: 905982413
+      PC Computer - MapleStory - Werewolf_28: 2056497911
+      PC Computer - MapleStory - Werewolf_0: -731691959
+      PC Computer - MapleStory - Werewolf_37: -293248223
+      PC Computer - MapleStory - Werewolf_24: 60798374
+      PC Computer - MapleStory - Werewolf_27: 394014913
+      PC Computer - MapleStory - Werewolf_17: 129607212
+      PC Computer - MapleStory - Werewolf_43: 267007161
+      PC Computer - MapleStory - Werewolf_47: 1107167095
+      PC Computer - MapleStory - Werewolf_11: 1637352452
+      PC Computer - MapleStory - Werewolf_21: -1658056158
+      PC Computer - MapleStory - Werewolf_6: -1279900900
+      PC Computer - MapleStory - Werewolf_26: 1599110110
+      PC Computer - MapleStory - Werewolf_34: -410331874
+      PC Computer - MapleStory - Werewolf_4: -823947021
+      PC Computer - MapleStory - Werewolf_1: -1112751389
+      PC Computer - MapleStory - Werewolf_15: 611016042
+      PC Computer - MapleStory - Werewolf_50: 2018057944
+      PC Computer - MapleStory - Werewolf_8: 35591294
+      PC Computer - MapleStory - Werewolf_5: 1543636985
+      PC Computer - MapleStory - Werewolf_49: 1461741091
+      PC Computer - MapleStory - Werewolf_52: 229574832
+      PC Computer - MapleStory - Werewolf_35: 2023533460
+      PC Computer - MapleStory - Werewolf_46: 325507169
+      PC Computer - MapleStory - Werewolf_41: -1596853836
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
