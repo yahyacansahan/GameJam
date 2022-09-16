@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c2b5df8c51be7b44a705c96d5fdb05e
+guid: 6924f9fe7fe18e84ca86c5a9a9b4616b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Girl_walk_0
+      name: Fisherman_hook_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 9
         y: 0
-        width: 16
-        height: 25
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc44d1c3631ef2544b3a41f1baaa9712
-      internalID: 304902005
+      spriteID: 7f1e63fbb64915243b14025625de3639
+      internalID: -1618451227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_1
+      name: Fisherman_hook_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 57
         y: 0
-        width: 12
-        height: 24
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b87b12bee45084db4ca39b07f08711
-      internalID: -1071038952
+      spriteID: 03fd0a89e4be67c43bf1a8f169d0fc57
+      internalID: -622052985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_2
+      name: Fisherman_hook_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 105
         y: 0
-        width: 19
-        height: 24
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e9e8d693ea55634da65f48a168f7235
-      internalID: 998609833
+      spriteID: 8532bcb0954210947b41121ed27f9006
+      internalID: 740416511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_3
+      name: Fisherman_hook_3
       rect:
         serializedVersion: 2
-        x: 146
+        x: 152
         y: 0
-        width: 20
-        height: 25
+        width: 38
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29740522000b2dc4d80704028502f81b
-      internalID: 472411131
+      spriteID: e6b1b63f2688cfc4180572b6b47ae914
+      internalID: 1437722986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_4
+      name: Fisherman_hook_4
       rect:
         serializedVersion: 2
         x: 200
         y: 0
-        width: 10
-        height: 24
+        width: 38
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ef01af9d181b940a46301c78d59a6c
-      internalID: -1690282772
+      spriteID: e5c3a3c30ec22d843b114183eb1b1434
+      internalID: -2099949689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_5
+      name: Fisherman_hook_5
       rect:
         serializedVersion: 2
-        x: 245
+        x: 249
         y: 0
-        width: 16
-        height: 24
+        width: 24
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bcec2ac42890ff4b8ec1e31999d4107
-      internalID: -416909028
+      spriteID: 95dc2677bc6ada142b0e5e8afbb039d0
+      internalID: 1090573387
       vertices: []
       indices: 
       edges: []
@@ -252,12 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Girl_walk_4: -1690282772
-      Girl_walk_1: -1071038952
-      Girl_walk_3: 472411131
-      Girl_walk_5: -416909028
-      Girl_walk_0: 304902005
-      Girl_walk_2: 998609833
+      Fisherman_hook_5: 1090573387
+      Fisherman_hook_3: 1437722986
+      Fisherman_hook_1: -622052985
+      Fisherman_hook_0: -1618451227
+      Fisherman_hook_4: -2099949689
+      Fisherman_hook_2: 740416511
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

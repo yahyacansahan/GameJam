@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c2b5df8c51be7b44a705c96d5fdb05e
+guid: 76d88ef133eca6c48a02016ada172196
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Girl_walk_0
+      name: Fisherman_death_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 2
         y: 0
-        width: 16
-        height: 25
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc44d1c3631ef2544b3a41f1baaa9712
-      internalID: 304902005
+      spriteID: fae94f8a2a4cf1a47ac2d4a30b983865
+      internalID: 640218962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_1
+      name: Fisherman_death_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 57
         y: 0
-        width: 12
-        height: 24
+        width: 25
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b87b12bee45084db4ca39b07f08711
-      internalID: -1071038952
+      spriteID: 0e21bf49672425c479fb642e20787530
+      internalID: 929212791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_2
+      name: Fisherman_death_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 105
         y: 0
-        width: 19
-        height: 24
+        width: 30
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e9e8d693ea55634da65f48a168f7235
-      internalID: 998609833
+      spriteID: 293630dcb99dca74fb4d016db9757b66
+      internalID: -384379007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_3
+      name: Fisherman_death_3
       rect:
         serializedVersion: 2
-        x: 146
+        x: 153
         y: 0
-        width: 20
-        height: 25
+        width: 36
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29740522000b2dc4d80704028502f81b
-      internalID: 472411131
+      spriteID: 8f5f7536f2f317847852c5897c546d3a
+      internalID: 135158811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_4
+      name: Fisherman_death_4
       rect:
         serializedVersion: 2
-        x: 200
+        x: 201
         y: 0
-        width: 10
-        height: 24
+        width: 38
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ef01af9d181b940a46301c78d59a6c
-      internalID: -1690282772
+      spriteID: 1237cb801b6948b4ca9a9f2cf2718bfb
+      internalID: -108146577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_5
+      name: Fisherman_death_5
       rect:
         serializedVersion: 2
-        x: 245
+        x: 249
         y: 0
-        width: 16
-        height: 24
+        width: 39
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bcec2ac42890ff4b8ec1e31999d4107
-      internalID: -416909028
+      spriteID: abbf87ce0acea6a4e92a553cf415e2d1
+      internalID: -376903701
       vertices: []
       indices: 
       edges: []
@@ -252,12 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Girl_walk_4: -1690282772
-      Girl_walk_1: -1071038952
-      Girl_walk_3: 472411131
-      Girl_walk_5: -416909028
-      Girl_walk_0: 304902005
-      Girl_walk_2: 998609833
+      Fisherman_death_3: 135158811
+      Fisherman_death_4: -108146577
+      Fisherman_death_0: 640218962
+      Fisherman_death_1: 929212791
+      Fisherman_death_5: -376903701
+      Fisherman_death_2: -384379007
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
