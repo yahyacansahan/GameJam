@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Users/Mert/ScenesME/MenuME01.unity
     guid: ab76cf0f317cb954596e29929f971fde
+  - enabled: 1
+    path: Assets/Users/Erdem/ErdemDemoGirmeyin.unity
+    guid: f4a3322f677d0c64dacff8aa6912eaf0
   m_configObjects: {}

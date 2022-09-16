@@ -5,7 +5,7 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
     Controller controller;
-    Bars bars;
+   public Bars bars;
     Collider2D[] hitEnemies;
     Transform AttackPoint;
     float Damage;
