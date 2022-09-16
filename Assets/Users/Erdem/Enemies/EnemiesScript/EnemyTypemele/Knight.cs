@@ -62,7 +62,7 @@ public class Knight : MonoBehaviour
 
     void Attack()
     {
-        
+        RbOfknight.velocity = (new Vector3(0, 0, 0));
         animator.Play("Attack");
 
     }

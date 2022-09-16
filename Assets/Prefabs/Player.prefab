@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 370832289437286695}
   - component: {fileID: 370832289437286872}
   - component: {fileID: 370832289437286694}
-  m_Layer: 0
+  - component: {fileID: 456938058}
+  - component: {fileID: 456938059}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,11 +177,39 @@ MonoBehaviour:
   Moving: 0
   isGround: 0
   isDash: 0
-  isAttacking: 0
-  Attackable: 0
+  isAttacking: 1
+  Attackable: 1
+--- !u!114 &456938058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370832289437286876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b035fe68fcd4c44b8510b057ab79f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  Stamina: 0
+--- !u!114 &456938059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370832289437286876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91044f20b8213647bbd361ae1241fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 0
+  Attackable: 1
+  EnemyInCollider: 0
 --- !u!1 &370832290130631217
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +221,7 @@ GameObject:
   - component: {fileID: 370832290130631216}
   - component: {fileID: 370832290130631230}
   - component: {fileID: 370832290130631231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -251,8 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4822836722028365514}
   - component: {fileID: 7416443370299247405}
-  - component: {fileID: 3810834769008479688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -290,15 +319,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.06}
   serializedVersion: 2
   m_Radius: 0.09
---- !u!114 &3810834769008479688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2620843487523740106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc252a0cfb69394aa4a6dae3e9c92f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

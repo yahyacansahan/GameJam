@@ -123,42 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &456938051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 370832289437286876, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
-  m_PrefabInstance: {fileID: 1910585050}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &456938058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456938051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b035fe68fcd4c44b8510b057ab79f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 100
-  Stamina: 0
---- !u!114 &456938059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456938051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f91044f20b8213647bbd361ae1241fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  Attackable: 1
-  EnemyInCollider: 0
 --- !u!1 &536487764
 GameObject:
   m_ObjectHideFlags: 0
@@ -32795,14 +32759,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 370832289437286694, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
-      propertyPath: Attackable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 370832289437286694, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
-      propertyPath: isAttacking
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -32851,20 +32807,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 370832289437286876, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 370832290130631217, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2620843487523740106, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3810834769008479688, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
 --- !u!1001 &3664570574008453626
 PrefabInstance:
@@ -32929,6 +32872,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3664570572146733293, guid: 3aa7036d86c40254aa1922c7cd0c3827, type: 3}
+      propertyPath: FightAramaMenzili
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3aa7036d86c40254aa1922c7cd0c3827, type: 3}
 --- !u!1001 &7105494358554818287
@@ -32989,6 +32936,10 @@ PrefabInstance:
     - target: {fileID: 7105494358606727947, guid: b7382583bba78be44a0b8bedefb70944, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105494358606727951, guid: b7382583bba78be44a0b8bedefb70944, type: 3}
+      propertyPath: FarketmeMenzili
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7105494358606727984, guid: b7382583bba78be44a0b8bedefb70944, type: 3}
       propertyPath: m_Name

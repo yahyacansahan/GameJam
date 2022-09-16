@@ -46,12 +46,7 @@ public class EnemymaleaTTACK : MonoBehaviour
 
     private void MovementAndAnimation()
     {
-        if (Rb.velocity.y < 0)
-        {
-            Animator2d.SetBool("fall", true);
-
-
-        }
+        
 
 
         if (Vector2.Distance(transform.position, Adventurer.transform.position) < FarketmeMenzili && !(Vector2.Distance(transform.position, Adventurer.transform.position) < AttackMenzili) && İsOnGround&& !isAttack)
@@ -109,7 +104,7 @@ public class EnemymaleaTTACK : MonoBehaviour
 
     private void Attack()
     {
-
+        Rb.velocity = (new Vector3(0, 0, 0));
         isAttack = true;
         AttackCounter++;
         if (AttackCounter == 3)
@@ -151,7 +146,7 @@ public class EnemymaleaTTACK : MonoBehaviour
     {
 
 
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(.5f);
         isAttack = false;
     }
 
