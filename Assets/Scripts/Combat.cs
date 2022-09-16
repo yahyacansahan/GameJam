@@ -11,8 +11,8 @@ public class Combat : MonoBehaviour
     float Damage;
     [SerializeField] LayerMask EnemyLayer;
     public bool Attackable,EnemyInCollider;
+    TransFormer Transform;
 
-    
     Transform SwordAttackPoint;
 
     
@@ -22,6 +22,7 @@ public class Combat : MonoBehaviour
         controller = gameObject.GetComponent<Controller>();
         AttackPoint = gameObject.GetComponent<Transform>();
         EnemyLayer = LayerMask.GetMask("Enemy");
+        Transform = FindObjectOfType<TransFormer>();
       /* 
         if (GameObject.Find("Bars"))
         {
@@ -67,7 +68,7 @@ public class Combat : MonoBehaviour
             if (keyCode == KeyCode.Z)
             {
                 controller.animator.Play("Attack1");
-                Damage = 20;
+                Transform.ShapeShift();
             }
             else if (keyCode == KeyCode.X)
             {
