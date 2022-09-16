@@ -15,7 +15,7 @@ public class NewEnemy : MonoBehaviour
 
     void Start()
     {
-        
+        animator=GetComponent<Animator>();
     }
 
     
@@ -28,25 +28,30 @@ public class NewEnemy : MonoBehaviour
     {
         Health -= Damage;
         healthbar.SetHealth(Health, MaxHealth);
-        if (Damage <= 0)
+        animator.Play("TakeDamage");
+      
+        if (Health <= 0)
         {
 
             Die();
+            
                 
-                }
+         }
 
     }
 
     public void Die()
     {
-        animator.Play("Death");
         isDead = true;
+        animator.Play("Death");
+        
 
     }
 
     public void Destroy()
     {
-       // Instantiate();
+        // Instantiate();
 
+        Destroy(this.gameObject);
     }
 }

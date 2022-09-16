@@ -5,7 +5,7 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
     Controller controller;
-    Bars bars;
+   // Bars bars;
     Collider2D[] hitEnemies;
     Transform AttackPoint;
     float Damage;
@@ -22,11 +22,15 @@ public class Combat : MonoBehaviour
         controller = gameObject.GetComponent<Controller>();
         AttackPoint = gameObject.GetComponent<Transform>();
         EnemyLayer = LayerMask.GetMask("Enemy");
+      /* 
         if (GameObject.Find("Bars"))
         {
             bars = GameObject.Find("Bars").GetComponent<Bars>();
-            Attackable = true;
+           
         }
+      */
+
+        Attackable = true;
         SwordAttackPoint = transform.Find("AttackPoint");
     }
 
@@ -76,7 +80,7 @@ public class Combat : MonoBehaviour
                 Damage = 20;
             }
 
-            hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, .2f, EnemyLayer);
+           // hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, .2f, EnemyLayer);
 
             /**foreach (Collider2D enemy in hitEnemies)
             {
@@ -94,13 +98,13 @@ public class Combat : MonoBehaviour
                     }
                 }
             }**/
-            bars.Stamina -= 30;
+           //bars.Stamina -= 30;
         }
     }
 
     void TakeDamage(float Damage)
     {
-        bars.Health-= Damage;
+      //  bars.Health-= Damage;
     }
     public void AttackEnd()
     {
@@ -111,7 +115,7 @@ public class Combat : MonoBehaviour
             if (!enemy.GetComponent<NewEnemy>().isDead)
             {
 
-                enemy.GetComponent<NewEnemy>().TakeDamage(15);
+                enemy.GetComponent<NewEnemy>().TakeDamage((int)Damage);
 
             }
         }

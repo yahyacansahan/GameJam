@@ -20,7 +20,7 @@ public class EnemymaleaTTACK : MonoBehaviour
     [SerializeField] private float AttackRadius = 1.2f;
     [SerializeField] private float AttackDamage = 30;
     //----------
-    bool isAttack = false;
+  [SerializeField]  bool isAttack = false;
     Vector3 LocalScale;
     int AttackCounter = 0;
     int attackEndCounter = 0;
@@ -54,7 +54,7 @@ public class EnemymaleaTTACK : MonoBehaviour
         }
 
 
-        if (Vector2.Distance(transform.position, Adventurer.transform.position) < FarketmeMenzili && !(Vector2.Distance(transform.position, Adventurer.transform.position) < AttackMenzili) && İsOnGround)
+        if (Vector2.Distance(transform.position, Adventurer.transform.position) < FarketmeMenzili && !(Vector2.Distance(transform.position, Adventurer.transform.position) < AttackMenzili) && İsOnGround&& !isAttack)
         {
             if (Adventurer.transform.position.x > this.transform.position.x)
             {
@@ -71,7 +71,7 @@ public class EnemymaleaTTACK : MonoBehaviour
 
             Animator2d.SetBool("Running", true);
         }
-        else if ((Vector2.Distance(transform.position, Adventurer.transform.position) < AttackMenzili))
+        else if ((Vector2.Distance(transform.position, Adventurer.transform.position) < AttackMenzili)&& !isAttack)
         {
             Rb.velocity = (new Vector3(0, 0, 0));
             if (!isAttack)
@@ -124,7 +124,7 @@ public class EnemymaleaTTACK : MonoBehaviour
             Animator2d.Play("Attack1");
         }
 
-        StartCoroutine(Patlatıyim());
+        
 
     }
 
@@ -143,15 +143,15 @@ public class EnemymaleaTTACK : MonoBehaviour
 
         }
 
+        StartCoroutine(Patlatıyim());
 
-        isAttack = false;
     }
 
     IEnumerator Patlatıyim()
     {
 
 
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(1.6f);
         isAttack = false;
     }
 

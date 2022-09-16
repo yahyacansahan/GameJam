@@ -10,12 +10,13 @@ public class Bars : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
-        StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
+      //  HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
+       // StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
     }
 
     void FixedUpdate()
     {
+      /*
         if (Stamina < 100)
         {
             Stamina += 0.1f;
@@ -24,7 +25,7 @@ public class Bars : MonoBehaviour
         else
         {
             Stamina = 100;
-        }
+        }*/
     }
 
     void CalculateHealth()
