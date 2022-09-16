@@ -17,6 +17,7 @@ public class GroundCheck : MonoBehaviour
         if (collision.tag == "Ground")
         {
             controller.isGround = true;
+            controller.isJumping = false;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
