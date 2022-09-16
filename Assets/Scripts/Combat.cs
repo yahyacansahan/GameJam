@@ -63,10 +63,7 @@ public class Combat : MonoBehaviour
             if (keyCode == KeyCode.Z)
             {
                 controller.animator.Play("Attack1");
-                Damage = 10;
-                Trans.ShapeShift();
-
-                Damage = 10;
+              
                 Trans.ShapeShift();
 
             }
