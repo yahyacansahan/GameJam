@@ -9,7 +9,9 @@ public class Wizard : MonoBehaviour
     Vector3 LocalScale;
     Controller Player;
     bool CanAttack = true;
+    bool IsAttack = false;
     bool Right;
+    bool IsDead = false;
 
     [Header("İstatistikler")]
     [SerializeField] float MagicBallSpeed, RunSpeed,Farketmemenzili,AttackMenzili;
@@ -30,7 +32,8 @@ public class Wizard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Flip();
+        Movement();
     }
 
     void Flip()
@@ -51,31 +54,46 @@ public class Wizard : MonoBehaviour
 
     void Attack()
     {
-
+        IsDead = GetComponent<NewEnemy>().isDead;
         CanAttack = false;
         WizardAnimaytor.Play("Attack");
+        IsAttack = true;
+        StartCoroutine(forBugs());
 
     }
 
     void Movement()
     {
 
-        if (Vector2.Distance(transform.position, Player.transform.position) < Farketmemenzili)
+        if (Vector2.Distance(transform.position, Player.transform.position) < Farketmemenzili&& Vector2.Distance(transform.position, Player.transform.position) > AttackMenzili)
         {
-            if(Vector2.Distance(transform.position, Player.transform.position) < AttackMenzili&&CanAttack)
+            if (Right)
             {
-                
-                Attack();
+                Rb.velocity= new Vector3(-RunSpeed,0,0);
 
             }
-            Flip();
+            else
+            {
 
-            WizardAnimaytor.SetBool("Running", true);
+                Rb.velocity = new Vector3(RunSpeed, 0, 0);
+            }
 
+
+
+           
 
 
         }
-        else
+        else if (Vector2.Distance(transform.position, Player.transform.position) < AttackMenzili && CanAttack&&!IsDead)
+        {
+            Rb.velocity = new Vector3(0, 0, 0);
+            Attack();
+            WizardAnimaytor.SetBool("Running", false);
+        }
+        Flip();
+
+        WizardAnimaytor.SetBool("Running", true);
+
         {
             WizardAnimaytor.SetBool("Running", false);
         }
@@ -86,14 +104,14 @@ public class Wizard : MonoBehaviour
     void SendMagickaBall()
     {
       GameObject Go=  Instantiate(WizardEnerGyBall, WizardAttackPoint.position, Quaternion.identity);
-
+        IsAttack = true;
         if (Right)
         {
-            Go.GetComponent<oK>().Fırla(MagicBallSpeed);
+            Go.GetComponent<oK>().Fırla(-MagicBallSpeed);
         }
         else
         {
-            Go.GetComponent<oK>().Fırla(-MagicBallSpeed);
+            Go.GetComponent<oK>().Fırla(MagicBallSpeed);
 
         }
        
@@ -108,8 +126,21 @@ public class Wizard : MonoBehaviour
     IEnumerator AttackWaitTime()
     {
 
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.4f);
         CanAttack = true;
+    
+    }
+    IEnumerator forBugs()
+    {
+
+        yield return new WaitForSeconds(3f);
+
+        if (CanAttack == false && IsAttack==true)
+        {
+
+            CanAttack = true;
+        }
+
     }
  
 }

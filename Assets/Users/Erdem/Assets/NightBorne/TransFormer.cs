@@ -7,6 +7,7 @@ public class TransFormer : MonoBehaviour
     [SerializeField] GameObject Go1, Go2;
     bool Situation = true;
     [SerializeField] CameraFollow Camera;
+    [SerializeField] GameObject Blast;
     void Start()
     {
         Camera = FindObjectOfType<CameraFollow>();
@@ -26,6 +27,8 @@ public class TransFormer : MonoBehaviour
 
             Go2.SetActive(true);
             Go2.transform.position = Camera.transform.position + Vector3.up * 2f;
+            Instantiate(Blast, Camera.transform.position , Quaternion.identity);
+
             Situation = false;
             Camera.GetComponent<CameraFollow>().ShapeShiftCamea();
 
@@ -34,6 +37,7 @@ public class TransFormer : MonoBehaviour
         {
             Go1.SetActive(true);
             Go1.transform.position = Camera.transform.position+Vector3.up*2f;
+            Instantiate(Blast, Camera.transform.position + Vector3.up * 2f, Quaternion.identity);
             Go2.SetActive(false);
             Situation = true;
             Camera.GetComponent<CameraFollow>().ShapeShiftCamea();
