@@ -12,6 +12,9 @@ public class Combat : MonoBehaviour
     [SerializeField] LayerMask EnemyLayer;
     [SerializeField] GameObject FireBallGO;
     public bool Attackable, EnemyInCollider;
+    TransFormer Trans;
+
+    TransFormer Trans;
 
     void Start()
     {
@@ -24,6 +27,11 @@ public class Combat : MonoBehaviour
             bars = GameObject.Find("Bars").GetComponent<Bars>();
         }
 
+        Trans = FindObjectOfType<TransFormer>();
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
         Attackable = true;
     }
 
@@ -60,9 +68,15 @@ public class Combat : MonoBehaviour
 
             if (keyCode == KeyCode.Z)
             {
-                controller.animator.Play("Attack1");
-                Damage = 10;
+              //  controller.animator.Play("Attack1");
+<<<<<<< Updated upstream
+               // Damage = 10;
+                Trans.ShapeShift();
                 //Transform.ShapeShift();
+=======
+                //Damage = 10;
+                Trans.ShapeShift();
+>>>>>>> Stashed changes
             }
             else if (keyCode == KeyCode.X)
             {
