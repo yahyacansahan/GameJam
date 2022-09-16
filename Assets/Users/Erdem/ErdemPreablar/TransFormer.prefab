@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4860460327874963353}
   - component: {fileID: 4860460327874963352}
   - component: {fileID: 2111920760}
+  - component: {fileID: 6251841946997759892}
   m_Layer: 7
   m_Name: NightBorne
   m_TagString: Player
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 15
-  Damage: 15
+  Damage: 45
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -162,6 +163,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.110758}
   m_Size: {x: 0.15684369, y: 0.2744402}
   m_Direction: 0
+--- !u!61 &6251841946997759892
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860460327874963330}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0071094483, y: -0.22750123}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14309013, y: 0.04355821}
+  m_EdgeRadius: 0
 --- !u!1 &4860460329361855416
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +238,7 @@ MonoBehaviour:
   Go1: {fileID: 5068419756381804943}
   Go2: {fileID: 4860460327874963330}
   Camera: {fileID: 0}
+  Blast: {fileID: 7418792836025603069, guid: 684312a951e23b840a6538a71940a984, type: 3}
 --- !u!1001 &4860460327685462099
 PrefabInstance:
   m_ObjectHideFlags: 0
