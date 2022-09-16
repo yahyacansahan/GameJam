@@ -7,6 +7,7 @@ public class Bars : MonoBehaviour
 {
     Slider HealthBar, StaminaBar;
     PlayerData playerData;
+    Animator animator;
     public float Health, Stamina;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,7 @@ public class Bars : MonoBehaviour
         HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
         playerData = GameObject.Find("Player").GetComponent<PlayerData>();
+        animator = GameObject.Find("Player").GetComponent<Animator>();
 
         Health = playerData.Health;
         HealthBar.maxValue = Health;
@@ -45,7 +47,7 @@ public class Bars : MonoBehaviour
         }
         else
         {
-            //gameOver penceresi açýlacak
+            animator.Play("Death");
         }
     }
 }

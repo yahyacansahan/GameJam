@@ -18,7 +18,6 @@ public class Controller : MonoBehaviour
         PlayerRB = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         PlayerCollider = gameObject.GetComponent<Collider2D>();
-
     }
 
     // Update is called once per frame
@@ -44,6 +43,7 @@ public class Controller : MonoBehaviour
         {
             animator.SetBool("Falling", false);
             animator.SetBool("isGround", true);
+            isJumping = false;
         }
         else
         {
@@ -65,8 +65,6 @@ public class Controller : MonoBehaviour
 
     void KeyEvent()
     {
-
-
         if (Input.GetKeyDown(KeyCode.Space) && !isDash)
         {
             Jump();

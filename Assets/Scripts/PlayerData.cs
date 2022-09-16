@@ -7,7 +7,7 @@ public class PlayerData : MonoBehaviour
     public int CurrentDay;
     public float Health, Stamina;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Stamina = 100;
         Health = 100;

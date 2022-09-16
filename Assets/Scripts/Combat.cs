@@ -113,4 +113,9 @@ public class Combat : MonoBehaviour
     {
         controller.Movable = true;
     }
+
+    public void GameOver()
+    {
+        //GameOver penceresi açýlacak.
+    }
 }
