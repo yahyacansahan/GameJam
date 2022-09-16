@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class MenuButtonController : MonoBehaviour
 {
-    [SerializeField] int thisButtonÝndex;
+    [SerializeField] int thisButtonIndex;
     [SerializeField] MenuController controlingMenu;
     [SerializeField] Animator animator;
 
     // Update is called once per frame
     void Update()
     {
-        if (controlingMenu.buttonIndex == thisButtonÝndex)
+        if (controlingMenu.buttonIndex == thisButtonIndex)
         {
+            //seçildi animasyonunu baþlatýyor
             animator.SetBool("Selected", true);
+
+            //üstüne týklandý animasyonunu baþlatýyor
             if (Input.GetAxis("Submit") == 1)
             {
                 animator.SetBool("Entered", true);
