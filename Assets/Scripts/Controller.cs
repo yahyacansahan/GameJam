@@ -8,9 +8,9 @@ public class Controller : MonoBehaviour
     public Animator animator;
     Collider2D PlayerCollider;
     public float MovementSpeed = 5, DashSpeed = 10;
-    public bool Moving, isGround, isDash, isAttacking, Attackable;
+    public bool Moving, isGround, isDash, isAttacking, Attackable, isJumping, Movable;
 
-   
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class Controller : MonoBehaviour
         PlayerRB = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         PlayerCollider = gameObject.GetComponent<Collider2D>();
-       
+
     }
 
     // Update is called once per frame
@@ -54,6 +54,7 @@ public class Controller : MonoBehaviour
         {
             isAttacking = false;
             isDash = false;
+            Movable = true;
         }
 
         if (!Input.GetKey(KeyCode.LeftControl))
@@ -66,7 +67,7 @@ public class Controller : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGround && !isDash)
+        if (Input.GetKeyDown(KeyCode.Space) && !isDash)
         {
             Jump();
         }
@@ -82,7 +83,7 @@ public class Controller : MonoBehaviour
             Crouch();
         }
 
-        if (!isDash)
+        if (!isDash && Movable)
         {
             if (Input.GetKey(KeyCode.RightArrow) && !isAttacking)
             {
@@ -117,9 +118,19 @@ public class Controller : MonoBehaviour
 
     void Jump()
     {
-        Debug.Log("jump");
-        animator.SetBool("Jumping", true);
-        PlayerRB.velocity = new Vector2(PlayerRB.velocity.x, 10);
+        if (isGround && !isJumping)
+        {
+            isJumping = true;
+            animator.SetBool("Jumping", true);
+            PlayerRB.velocity = new Vector2(PlayerRB.velocity.x, 10);
+        }
+        else if (!isGround && isJumping)
+        {
+            isJumping = false;
+            animator.SetBool("Jumping", true);
+            animator.SetBool("Falling", false);
+            PlayerRB.velocity = new Vector2(PlayerRB.velocity.x, 10);
+        }
     }
 
     void Falling()
@@ -130,7 +141,7 @@ public class Controller : MonoBehaviour
             animator.SetBool("Jumping", false);
         }
 
-        if (animator.GetBool("Jumping") == false && PlayerRB.velocity.y < 0.2)
+        if (animator.GetBool("Jumping") == false && PlayerRB.velocity.y < -0.1)
         {
             animator.SetBool("Falling", true);
         }
@@ -148,5 +159,5 @@ public class Controller : MonoBehaviour
         animator.SetBool("isCrouch", true);
     }
 
-  
+
 }
