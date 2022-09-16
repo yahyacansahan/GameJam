@@ -13,6 +13,9 @@ public class Combat : MonoBehaviour
     [SerializeField] GameObject FireBallGO;
     public bool Attackable, EnemyInCollider;
     TransFormer Trans;
+    public float Health, Stamina;
+
+
 
     void Start()
     {
@@ -82,7 +85,10 @@ public class Combat : MonoBehaviour
 
     public void TakeDamage(float Damage)
     {
-        bars.Health -= Damage;
+        Health -= Damage;
+        bars.Health = this.Health;
+
+        
     }
 
     public void CreateFireBall()
@@ -120,5 +126,18 @@ public class Combat : MonoBehaviour
     public void GameOver()
     {
         //GameOver penceresi açýlacak.
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Arrow")
+        {
+
+           TakeDamage(10);
+        }
+        if (collision.gameObject.tag == "Fireball")
+        {
+
+            TakeDamage(15);
+        }
     }
 }

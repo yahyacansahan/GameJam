@@ -23,7 +23,7 @@ public class Bars : MonoBehaviour
         StaminaBar.maxValue = Stamina;
         StaminaBar.value = Stamina;
 
-        CalculateHealth();
+      
     }
 
     void FixedUpdate()
@@ -37,6 +37,7 @@ public class Bars : MonoBehaviour
         {
             Stamina = 100;
         }
+        CalculateHealth();
     }
 
     void CalculateHealth()

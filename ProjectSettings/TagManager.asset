@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Fireball
+  - Arrow
   layers:
   - Default
   - TransparentFX
