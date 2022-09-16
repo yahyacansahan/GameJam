@@ -39,6 +39,11 @@ public class oK : MonoBehaviour
             Destroy(this.gameObject, .1f);
 
         }
+        if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(this.gameObject);
+
+        }
     }
 
 }
