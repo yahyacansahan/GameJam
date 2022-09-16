@@ -14,6 +14,11 @@ public class MenuButtonController : MonoBehaviour
         if (controlingMenu.buttonIndex == thisButton›ndex)
         {
             animator.SetBool("Selected", true);
+            if (Input.GetAxis("Submit") == 1)
+            {
+                animator.SetBool("Entered", true);
+            }
+            else { animator.SetBool("Entered", false); }
         }
         else
         {
