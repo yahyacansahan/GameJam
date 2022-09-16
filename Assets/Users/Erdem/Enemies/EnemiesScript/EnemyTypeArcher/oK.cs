@@ -17,8 +17,12 @@ public class oK : MonoBehaviour
     {
         if (DEger > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = false;
 
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
         }
 
         Rbok.velocity = new Vector3(DEger, 0, 0);
