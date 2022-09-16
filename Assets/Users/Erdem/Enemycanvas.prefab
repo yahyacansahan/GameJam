@@ -317,6 +317,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slider: {fileID: 2665819590057654455}
-  low: {r: 1, g: 0.071358845, b: 0, a: 0}
-  Highh: {r: 0, g: 1, b: 0.011921167, a: 0}
+  low: {r: 1, g: 0.071358845, b: 0, a: 1}
+  Highh: {r: 0, g: 1, b: 0.011921167, a: 1}
   offset: {x: 0, y: 0, z: 0}
