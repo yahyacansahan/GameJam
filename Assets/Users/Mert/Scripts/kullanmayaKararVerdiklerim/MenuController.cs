@@ -13,6 +13,11 @@ public class MenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MenuGecisKontrol();
+    }
+
+    void MenuGecisKontrol()
+    {
         verticalValue = Input.GetAxis("Vertical");
         if (verticalValue != 0)
         {
@@ -37,7 +42,7 @@ public class MenuController : MonoBehaviour
                 // S ve alt ok tuþu basýldýðýnda
                 else if (verticalValue < 0)
                 {
-                    if(buttonIndex != minIndex)
+                    if (buttonIndex != minIndex)
                     {
                         buttonIndex--;
                     }
@@ -56,4 +61,7 @@ public class MenuController : MonoBehaviour
             isPressed = false;
         }
     }
+
+    
+
 }
