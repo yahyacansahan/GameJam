@@ -6,6 +6,7 @@ public class oK : MonoBehaviour
 {
    [SerializeField] float OkSpeed = 3f;
     Rigidbody2D Rbok;
+   public float Damage;
 
     void Awake()
     {
@@ -32,8 +33,9 @@ public class oK : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.layer == 7)
         {
+            collision.gameObject.GetComponent<Combat>().TakeDamage(Damage);
             Destroy(this.gameObject, .1f);
 
         }

@@ -14,7 +14,7 @@ public class Wizard : MonoBehaviour
     bool IsDead = false;
 
     [Header("İstatistikler")]
-    [SerializeField] float MagicBallSpeed, RunSpeed,Farketmemenzili,AttackMenzili;
+    [SerializeField] float MagicBallSpeed, RunSpeed,Farketmemenzili,AttackMenzili,damage;
 
     [Header("alacakları")]
     [SerializeField] GameObject WizardEnerGyBall;
@@ -108,13 +108,14 @@ public class Wizard : MonoBehaviour
         if (Right)
         {
             Go.GetComponent<oK>().Fırla(-MagicBallSpeed);
+
         }
         else
         {
             Go.GetComponent<oK>().Fırla(MagicBallSpeed);
 
         }
-       
+        Go.GetComponent<oK>().Damage = damage;
     }
 
     void AttackAgain()

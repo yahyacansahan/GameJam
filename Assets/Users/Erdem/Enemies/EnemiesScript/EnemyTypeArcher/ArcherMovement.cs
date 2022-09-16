@@ -15,6 +15,7 @@ public class ArcherMovement : MonoBehaviour
     [SerializeField] float RunSpeed;
     [SerializeField] float FarketmeMenzili;
     [SerializeField] float attackMenzili;
+    [SerializeField] float Hasar;
 
     [Header("ok")]
     [SerializeField] GameObject Ok;
@@ -109,12 +110,14 @@ public class ArcherMovement : MonoBehaviour
         if (Right)
         {
             ok.GetComponent<oK>().Fırla(-OkunHızı);
+       
 
         }
         else
         {
             ok.GetComponent<oK>().Fırla(OkunHızı);
         }
+        ok.GetComponent<oK>().Damage = Hasar;
        
     }
 

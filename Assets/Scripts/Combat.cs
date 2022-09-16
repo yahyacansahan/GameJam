@@ -87,8 +87,10 @@ public class Combat : MonoBehaviour
     {
         Health -= Damage;
         bars.Health = this.Health;
+        transform.GetComponent<Animator>().Play("TakeDamage");
 
-        
+        controller.Movable = true;
+
     }
 
     public void CreateFireBall()
@@ -129,15 +131,10 @@ public class Combat : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Arrow")
+        if (collision.gameObject.tag == "FireTrap")
         {
 
-           TakeDamage(10);
-        }
-        if (collision.gameObject.tag == "Fireball")
-        {
-
-            TakeDamage(15);
+            TakeDamage(10);
         }
     }
 }
