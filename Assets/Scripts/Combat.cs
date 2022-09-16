@@ -14,8 +14,6 @@ public class Combat : MonoBehaviour
     public bool Attackable, EnemyInCollider;
     TransFormer Trans;
 
-    TransFormer Trans;
-
     void Start()
     {
         controller = gameObject.GetComponent<Controller>();
@@ -28,10 +26,6 @@ public class Combat : MonoBehaviour
         }
 
         Trans = FindObjectOfType<TransFormer>();
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
         Attackable = true;
     }
 
@@ -61,22 +55,20 @@ public class Combat : MonoBehaviour
 
     void AttackEvent(KeyCode keyCode)
     {
-        if (!controller.animator.GetBool("Jumping") && !controller.isDash && bars.Stamina>Damage)
+        if (!controller.animator.GetBool("Jumping") && !controller.isDash && bars.Stamina > Damage)
         {
             controller.Movable = false;
             controller.isAttacking = true;
 
             if (keyCode == KeyCode.Z)
             {
-              //  controller.animator.Play("Attack1");
-<<<<<<< Updated upstream
-               // Damage = 10;
+                controller.animator.Play("Attack1");
+                Damage = 10;
                 Trans.ShapeShift();
-                //Transform.ShapeShift();
-=======
-                //Damage = 10;
+
+                Damage = 10;
                 Trans.ShapeShift();
->>>>>>> Stashed changes
+
             }
             else if (keyCode == KeyCode.X)
             {
