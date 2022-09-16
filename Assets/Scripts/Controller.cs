@@ -43,7 +43,6 @@ public class Controller : MonoBehaviour
         {
             animator.SetBool("Falling", false);
             animator.SetBool("isGround", true);
-            isJumping = false;
         }
         else
         {
@@ -57,9 +56,19 @@ public class Controller : MonoBehaviour
             Movable = true;
         }
 
+        if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Falling")
+        {
+            isJumping = false;
+        }
+
         if (!Input.GetKey(KeyCode.LeftControl))
         {
             animator.SetBool("isCrouch", false);
+        }
+
+        if (!Movable)
+        {
+            PlayerRB.velocity = new Vector2(0, 0);
         }
     }
 
