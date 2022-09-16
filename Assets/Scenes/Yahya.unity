@@ -275,6 +275,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &910911934
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +381,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1655225507
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,13 +555,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+<<<<<<< Updated upstream
 --- !u!1001 &3154670288458028645
+=======
+--- !u!1001 &4428845050442479152
+>>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 3154670287566368471, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
       propertyPath: m_Camera
       value: 
@@ -627,5 +635,75 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 4428845049588449203, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049588449203, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431621, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_Name
+      value: Bars
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.17561054
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845049766431623, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845050193541885, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845050193541885, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428845051199917698, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 875685076}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de76d20e2c0b8ed47a92f2852c135231, type: 3}
