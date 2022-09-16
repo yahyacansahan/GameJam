@@ -13,6 +13,8 @@ public class Combat : MonoBehaviour
     [SerializeField] GameObject FireBallGO;
     public bool Attackable, EnemyInCollider;
 
+    TransFormer Trans;
+
     void Start()
     {
         controller = gameObject.GetComponent<Controller>();
@@ -23,6 +25,8 @@ public class Combat : MonoBehaviour
         {
             bars = GameObject.Find("Bars").GetComponent<Bars>();
         }
+
+        Trans = FindObjectOfType<TransFormer>();
 
         Attackable = true;
     }
@@ -60,8 +64,9 @@ public class Combat : MonoBehaviour
 
             if (keyCode == KeyCode.Z)
             {
-                controller.animator.Play("Attack1");
-                Damage = 10;
+              //  controller.animator.Play("Attack1");
+               // Damage = 10;
+                Trans.ShapeShift();
                 //Transform.ShapeShift();
             }
             else if (keyCode == KeyCode.X)
