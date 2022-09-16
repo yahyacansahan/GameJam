@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c2b5df8c51be7b44a705c96d5fdb05e
+guid: da68c5f5d87858c4b968016c3426e7ae
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Girl_walk_0
+      name: Fisherman_idle_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 1
         y: 0
-        width: 16
-        height: 25
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc44d1c3631ef2544b3a41f1baaa9712
-      internalID: 304902005
+      spriteID: bd3ddeb0b2368514e877f3a2e3c2a60d
+      internalID: -1461663076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_1
+      name: Fisherman_idle_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 50
         y: 0
-        width: 12
-        height: 24
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b87b12bee45084db4ca39b07f08711
-      internalID: -1071038952
+      spriteID: cccec0e6b764e1047a2b6b64b67d825b
+      internalID: -356715961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_2
+      name: Fisherman_idle_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 98
         y: 0
-        width: 19
-        height: 24
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e9e8d693ea55634da65f48a168f7235
-      internalID: 998609833
+      spriteID: 126ab354c7968be4b9677a3c1811dc64
+      internalID: -443461169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Girl_walk_3
+      name: Fisherman_idle_3
       rect:
         serializedVersion: 2
-        x: 146
+        x: 145
         y: 0
-        width: 20
-        height: 25
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,50 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29740522000b2dc4d80704028502f81b
-      internalID: 472411131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Girl_walk_4
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 10
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27ef01af9d181b940a46301c78d59a6c
-      internalID: -1690282772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Girl_walk_5
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 0
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bcec2ac42890ff4b8ec1e31999d4107
-      internalID: -416909028
+      spriteID: a9e136ef20dc66140b3c9384f682d049
+      internalID: -1763971633
       vertices: []
       indices: 
       edges: []
@@ -252,12 +210,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Girl_walk_4: -1690282772
-      Girl_walk_1: -1071038952
-      Girl_walk_3: 472411131
-      Girl_walk_5: -416909028
-      Girl_walk_0: 304902005
-      Girl_walk_2: 998609833
+      Fisherman_idle_0: -1461663076
+      Fisherman_idle_2: -443461169
+      Fisherman_idle_3: -1763971633
+      Fisherman_idle_1: -356715961
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
