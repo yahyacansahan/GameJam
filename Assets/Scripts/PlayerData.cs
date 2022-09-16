@@ -18,4 +18,12 @@ public class PlayerData : MonoBehaviour
     {
         
     }
+
+    public void takeDamage(float Damage)
+    {
+        Health -= Damage;
+        Debug.Log("DamageYedim Ahhh");
+    }
+
+
 }

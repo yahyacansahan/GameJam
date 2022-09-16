@@ -44,8 +44,7 @@ public class NewEnemy : MonoBehaviour
     {
         isDead = true;
         animator.Play("Death");
-
-
+        Destroy(this.gameObject,3f);
     }
 
     public void Destroy()

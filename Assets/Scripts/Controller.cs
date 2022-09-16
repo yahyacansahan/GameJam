@@ -10,6 +10,7 @@ public class Controller : MonoBehaviour
     public float MovementSpeed = 5, DashSpeed = 10;
     public bool Moving, isGround, isDash, isAttacking, Attackable, isJumping, Movable;
 
+    public Vector3 Size;
 
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class Controller : MonoBehaviour
         PlayerRB = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         PlayerCollider = gameObject.GetComponent<Collider2D>();
+        Size = transform.localScale;
     }
 
     // Update is called once per frame
@@ -88,7 +90,15 @@ public class Controller : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl))
         {
             Crouch();
+            transform.gameObject.layer = 9;
+
         }
+        else
+        {
+            transform.gameObject.layer = 7;
+
+        }
+
 
         if (!isDash && Movable)
         {

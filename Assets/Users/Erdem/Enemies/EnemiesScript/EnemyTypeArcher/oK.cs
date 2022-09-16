@@ -6,6 +6,7 @@ public class oK : MonoBehaviour
 {
    [SerializeField] float OkSpeed = 3f;
     Rigidbody2D Rbok;
+   public float Damage;
 
     void Awake()
     {
@@ -17,8 +18,12 @@ public class oK : MonoBehaviour
     {
         if (DEger > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = false;
 
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
         }
 
         Rbok.velocity = new Vector3(DEger, 0, 0);
@@ -26,6 +31,14 @@ public class oK : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            collision.gameObject.GetComponent<Combat>().TakeDamage(Damage);
+            Destroy(this.gameObject, .1f);
+
+        }
+    }
+
 }

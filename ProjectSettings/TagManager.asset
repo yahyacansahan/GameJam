@@ -5,17 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Fireball
+  - Arrow
+  - FireTrap
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - "K\xF6yl\xFC"
   - Water
   - UI
   - Ground
   - Player
   - Enemy
-  - 
+  - Hide
   - 
   - 
   - 

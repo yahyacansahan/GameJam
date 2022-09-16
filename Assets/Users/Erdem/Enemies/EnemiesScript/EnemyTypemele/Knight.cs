@@ -69,6 +69,11 @@ public class Knight : MonoBehaviour
     void AttackEnd()
     {
 
+        if(Vector2.Distance(Player.transform.position, transform.position) < 3f)
+        {
+            Player.GetComponent<Combat>().TakeDamage(15f);
+
+        }
 
         StartCoroutine(WaitForNextAtttack());
 

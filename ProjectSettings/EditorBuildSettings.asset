@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Users/Mert/ScenesME/MenuME01.unity
-    guid: ab76cf0f317cb954596e29929f971fde
-  - enabled: 1
-    path: Assets/Users/Mert/ScenesME/Level1ME.unity
-    guid: 6975caf8c212a13408ab0d25deb04cf0
+  m_Scenes: []
   m_configObjects: {}

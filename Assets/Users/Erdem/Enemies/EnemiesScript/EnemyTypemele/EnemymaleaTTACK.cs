@@ -134,7 +134,10 @@ public class EnemymaleaTTACK : MonoBehaviour
 
         if (Physics2D.OverlapCircle(attackPoint.transform.position, AttackRadius, PlayerLayer))
         {
-          //  Adventurer.TakeDamage(AttackDamage);
+          
+                Adventurer.GetComponent<Combat>().TakeDamage(15f);
+
+           
 
         }
 

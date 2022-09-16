@@ -5,7 +5,7 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
     Controller controller;
-    Bars bars;
+   public Bars bars;
     Collider2D[] hitEnemies;
     Transform AttackPoint;
     float Damage;
@@ -13,6 +13,9 @@ public class Combat : MonoBehaviour
     [SerializeField] GameObject FireBallGO;
     public bool Attackable, EnemyInCollider;
     TransFormer Trans;
+    public float Health, Stamina;
+
+
 
     void Start()
     {
@@ -63,10 +66,7 @@ public class Combat : MonoBehaviour
             if (keyCode == KeyCode.Z)
             {
                 controller.animator.Play("Attack1");
-                Damage = 10;
-                Trans.ShapeShift();
-
-                Damage = 10;
+              
                 Trans.ShapeShift();
 
             }
@@ -85,7 +85,12 @@ public class Combat : MonoBehaviour
 
     public void TakeDamage(float Damage)
     {
-        bars.Health -= Damage;
+        Health -= Damage;
+        bars.Health = this.Health;
+        transform.GetComponent<Animator>().Play("TakeDamage");
+
+        controller.Movable = true;
+
     }
 
     public void CreateFireBall()
@@ -123,5 +128,13 @@ public class Combat : MonoBehaviour
     public void GameOver()
     {
         //GameOver penceresi açýlacak.
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "FireTrap")
+        {
+
+            TakeDamage(10);
+        }
     }
 }
