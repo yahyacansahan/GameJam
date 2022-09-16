@@ -8,35 +8,35 @@ public class NewEnemy : MonoBehaviour
     [SerializeField] float Health = 100;
     Animator animator;
     public EnemyhealthBar healthbar;
-   public bool isDead;
+    public bool isDead;
     [SerializeField] GameObject BloodParticle;
     [SerializeField] GameObject slashParticle;
     [SerializeField] GameObject ExpParticle;
 
     void Start()
     {
-        animator=GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
-    
+
     void Update()
     {
-        
+
     }
 
-    public void TakeDamage(int Damage)
+    public void TakeDamage(float Damage)
     {
         Health -= Damage;
         healthbar.SetHealth(Health, MaxHealth);
         animator.Play("TakeDamage");
-      
+
         if (Health <= 0)
         {
 
             Die();
-            
-                
-         }
+
+
+        }
 
     }
 
@@ -44,7 +44,7 @@ public class NewEnemy : MonoBehaviour
     {
         isDead = true;
         animator.Play("Death");
-        
+
 
     }
 
