@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScenes : MonoBehaviour
 {
-
+    PlayerData playerData;
+    public SaveSystem system;
     public string sceneName;
     [SerializeField] int buttonIndex;
     [SerializeField] MenuController controller;
@@ -16,7 +17,10 @@ public class LoadingScenes : MonoBehaviour
 
     private void Start()
     {
-        hangiSahne = PlayerPrefs.GetString(hangikutu);
+        //hangiSahne = PlayerPrefs.GetString(hangikutu);
+
+        
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
     }
 
 
@@ -24,20 +28,26 @@ public class LoadingScenes : MonoBehaviour
     {
         if(controller.buttonIndex == buttonIndex && Input.GetAxis("Submit") == 1 )
         {
-            if (hangiSahne == "")
+
+            if (PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == null)
             {
-                Debug.Log(PlayerPrefs.GetString(hangikutu) + "dene");
-                PlayerPrefs.SetString(hangikutu, "Level-1");
+                system.NewGame(buttonIndex);
             }
+            else
+            {
+                playerData.SaveBox = buttonIndex;
+                system.Load();
+            }
+
             StartCoroutine(GeciseHazirlan());
-            PlayerPrefs.SetString("girisYapildi", hangikutu);
-            SceneManager.LoadScene("GecisSahnesi");
         }
     }
 
     IEnumerator GeciseHazirlan()
     {
         yield return new WaitForSeconds(0.6f);
+
+        SceneManager.LoadScene("GecisSahnesi");
     }
 
     

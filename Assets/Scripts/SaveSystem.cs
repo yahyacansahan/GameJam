@@ -10,10 +10,15 @@ public class SaveSystem : MonoBehaviour
     void Start()
     {
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+        if (GameObject.FindWithTag("Player"))
+        {
+            Load();
+        }
     }
 
-    public void NewGame()
+    public void NewGame(int saveBox)
     {
+        playerData.SaveBox = saveBox;
         playerData.CurrentDay = 1;
         playerData.Health = 100;
         playerData.Stamina = 100;
