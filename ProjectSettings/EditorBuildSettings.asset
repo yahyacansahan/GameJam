@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Users/Mert/ScenesME/Level1ME.unity
     guid: 6975caf8c212a13408ab0d25deb04cf0
+  - enabled: 1
+    path: Assets/Users/Mert/ScenesME/Load.unity
+    guid: 2b034a7a4bc841b4eb80491b8747b426
   m_configObjects: {}
