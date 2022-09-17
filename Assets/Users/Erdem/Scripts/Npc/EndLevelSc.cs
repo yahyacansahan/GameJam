@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class EndLevelSc : MonoBehaviour
 {
     Animator Anime;
+    public string hangiLevel;
     void Start()
     {
         Anime = GetComponent<Animator>();
@@ -28,7 +29,7 @@ public class EndLevelSc : MonoBehaviour
     void EndOfLevel()
     {
         string kutuismi = PlayerPrefs.GetString("girisYapildi");
-        PlayerPrefs.SetString(kutuismi, "Leve-2");
+        PlayerPrefs.SetString(kutuismi, hangiLevel);
 
         SceneManager.LoadScene("GecisSahnesi");
 
