@@ -54,13 +54,13 @@ public class EnemymaleaTTACK : MonoBehaviour
             if (Adventurer.transform.position.x > this.transform.position.x)
             {
 
-                Rb.velocity = (new Vector3(Speed, 0, 0));
+                Rb.velocity = (new Vector3(Speed, -1.5f, 0));
 
 
             }
             else
             {
-                Rb.velocity = (new Vector3(-Speed, 0, 0));
+                Rb.velocity = (new Vector3(-Speed, -1.5f, 0));
             }
 
 
@@ -68,7 +68,7 @@ public class EnemymaleaTTACK : MonoBehaviour
         }
         else if ((Vector2.Distance(transform.position, Adventurer.transform.position) < AttackMenzili)&& !isAttack)
         {
-            Rb.velocity = (new Vector3(0, 0, 0));
+            Rb.velocity = (new Vector3(0, -1.5f, 0));
             if (!isAttack)
             {
                 Attack();
@@ -104,7 +104,7 @@ public class EnemymaleaTTACK : MonoBehaviour
 
     private void Attack()
     {
-        Rb.velocity = (new Vector3(0, 0, 0));
+        
         isAttack = true;
         AttackCounter++;
         if (AttackCounter == 3)

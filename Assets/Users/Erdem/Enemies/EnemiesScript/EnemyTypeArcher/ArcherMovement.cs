@@ -51,12 +51,12 @@ public class ArcherMovement : MonoBehaviour
             {
                 if (Right)
             {
-                    Rb.velocity = new Vector3(-RunSpeed, 0, 0);
+                    Rb.velocity = new Vector3(-RunSpeed, -1.5f, 0);
 
                 }
                 else
                 {
-                    Rb.velocity = new Vector3(RunSpeed, 0, 0);
+                    Rb.velocity = new Vector3(RunSpeed, -1.5f, 0);
 
 
                 }
@@ -71,7 +71,7 @@ public class ArcherMovement : MonoBehaviour
                 if (CanAttack)
                 {
                     Attack();
-                    Rb.velocity = new Vector3(0, 0, 0);
+                    Rb.velocity = new Vector3(0, -1.5f, 0);
                     CanAttack = false;
 
                 }

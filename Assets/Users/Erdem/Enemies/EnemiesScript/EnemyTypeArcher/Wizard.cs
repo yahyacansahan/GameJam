@@ -69,13 +69,13 @@ public class Wizard : MonoBehaviour
         {
             if (Right)
             {
-                Rb.velocity= new Vector3(-RunSpeed,0,0);
+                Rb.velocity= new Vector3(-RunSpeed,-1.5f,0);
 
             }
             else
             {
 
-                Rb.velocity = new Vector3(RunSpeed, 0, 0);
+                Rb.velocity = new Vector3(RunSpeed, -1.5f, 0);
             }
 
 
@@ -86,7 +86,7 @@ public class Wizard : MonoBehaviour
         }
         else if (Vector2.Distance(transform.position, Player.transform.position) < AttackMenzili && CanAttack&&!IsDead)
         {
-            Rb.velocity = new Vector3(0, 0, 0);
+            Rb.velocity = new Vector3(0, -1.5f, 0);
             Attack();
             
             WizardAnimaytor.SetBool("Running", false);

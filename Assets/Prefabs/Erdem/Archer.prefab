@@ -95,10 +95,10 @@ GameObject:
   - component: {fileID: 4171052735506711803}
   - component: {fileID: 4171052735506711804}
   - component: {fileID: 4171052735506711805}
-  - component: {fileID: 4171052735506711806}
   - component: {fileID: 4171052735506711807}
   - component: {fileID: 4171052735506711802}
   - component: {fileID: 1685331096}
+  - component: {fileID: 6044111291653601210}
   m_Layer: 8
   m_Name: Archer
   m_TagString: Untagged
@@ -195,32 +195,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &4171052735506711806
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4171052735506711744}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0016221888, y: -0.025959045}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1500214, y: 0.38040912}
-  m_EdgeRadius: 0
 --- !u!114 &4171052735506711807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +254,22 @@ MonoBehaviour:
   BloodParticle: {fileID: 0}
   slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
+--- !u!70 &6044111291653601210
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171052735506711744}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00286858, y: -0.04589297}
+  m_Size: {x: 0.17533292, y: 0.38758817}
+  m_Direction: 0
 --- !u!1001 &1497285847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378,6 +368,10 @@ PrefabInstance:
     - target: {fileID: 2665819590543570401, guid: 895ec4058d0bf2d44b9e03680610a488, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665819590543570406, guid: 895ec4058d0bf2d44b9e03680610a488, type: 3}
+      propertyPath: offset.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2665819590543570413, guid: 895ec4058d0bf2d44b9e03680610a488, type: 3}
       propertyPath: m_Name

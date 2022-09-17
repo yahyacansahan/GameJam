@@ -11,6 +11,7 @@ public class Combat : MonoBehaviour
     Transform CreationPoint;
     float Damage;
     [SerializeField] LayerMask EnemyLayer;
+    LayerMask EndOF;
     [SerializeField] GameObject FireBallGO;
     public bool Attackable, EnemyInCollider;
     TransFormer Trans;
@@ -22,6 +23,7 @@ public class Combat : MonoBehaviour
 
     void Start()
     {
+        EndOF = 31;
         controller = gameObject.GetComponent<Controller>();
         AttackPoint = gameObject.GetComponent<Transform>();
         EnemyLayer = LayerMask.GetMask("Enemy");
@@ -151,6 +153,17 @@ public class Combat : MonoBehaviour
                 }
             }
         }
+
+        Collider2D[] EndOFlayer= Physics2D.OverlapCircleAll(AttackPoint.position, .2f, EndOF);
+
+        foreach(Collider2D EndObj in EndOFlayer)
+        {
+            EndObj.GetComponent<EndLevelSc>().Deadthh();
+
+
+        }
+
+
     }
 
     public void AttackEnd()

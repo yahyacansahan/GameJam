@@ -45,13 +45,13 @@ public class Knight : MonoBehaviour
                 if (NightBorne.transform.position.x > this.transform.position.x)
                 {
 
-                    RbOfknight.velocity = new Vector2(-Speed, 0);
+                    RbOfknight.velocity = new Vector2(-Speed, -1.5f);
                     animator.SetBool("running", true);
 
                 }
                 else
                 {
-                    RbOfknight.velocity = new Vector2(Speed, 0);
+                    RbOfknight.velocity = new Vector2(Speed, -1.5f);
                     animator.SetBool("running", true);
 
                 }
@@ -72,11 +72,11 @@ public class Knight : MonoBehaviour
                  animator.SetBool("running", true);
                 if (Player.gameObject.transform.position.x > transform.position.x)
                 {
-                    RbOfknight.velocity = new Vector2(Speed, 0);
+                    RbOfknight.velocity = new Vector2(Speed, -1.5f);
                 }
                 else if(Player.gameObject.transform.position.x < transform.position.x)
                 {
-                    RbOfknight.velocity = new Vector2(-Speed, 0);
+                    RbOfknight.velocity = new Vector2(-Speed, -1.5f);
 
                 }
 
@@ -84,7 +84,7 @@ public class Knight : MonoBehaviour
             }else if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < attackMenzili)
             {
                 animator.SetBool("running", false);
-                RbOfknight.velocity = (new Vector3(0, 0, 0));
+                RbOfknight.velocity = (new Vector3(0, -1.5f, 0));
                 Attack();
 
             }

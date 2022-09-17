@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3664570572146733292}
   - component: {fileID: 3664570572146733295}
   - component: {fileID: 3664570572146733294}
-  - component: {fileID: 3664570572146733289}
   - component: {fileID: 3664570572146733288}
   - component: {fileID: 3664570572146733293}
   - component: {fileID: 3664570572146733282}
+  - component: {fileID: 2082753754521328746}
   m_Layer: 8
   m_Name: Knight
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3664570572146733291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.6204004, y: -8.3685665, z: 0}
-  m_LocalScale: {x: 2.4672, y: 2.4672, z: 2.4672}
+  m_LocalScale: {x: 2.816062, y: 2.816062, z: 2.816062}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1595909579012098919}
@@ -110,32 +110,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &3664570572146733289
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3664570572146733291}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.023740351, y: -0.1582697}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 1.37}
-    newSize: {x: 1.84, y: 1.37}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.383919, y: 0.83188355}
-  m_EdgeRadius: 0
 --- !u!50 &3664570572146733288
 Rigidbody2D:
   serializedVersion: 4
@@ -171,9 +145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanAttack: 1
   NightBorneScarred: 0
-  Speed: 5
-  attackMenzili: 3
-  FightAramaMenzili: 10
+  Speed: 4
+  attackMenzili: 2
+  FightAramaMenzili: 6
   NightBorneLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -196,6 +170,22 @@ MonoBehaviour:
   BloodParticle: {fileID: 0}
   slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
+--- !u!70 &2082753754521328746
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3664570572146733291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.062253997, y: -0.15324147}
+  m_Size: {x: 0.2980062, y: 0.8056189}
+  m_Direction: 0
 --- !u!1001 &3664570573621083782
 PrefabInstance:
   m_ObjectHideFlags: 0
