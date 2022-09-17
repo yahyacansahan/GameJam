@@ -122,12 +122,28 @@ public class Knight : MonoBehaviour
 
     void Flip()
     {
-        if (CanAttack)
+        if (NightBorneScarred)
+        {
+
+            if (NightBorne.gameObject.transform.position.x > transform.position.x)
+            {
+                transform.localScale = new Vector3(-LocalScale.x, LocalScale.y, LocalScale.z);
+                RbOfknight.velocity = new Vector2(-Speed, RbOfknight.velocity.y);
+            }
+            else
+            {
+                transform.localScale = new Vector3(LocalScale.x , LocalScale.y, LocalScale.z);
+                RbOfknight.velocity = new Vector2(Speed, RbOfknight.velocity.y);
+            }
+
+
+        }
+        else if(CanAttack)
         {
 
             if (Player.gameObject.transform.position.x > transform.position.x)
             {
-                transform.localScale = new Vector3(LocalScale.x , LocalScale.y, LocalScale.z);
+                transform.localScale = new Vector3(LocalScale.x, LocalScale.y, LocalScale.z);
                 RbOfknight.velocity = new Vector2(Speed, RbOfknight.velocity.y);
             }
             else
@@ -137,6 +153,9 @@ public class Knight : MonoBehaviour
             }
 
         }
+      
+
+        
 
       
 

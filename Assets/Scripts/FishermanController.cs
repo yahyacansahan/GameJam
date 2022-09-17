@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FishermanController : MonoBehaviour
 {
     public Rigidbody2D FishermanRB;
@@ -66,7 +66,7 @@ public class FishermanController : MonoBehaviour
                 }
                 else if(goVillage)
                 {
-                    //villlage scene load
+                    SceneManager.LoadScene("Köyleveli");
                 }
             } 
         }   

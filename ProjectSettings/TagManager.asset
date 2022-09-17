@@ -13,6 +13,7 @@ TagManager:
   - EventArea
   - NightBorne
   - Npc
+  - LittleOnes
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Hide
   - NightBorne
   - Npc
-  - 
+  - LittleOnes
   - 
   - 
   - 

@@ -71,7 +71,7 @@ public class NightBorneMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        NightBorneLifeTime -= Time.deltaTime;
+        NightBorneLifeTime -= Time.deltaTime*5;
         NightBorneSlider.value = NightBorneLifeTime;
         
     }

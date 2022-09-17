@@ -35,6 +35,16 @@ public class Combat : MonoBehaviour
     void Update()
     {
         KeyEvent();
+
+
+        if (Stamina < 100)
+        {
+
+            Stamina += Time.deltaTime * 2f;
+        }
+
+        bars.Stamina = Stamina;
+        bars.Health = Health;
     }
 
     void KeyEvent()
@@ -66,8 +76,15 @@ public class Combat : MonoBehaviour
             if (keyCode == KeyCode.Z)
             {
                 controller.animator.Play("Attack1");
-              
-                Trans.ShapeShift();
+
+                if (Stamina > 70)
+                {
+                    Stamina -= 70;
+
+                    Trans.ShapeShift();
+                    
+                }
+               
 
             }
             else if (keyCode == KeyCode.X)
@@ -114,7 +131,7 @@ public class Combat : MonoBehaviour
                 else
                 {
                     enemy.GetComponent<NewEnemy>().TakeDamage(Damage * bars.Stamina / 20);
-                    bars.Stamina = 0;
+                 //   bars.Stamina = 0;
                 }
             }
         }
@@ -127,7 +144,7 @@ public class Combat : MonoBehaviour
 
     public void GameOver()
     {
-        //GameOver penceresi açýlacak.
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -135,6 +152,23 @@ public class Combat : MonoBehaviour
         {
 
             TakeDamage(10);
+        }
+
+       
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "LittleOnes")
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Health += 10;
+                Stamina += 10;
+                collision.gameObject.GetComponent<Kucukler>().Death();
+            }
+          
+
         }
     }
 }
