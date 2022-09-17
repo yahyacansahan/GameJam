@@ -29,7 +29,7 @@ public class SaveSystem : MonoBehaviour
 
     public void Save()
     {
-
+        PlayerPrefs.SetInt("SaveBox", playerData.SaveBox);
         PlayerPrefs.SetInt("CurrentDay" + playerData.SaveBox, playerData.CurrentDay);
         PlayerPrefs.SetFloat("Health" + playerData.SaveBox, playerData.Health);
         PlayerPrefs.SetFloat("Stamina" + playerData.SaveBox, playerData.Stamina);
@@ -39,6 +39,7 @@ public class SaveSystem : MonoBehaviour
 
     public void Load()
     {
+        playerData.SaveBox = PlayerPrefs.GetInt("SaveBox");
         playerData.CurrentDay = PlayerPrefs.GetInt("CurrentDay" + playerData.SaveBox);
         playerData.Health = PlayerPrefs.GetFloat("Health" + playerData.SaveBox);
         playerData.Stamina = PlayerPrefs.GetFloat("Stamina" + playerData.SaveBox);
