@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &63111024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63111025}
+  - component: {fileID: 63111026}
+  m_Layer: 7
+  m_Name: CreatPointAzazel
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &63111025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63111024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7, y: 0.98, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5068419756381804938}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &63111026
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63111024}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.06}
+  serializedVersion: 2
+  m_Radius: 0.09
 --- !u!1 &4860460327874963330
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +63,7 @@ GameObject:
   - component: {fileID: 4860460327874963352}
   - component: {fileID: 2111920760}
   - component: {fileID: 6251841946997759892}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: NightBorne
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -147,6 +195,8 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 256
+  NightBorneLifeTime: 100
+  NightBorneSlider: {fileID: 0}
 --- !u!70 &2111920760
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -246,6 +296,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4860460329361855418}
     m_Modifications:
+    - target: {fileID: 456938059, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: Health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 456938059, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: Stamina
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 370832289437286695, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_Material
       value: 
@@ -263,12 +321,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2652
+      objectReference: {fileID: 0}
+    - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2652
+      objectReference: {fileID: 0}
+    - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2652
+      objectReference: {fileID: 0}
+    - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.392232
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.716825
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -304,6 +374,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286876, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 370832289437286876, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []

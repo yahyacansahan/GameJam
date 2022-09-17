@@ -6,9 +6,12 @@ public class Kucukler : MonoBehaviour
 {
     [SerializeField] Animator Anime;
     [SerializeField] GameObject Soul;
+    [SerializeField] GameObject İmage;
+
     void Start()
     {
         Anime = GetComponent<Animator>();
+        İmage.SetActive(false);
     }
 
     
@@ -35,7 +38,7 @@ public class Kucukler : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Anime.SetBool("Hide",true);
-
+            İmage.SetActive(true);
         }
        
 
@@ -46,6 +49,7 @@ public class Kucukler : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Anime.SetBool("Hide", false);
+            İmage.SetActive(false);
 
         }
 

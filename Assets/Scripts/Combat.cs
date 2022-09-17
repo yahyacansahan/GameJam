@@ -8,6 +8,7 @@ public class Combat : MonoBehaviour
    public Bars bars;
     Collider2D[] hitEnemies;
     Transform AttackPoint;
+    Transform CreationPoint;
     float Damage;
     [SerializeField] LayerMask EnemyLayer;
     [SerializeField] GameObject FireBallGO;
@@ -16,12 +17,15 @@ public class Combat : MonoBehaviour
     public float Health, Stamina;
 
 
+    [SerializeField] GameObject Azazel;
+
 
     void Start()
     {
         controller = gameObject.GetComponent<Controller>();
         AttackPoint = gameObject.GetComponent<Transform>();
         EnemyLayer = LayerMask.GetMask("Enemy");
+        CreationPoint = transform.Find("CreatPointAzazel");
 
         if (GameObject.Find("Bars"))
         {
@@ -62,6 +66,9 @@ public class Combat : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.C))
             {
                 AttackEvent(KeyCode.C);
+            }else if (Input.GetKeyDown(KeyCode.B))
+            {
+                AttackEvent(KeyCode.B);
             }
         }
     }
@@ -96,6 +103,15 @@ public class Combat : MonoBehaviour
             {
                 controller.animator.Play("Attack3");
                 Damage = 10;
+            }else if (keyCode == KeyCode.B)
+            {
+                if (Stamina > 50)
+                {
+                    controller.animator.Play("Attack1");
+                    CrateAzazel();
+                    Stamina -= 50;
+                }
+            
             }
         }
     }
@@ -153,15 +169,27 @@ public class Combat : MonoBehaviour
 
             TakeDamage(10);
         }
+        if (collision.gameObject.tag == "LittleOnes")
+        {
 
-       
+
+        }
+
+
     }
+
+    public void CrateAzazel()
+    {
+        Instantiate(Azazel, CreationPoint.position,Quaternion.identity);
+
+    }
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "LittleOnes")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 Health += 10;
                 Stamina += 10;
