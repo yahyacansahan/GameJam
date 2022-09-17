@@ -13,19 +13,31 @@ public class MenuButtonController : MonoBehaviour
     {
         if (controlingMenu.buttonIndex == thisButtonIndex)
         {
+            
             //seçildi animasyonunu baþlatýyor
             animator.SetBool("Selected", true);
-
+            
+            
             //üstüne týklandý animasyonunu baþlatýyor
-            if (Input.GetAxis("Submit") == 1)
-            {
-                animator.SetBool("Entered", true);
-            }
-            else { animator.SetBool("Entered", false); }
+            Enterlandi();
+            
+            
         }
         else
         {
             animator.SetBool("Selected", false);
         }
     }
+
+    public void Enterlandi()
+    {
+        //üstüne týklandý animasyonunu baþlatýyor
+        if (Input.GetAxis("Submit") == 1)
+        {
+            animator.SetBool("Entered", true);
+        }
+        else { animator.SetBool("Entered", false); }
+    }
+
+    
 }

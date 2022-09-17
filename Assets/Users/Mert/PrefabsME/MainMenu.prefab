@@ -339,7 +339,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2045859991735043406, guid: 1077fea3838caf9428539a22837c6781, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1077fea3838caf9428539a22837c6781, type: 3}
 --- !u!1 &5549171997311681621 stripped
 GameObject:
@@ -503,7 +504,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2045859991735043406, guid: 1077fea3838caf9428539a22837c6781, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1077fea3838caf9428539a22837c6781, type: 3}
 --- !u!224 &144353547593215872 stripped
 RectTransform:
@@ -658,7 +660,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2045859991735043406, guid: 1077fea3838caf9428539a22837c6781, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1077fea3838caf9428539a22837c6781, type: 3}
 --- !u!1 &144353546716083205 stripped
 GameObject:
