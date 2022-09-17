@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NightBorneMovement : MonoBehaviour
 {
@@ -11,12 +12,17 @@ public class NightBorneMovement : MonoBehaviour
     [SerializeField] float Speed,Damage;
     [SerializeField] LayerMask EnemyLayer;
     TransFormer Transformt;
+   public float NightBorneLifeTime = 100;
+    public Slider NightBorneSlider;
+
     void Awake()
     {
         Rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         Transformt = FindObjectOfType<TransFormer>();
-
+        gameObject.SetActive(NightBorneSlider);
+        NightBorneSlider.gameObject.SetActive(true);
+        NightBorneLifeTime = 100;
     }
 
     // Update is called once per frame
@@ -56,10 +62,28 @@ public class NightBorneMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.V))
         {
-
+            NightBorneSlider.gameObject.SetActive(false);
             Transformt.ShapeShift();
         }
 
+
+
+    }
+    private void FixedUpdate()
+    {
+        NightBorneLifeTime -= Time.deltaTime;
+        NightBorneSlider.value = NightBorneLifeTime;
+        
+    }
+
+    public void NightBorneTakeDamage(float Damage)
+    {
+
+        NightBorneLifeTime -= Damage;
+        if (NightBorneLifeTime < 0)
+        {
+            Transformt.ShapeShift();
+        }
     }
 
 
@@ -79,6 +103,25 @@ public class NightBorneMovement : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Fireball")
+        {
+
+            NightBorneTakeDamage(15);
+        }
+        if (collision.gameObject.tag == "Arrow")
+        {
+
+            NightBorneTakeDamage(15);
+        }
+        if (collision.gameObject.tag == "FireTrap")
+        {
+
+            NightBorneTakeDamage(15);
+        }
     }
 
 }

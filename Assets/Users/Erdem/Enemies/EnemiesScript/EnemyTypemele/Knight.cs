@@ -9,9 +9,11 @@ public class Knight : MonoBehaviour
     Controller Player;
     Vector3 LocalScale;
    [SerializeField] bool CanAttack=true;
+    [SerializeField] bool NightBorneScarred = false;
 
     [SerializeField] float Speed,attackMenzili,FightAramaMenzili;
-
+    NightBorneMovement NightBorne;
+    [SerializeField] LayerMask NightBorneLayer = 10;
 
     void Start()
     {
@@ -32,7 +34,7 @@ public class Knight : MonoBehaviour
 
     void Movement()
     {
-        if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < FightAramaMenzili)
+        if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < FightAramaMenzili&&!NightBorneScarred)
         {
             if(Vector2.Distance(Player.gameObject.transform.position, transform.position) < attackMenzili)
             {
@@ -50,12 +52,44 @@ public class Knight : MonoBehaviour
 
             }
         }
-        else
+        else if(!NightBorneScarred)
         {
             animator.SetBool("Running", false);
         }
 
 
+
+        if (Physics2D.OverlapCircle(transform.position, 10f,NightBorneLayer ))
+        {
+            NightBorne = FindObjectOfType<NightBorneMovement>();
+
+            if (Vector2.Distance(NightBorne.transform.position, this.transform.position) < 10)
+            {
+                NightBorneScarred = true;
+                if (NightBorne.transform.position.x > this.transform.position.x)
+                {
+
+                    RbOfknight.velocity = new Vector2(-Speed, 0);
+                    animator.SetBool("Running", true);
+
+                }
+                else
+                {
+                    RbOfknight.velocity = new Vector2(Speed, 0);
+                    animator.SetBool("Running", true);
+
+                }
+
+
+            }
+            else
+            {
+                NightBorneScarred = false;
+            }
+
+             
+
+        }
 
 
     }

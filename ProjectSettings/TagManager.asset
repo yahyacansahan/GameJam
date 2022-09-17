@@ -11,6 +11,7 @@ TagManager:
   - goVillage
   - Fishing
   - EventArea
+  - NightBorne
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Player
   - Enemy
   - Hide
-  - 
+  - NightBorne
   - 
   - 
   - 
