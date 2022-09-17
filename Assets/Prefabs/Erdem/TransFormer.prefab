@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1814300859}
   - component: {fileID: 1814300858}
   m_Layer: 0
-  m_Name: NightBorne_49
+  m_Name: NightBorne_Bulut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 6251841946997759892}
   m_Layer: 10
   m_Name: NightBorne
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,13 +280,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f0d92321931d94ca23c8227b7ab352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 15
+  Speed: 8
   Damage: 45
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 256
   NightBorneLifeTime: 100
   NightBorneSlider: {fileID: 0}
+  Bulut: {fileID: 0}
+  FlooathSpeed: 0.2
 --- !u!70 &2111920760
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -65,7 +65,7 @@ public class Wizard : MonoBehaviour
     void Movement()
     {
 
-        if (Vector2.Distance(transform.position, Player.transform.position) < Farketmemenzili&& Vector2.Distance(transform.position, Player.transform.position) > AttackMenzili)
+        if (Vector2.Distance(transform.position, Player.transform.position) < Farketmemenzili && Vector2.Distance(transform.position, Player.transform.position) > AttackMenzili)
         {
             if (Right)
             {
@@ -94,9 +94,7 @@ public class Wizard : MonoBehaviour
 
         WizardAnimaytor.SetBool("Running", true);
 
-        {
-            WizardAnimaytor.SetBool("Running", false);
-        }
+       
 
     }
 
