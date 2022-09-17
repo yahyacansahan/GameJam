@@ -10,7 +10,7 @@ public class PlayerData : MonoBehaviour
     void Awake()
     {
         Stamina = 100;
-        Health = 100;
+        Health = 150;
     }
 
     // Update is called once per frame
