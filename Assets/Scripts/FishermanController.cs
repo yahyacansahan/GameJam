@@ -8,7 +8,7 @@ public class FishermanController : MonoBehaviour
     [SerializeField] GameObject FishingEventGO;
     Animator animator;
     [SerializeField] float MovementSpeed;
-    public bool Fishing;
+    public bool Fishing,canFishing,goVillage;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +42,6 @@ public class FishermanController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
-
                 FishermanRB.velocity = new Vector2(MovementSpeed, FishermanRB.velocity.y);
 
                 gameObject.transform.localScale = new Vector3(1, 1, 1);
@@ -60,9 +59,41 @@ public class FishermanController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                FishingEventGO.SetActive(true);
-            }
+                if(canFishing)
+                {
+                    FishingEventGO.SetActive(true);
+                    FishingEventGO.GetComponent<FishingEvent>().FishEvent();
+                }
+                else if(goVillage)
+                {
+                    //villlage scene load
+                }
+            } 
         }   
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.tag == "Fishing")
+        {
+            canFishing = true;
+        }
+        if(collision.tag == "goVillage")
+        {
+            goVillage = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Fishing")
+        {
+            canFishing = false;
+        }
+        if (collision.gameObject.tag == "goVillage")
+        {
+            goVillage = false;
+        }
     }
 
 }

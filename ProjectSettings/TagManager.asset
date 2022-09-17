@@ -8,6 +8,9 @@ TagManager:
   - Fireball
   - Arrow
   - FireTrap
+  - goVillage
+  - Fishing
+  - EventArea
   layers:
   - Default
   - TransparentFX

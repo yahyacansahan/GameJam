@@ -5,36 +5,38 @@ using UnityEngine.UI;
 
 public class FishingEvent : MonoBehaviour
 {
-    public Transform Fisherman, CamPos, tempCamPos;
-    [SerializeField] Camera cam;
-    [SerializeField] Transform CatchArea;
+    public Transform Fisherman, CamPos;
+    [SerializeField] RectTransform CatchArea;
     [SerializeField] Slider slider;
     [SerializeField] Animator animator;
     [SerializeField] FishermanController controller;
     public int Good = 0, Bad = 0;
+    bool increase, Fishing;
     // Start is called before the first frame update
     void Awake()
     {
         Fisherman = GameObject.Find("Fisherman").GetComponent<Transform>();
         animator = GameObject.Find("Fisherman").GetComponent<Animator>();
         controller = GameObject.Find("Fisherman").GetComponent<FishermanController>();
-        CatchArea = GameObject.Find("CatchArea").GetComponent<Transform>();
-        cam = Camera.main;
-        CamPos = Camera.main.transform;
+        CatchArea = GameObject.Find("CatchArea").GetComponent<RectTransform>();
         slider = GameObject.Find("FishingSlider").GetComponent<Slider>();
-        FishEvent();
         controller.Fishing = true;
+        Bad = 0;
+        Good = 0;
     }
 
     private void FixedUpdate()
     {
         SliderMove();
+    }
+    private void Update()
+    {
         KeyEvent();
     }
 
     void KeyEvent()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && Fishing)
         {
             ExitEvent();
         }
@@ -47,7 +49,7 @@ public class FishingEvent : MonoBehaviour
 
     void Catch()
     {
-        if (slider.value * 130 / 100 > CatchArea.position.x - 10 || slider.value * 130 / 100 < CatchArea.position.x + 10)
+        if (slider.value * 130 / 100 > CatchArea.anchoredPosition.x - 15 - 10 && slider.value * 130 / 100 < CatchArea.anchoredPosition.x - 15 + 10)
         {
             Good++;
             RandomCatchArea();
@@ -56,40 +58,65 @@ public class FishingEvent : MonoBehaviour
         {
             Bad++;
         }
+
+        if (Good >= 3 || Bad >= 2)
+        {
+            ExitEvent();
+        }
     }
 
     void RandomCatchArea()
     {
-        float rand = Random.Range(-63, 63);
-        CatchArea.position = new Vector3(rand, CatchArea.position.y, CatchArea.position.z);
+        float rand = Random.Range(15, 145);
+        CatchArea.anchoredPosition = new Vector3(rand, 0, 1);
     }
 
     void SliderMove()
     {
-        if (slider.value >= 100)
+        if (slider.value >= 99)
         {
-            slider.value -= 0.2f;
+            increase = false;
         }
-        else if (slider.value < 0)
+        else if (slider.value <= 1)
         {
-            slider.value -= 0.2f;
+            increase = true;
+        }
+
+        if (increase)
+        {
+            slider.value += 1 + (Good);
+        }
+        else
+        {
+            slider.value -= 1 + (Good);
         }
     }
 
     public void FishEvent()
     {
+        Fishing = true;
         Fisherman.transform.position = new Vector3(4.65f, -2.59f, 5);
         controller.FishermanRB.constraints = RigidbodyConstraints2D.FreezeAll;
-        cam.orthographicSize /= 2;
-        tempCamPos = CamPos;
+        Camera.main.orthographicSize = 2.5f;
         Camera.main.transform.position = new Vector3(Fisherman.position.x, Fisherman.position.y + 0.6f, 0);
         animator.SetBool("Fishing", true);
     }
 
     public void ExitEvent()
     {
-        cam.orthographicSize *= 2;
-        CamPos = tempCamPos;
+        if (Good >= 3)
+        {
+            //ödül
+        }
+        else if (Bad >= 2)
+        {
+            //ceza 
+        }
+        Bad = 0;
+        Good = 0;
+        Fishing = false;
+        Camera.main.orthographicSize = 5;
+        Camera.main.transform.position = new Vector3(0, 0, 0);
         controller.Fishing = false;
         controller.FishermanRB.constraints = RigidbodyConstraints2D.None;
         controller.FishermanRB.constraints = RigidbodyConstraints2D.FreezeRotation;
