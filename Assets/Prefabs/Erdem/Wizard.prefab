@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2074764307162940429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.73, y: -2.17, z: 0}
-  m_LocalScale: {x: 4.0292068, y: 4.0292068, z: 4.0292068}
+  m_LocalScale: {x: 2.5334444, y: 2.5334444, z: 2.5334444}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2074764308629280538}
@@ -194,7 +194,7 @@ MonoBehaviour:
   healthbar: {fileID: 4050407247013646626}
   isDead: 0
   BloodParticle: {fileID: 0}
-  slashParticle: {fileID: 0}
+  slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
 --- !u!1 &2074764308629280539
 GameObject:

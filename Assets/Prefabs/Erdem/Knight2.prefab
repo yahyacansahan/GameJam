@@ -184,7 +184,7 @@ MonoBehaviour:
   healthbar: {fileID: 1103992747608063872}
   isDead: 0
   BloodParticle: {fileID: 0}
-  slashParticle: {fileID: 0}
+  slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
 --- !u!1001 &3147118135462152806
 PrefabInstance:

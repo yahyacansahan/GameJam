@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4171052735249275276
 Transform:
   m_ObjectHideFlags: 0
@@ -236,6 +236,7 @@ MonoBehaviour:
   RunSpeed: 5
   FarketmeMenzili: 25
   attackMenzili: 10
+  Hasar: 7.73
   Ok: {fileID: 853736404388844225, guid: a5fb256a1a645f947a22edc2140f331a, type: 3}
   OkPozisyonu: {fileID: 0}
   "OkunH\u0131z\u0131": 20
@@ -277,7 +278,7 @@ MonoBehaviour:
   healthbar: {fileID: 2665819592003072305}
   isDead: 0
   BloodParticle: {fileID: 0}
-  slashParticle: {fileID: 0}
+  slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
 --- !u!1001 &1497285847
 PrefabInstance:

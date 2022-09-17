@@ -170,9 +170,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanAttack: 1
+  NightBorneScarred: 0
   Speed: 5
   attackMenzili: 3
   FightAramaMenzili: 10
+  NightBorneLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &3664570572146733282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +194,7 @@ MonoBehaviour:
   healthbar: {fileID: 1595909579012098912}
   isDead: 0
   BloodParticle: {fileID: 0}
-  slashParticle: {fileID: 0}
+  slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
 --- !u!1001 &3664570573621083782
 PrefabInstance:

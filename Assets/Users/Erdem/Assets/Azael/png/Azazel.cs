@@ -26,13 +26,14 @@ public class Azazel : MonoBehaviour
             transform.GetComponent<SpriteRenderer>().flipX = true;
             Speed *= -1;
         }
+        transform.GetComponent<BoxCollider2D>().enabled = false;
 
     }
 
     void ilerle()
     {
         Rb.velocity = new Vector3(Speed, 0, 0);
-
+        transform.GetComponent<BoxCollider2D>().enabled = true;
 
     }
 

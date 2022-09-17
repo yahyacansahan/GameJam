@@ -49,7 +49,7 @@ public class NewEnemy : MonoBehaviour
 
     public void Destroy()
     {
-        // Instantiate();
+         Instantiate(slashParticle,transform.position,Quaternion.identity);
 
         Destroy(this.gameObject);
     }

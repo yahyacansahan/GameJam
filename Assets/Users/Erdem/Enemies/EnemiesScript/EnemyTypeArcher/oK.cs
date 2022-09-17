@@ -36,6 +36,7 @@ public class oK : MonoBehaviour
         if (collision.gameObject.layer == 7)
         {
             collision.gameObject.GetComponent<Combat>().TakeDamage(Damage);
+
             Destroy(this.gameObject, .1f);
 
         }

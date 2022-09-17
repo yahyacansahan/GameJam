@@ -7,6 +7,7 @@ public class Kucukler : MonoBehaviour
     [SerializeField] Animator Anime;
     [SerializeField] GameObject Soul;
     [SerializeField] GameObject İmage;
+    public bool deadAlready = false;
 
     void Start()
     {
@@ -28,8 +29,13 @@ public class Kucukler : MonoBehaviour
 
     public void dstroy()
     {
-        Instantiate(Soul, transform.position, Quaternion.identity);
-        Destroy(this.gameObject);
+        if (deadAlready == false)
+        {
+            Instantiate(Soul, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+            deadAlready = true;
+        }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

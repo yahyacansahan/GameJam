@@ -189,10 +189,11 @@ public class Combat : MonoBehaviour
     {
         if (collision.gameObject.tag == "LittleOnes")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && !collision.gameObject.GetComponent<Kucukler>().deadAlready)
             {
-                Health += 10;
-                Stamina += 10;
+                
+                Health += 5;
+                Stamina += 5;
                 collision.gameObject.GetComponent<Kucukler>().Death();
             }
           
