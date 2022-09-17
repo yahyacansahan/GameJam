@@ -13,6 +13,6 @@ public class SaveSystems
 
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerDatas data = new PlayerDatas();
+        PlayerDatas data = new PlayerDatas(player);
     }
 }
