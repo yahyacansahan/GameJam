@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Leveller/K\xF6yleveli.unity"
     guid: 4c025f13c3a97404992e2bdf7fa445de
   - enabled: 1

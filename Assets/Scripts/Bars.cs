@@ -5,13 +5,17 @@ using UnityEngine.UI;
 
 public class Bars : MonoBehaviour
 {
-    Slider HealthBar, StaminaBar;
+    Slider HealthBar, StaminaBar, SupheBar;
     PlayerData playerData;
     Animator animator;
-    public float Health, Stamina;
+    public float Health, Stamina, Suphe;
     // Start is called before the first frame update
     void Start()
     {
+        if (GameObject.Find("SupheBar"))
+        {
+            SupheBar = GameObject.Find("SupheBar").GetComponent<Slider>();
+        }
         HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
         playerData = GameObject.Find("Player").GetComponent<PlayerData>();
@@ -23,7 +27,7 @@ public class Bars : MonoBehaviour
         StaminaBar.maxValue = Stamina;
         StaminaBar.value = Stamina;
 
-      
+
     }
 
     void FixedUpdate()
@@ -50,5 +54,21 @@ public class Bars : MonoBehaviour
         {
             animator.Play("Death");
         }
+    }
+
+    void CalculateSuphe(float suphemiktari)
+    {
+        Suphe += suphemiktari;
+
+        if (Suphe <= 0)
+        {
+            Suphe = 0;
+        }
+        else if (Suphe >= 100)
+        {
+            Suphe = 100;
+            //gameover penceresi açýlacak
+        }
+        SupheBar.value = Suphe;
     }
 }

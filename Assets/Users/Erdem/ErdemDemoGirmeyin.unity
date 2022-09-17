@@ -2237,6 +2237,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1070273357, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070273357, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1561720522352764850, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
       propertyPath: m_Name
       value: Bars
