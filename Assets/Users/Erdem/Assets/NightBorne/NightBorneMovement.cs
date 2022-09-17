@@ -14,6 +14,9 @@ public class NightBorneMovement : MonoBehaviour
     TransFormer Transformt;
    public float NightBorneLifeTime = 100;
     public Slider NightBorneSlider;
+    bool DamageCanTaken = true;
+    [SerializeField] GameObject Bulut;
+    [SerializeField] float FlooathSpeed = .2f;
 
     void Awake()
     {
@@ -23,23 +26,45 @@ public class NightBorneMovement : MonoBehaviour
         gameObject.SetActive(NightBorneSlider);
         NightBorneSlider.gameObject.SetActive(true);
         NightBorneLifeTime = 100;
+        Bulut = GameObject.Find("NightBorne_Bulut");
     }
 
     // Update is called once per frame
     void Update()
     {
-       Movement= new Vector2(Input.GetAxis("Horizontal"), -2);
+     
 
           
-        if (Mathf.Abs(Input.GetAxis("Horizontal") )>.2f)
+       
+
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+
+            Movement = new Vector2(Input.GetAxis("Horizontal"), +FlooathSpeed);
+            Bulut.SetActive(true);
+            NightBorneLifeTime -= Time.deltaTime * 10;
+
+        }
+        else
+        {
+            Movement = new Vector2(Input.GetAxis("Horizontal"), -1.5f);
+            Bulut.SetActive(false);
+        }
+
+
+
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) > .2f)
         {
 
             Animator.SetBool("Run", true);
-
+            
         }
-        else { Animator.SetBool("Run", false); 
-        
-        
+        else
+        {
+            Animator.SetBool("Run", false);
+           
+
         }
 
         Rb.velocity = Movement*Speed;
@@ -55,9 +80,14 @@ public class NightBorneMovement : MonoBehaviour
 
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        else
+        else if(Input.GetAxis("Horizontal") < 0)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+
+
         }
 
         if (Input.GetKey(KeyCode.V))
@@ -73,19 +103,40 @@ public class NightBorneMovement : MonoBehaviour
     {
         NightBorneLifeTime -= Time.deltaTime*5;
         NightBorneSlider.value = NightBorneLifeTime;
+
+
+        if (NightBorneLifeTime < 0)
+        {
+
+            DamageCanTaken = false;
+            Animator.Play("TurnBack");
+        }
         
     }
 
     public void NightBorneTakeDamage(float Damage)
     {
-
-        NightBorneLifeTime -= Damage;
-        if (NightBorneLifeTime < 0)
+        if (DamageCanTaken)
         {
-            Transformt.ShapeShift();
-        }
+            Animator.Play("TakeHit");
+            NightBorneLifeTime -= Damage;
+            if (NightBorneLifeTime < 0)
+            {
+                Animator.Play("TurnBack");
+                DamageCanTaken = false;
+            }
+
+        } 
+
+       
     }
 
+
+    void ShapeShift()
+    {
+        Transformt.ShapeShift();
+
+    }
 
     void AttackEnd()
     {
