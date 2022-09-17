@@ -10,10 +10,11 @@ public class LoadLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = GameObject.Find("Player").GetComponent<PlayerData>();
-        saveSystem = GameObject.Find("Player").GetComponent<SaveSystem>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+        saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
         saveSystem.Load();
     }
+
 
     void LoadScene()
     {

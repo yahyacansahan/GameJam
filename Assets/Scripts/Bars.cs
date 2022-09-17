@@ -18,7 +18,7 @@ public class Bars : MonoBehaviour
         }
         HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
-        playerData = GameObject.Find("Player").GetComponent<PlayerData>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         animator = GameObject.Find("Player").GetComponent<Animator>();
 
         Health = playerData.Health;

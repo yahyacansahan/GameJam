@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 370832289437286875}
   - component: {fileID: 370832289437286695}
   - component: {fileID: 370832289437286872}
-  - component: {fileID: 5732841551505107302}
   - component: {fileID: 370832289437286694}
   - component: {fileID: 456938059}
   m_Layer: 7
@@ -159,21 +158,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.74, y: 1.53}
   m_EdgeRadius: 0
---- !u!114 &5732841551505107302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370832289437286876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1917bd267f6b42459f0d6da672ca276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentDay: 0
-  Health: 0
-  Stamina: 0
 --- !u!114 &370832289437286694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +178,9 @@ MonoBehaviour:
   isDash: 0
   isAttacking: 1
   Attackable: 1
+  isJumping: 0
+  Movable: 0
+  Size: {x: 0, y: 0, z: 0}
 --- !u!114 &456938059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,12 +193,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91044f20b8213647bbd361ae1241fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bars: {fileID: 0}
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 0
   FireBallGO: {fileID: 8208705056613007328, guid: bdb066b604480814c83cdea5d2c7cd71, type: 3}
   Attackable: 1
   EnemyInCollider: 0
+  Health: 0
+  Stamina: 0
+  Azazel: {fileID: 0}
 --- !u!1 &370832290130631217
 GameObject:
   m_ObjectHideFlags: 0

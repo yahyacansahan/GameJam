@@ -9,7 +9,7 @@ public class SaveSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = GameObject.Find("MainCamera").GetComponent<PlayerData>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
     }
 
     public void NewGame()
