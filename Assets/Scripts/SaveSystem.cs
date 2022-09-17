@@ -9,7 +9,7 @@ public class SaveSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = GameObject.Find("Player").GetComponent<PlayerData>();
+        playerData = GameObject.Find("MainCamera").GetComponent<PlayerData>();
     }
 
     public void NewGame()
@@ -17,20 +17,27 @@ public class SaveSystem : MonoBehaviour
         playerData.CurrentDay = 1;
         playerData.Health = 100;
         playerData.Stamina = 100;
+        playerData.Level = 1;
+        playerData.Suphe = 0;
         Save();
     }
 
     public void Save()
     {
-        PlayerPrefs.SetInt("CurrentDay", playerData.CurrentDay);
-        PlayerPrefs.SetFloat("Health", playerData.Health);
-        PlayerPrefs.SetFloat("Stamina", playerData.Stamina);
+
+        PlayerPrefs.SetInt("CurrentDay" + playerData.SaveBox, playerData.CurrentDay);
+        PlayerPrefs.SetFloat("Health" + playerData.SaveBox, playerData.Health);
+        PlayerPrefs.SetFloat("Stamina" + playerData.SaveBox, playerData.Stamina);
+        PlayerPrefs.SetInt("Level" + playerData.SaveBox, playerData.Level);
+        PlayerPrefs.SetFloat("Suphe" + playerData.SaveBox, playerData.Suphe);
     }
 
     public void Load()
     {
-        playerData.CurrentDay = PlayerPrefs.GetInt("CurrentDay");
-        playerData.Health = PlayerPrefs.GetFloat("Health");
-        playerData.Stamina = PlayerPrefs.GetFloat("Stamina");
+        playerData.CurrentDay = PlayerPrefs.GetInt("CurrentDay" + playerData.SaveBox);
+        playerData.Health = PlayerPrefs.GetFloat("Health" + playerData.SaveBox);
+        playerData.Stamina = PlayerPrefs.GetFloat("Stamina" + playerData.SaveBox);
+        playerData.Level = PlayerPrefs.GetInt("Level" + playerData.SaveBox);
+        playerData.Suphe = PlayerPrefs.GetInt("Suphe" + playerData.SaveBox);
     }
 }
