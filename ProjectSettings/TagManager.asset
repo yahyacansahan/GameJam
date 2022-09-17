@@ -12,6 +12,7 @@ TagManager:
   - Fishing
   - EventArea
   - NightBorne
+  - Npc
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Enemy
   - Hide
   - NightBorne
-  - 
+  - Npc
   - 
   - 
   - 
