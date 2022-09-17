@@ -19,14 +19,25 @@ public class EndLevelSc : MonoBehaviour
 
    public void Deadthh()
     {
+
         Anime.Play("Death");
+        StartCoroutine(Bekle());
 
     }
 
     void EndOfLevel()
     {
-       
+        string kutuismi = PlayerPrefs.GetString("girisYapildi");
+        PlayerPrefs.SetString(kutuismi, "Leve-2");
 
+        SceneManager.LoadScene("GecisSahnesi");
+
+    }
+
+    IEnumerator Bekle()
+    {
+        yield return new WaitForSeconds(3f);
+        EndOfLevel();
     }
 
 }
