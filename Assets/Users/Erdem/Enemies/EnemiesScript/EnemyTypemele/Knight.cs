@@ -34,32 +34,8 @@ public class Knight : MonoBehaviour
 
     void Movement()
     {
-        if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < FightAramaMenzili&&!NightBorneScarred)
-        {
-            if(Vector2.Distance(Player.gameObject.transform.position, transform.position) < attackMenzili)
-            {
-                if (CanAttack)
-                {
-                    Attack();
-                    CanAttack = false;
-                }
 
-            }
-            // animasyon
-            if (!CanAttack)
-            {
-                animator.SetBool("Running", true);
-
-            }
-        }
-        else if(!NightBorneScarred)
-        {
-            animator.SetBool("Running", false);
-        }
-
-
-
-        if (Physics2D.OverlapCircle(transform.position, 10f,NightBorneLayer ))
+        if (Physics2D.OverlapCircle(transform.position, 10f, NightBorneLayer))
         {
             NightBorne = FindObjectOfType<NightBorneMovement>();
 
@@ -70,13 +46,13 @@ public class Knight : MonoBehaviour
                 {
 
                     RbOfknight.velocity = new Vector2(-Speed, 0);
-                    animator.SetBool("Running", true);
+                    animator.SetBool("running", true);
 
                 }
                 else
                 {
                     RbOfknight.velocity = new Vector2(Speed, 0);
-                    animator.SetBool("Running", true);
+                    animator.SetBool("running", true);
 
                 }
 
@@ -87,16 +63,47 @@ public class Knight : MonoBehaviour
                 NightBorneScarred = false;
             }
 
-             
+
+
+        }else if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < FightAramaMenzili && !NightBorneScarred)
+        {
+            if(Vector2.Distance(Player.gameObject.transform.position,transform.position)<FightAramaMenzili && Vector2.Distance(Player.gameObject.transform.position, transform.position) > attackMenzili)
+            {
+                 animator.SetBool("running", true);
+                if (Player.gameObject.transform.position.x > transform.position.x)
+                {
+                    RbOfknight.velocity = new Vector2(Speed, 0);
+                }
+                else if(Player.gameObject.transform.position.x < transform.position.x)
+                {
+                    RbOfknight.velocity = new Vector2(-Speed, 0);
+
+                }
+
+
+            }else if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < attackMenzili)
+            {
+                animator.SetBool("running", false);
+                RbOfknight.velocity = (new Vector3(0, 0, 0));
+                Attack();
+
+            }
 
         }
+
+
+
+
+
+
+        
 
 
     }
 
     void Attack()
     {
-        RbOfknight.velocity = (new Vector3(0, 0, 0));
+      
         animator.Play("Attack");
 
     }
@@ -144,12 +151,12 @@ public class Knight : MonoBehaviour
             if (Player.gameObject.transform.position.x > transform.position.x)
             {
                 transform.localScale = new Vector3(LocalScale.x, LocalScale.y, LocalScale.z);
-                RbOfknight.velocity = new Vector2(Speed, RbOfknight.velocity.y);
+               // RbOfknight.velocity = new Vector2(Speed, RbOfknight.velocity.y);
             }
             else
             {
                 transform.localScale = new Vector3(LocalScale.x * -1, LocalScale.y, LocalScale.z);
-                RbOfknight.velocity = new Vector2(-Speed, RbOfknight.velocity.y);
+              //  RbOfknight.velocity = new Vector2(-Speed, RbOfknight.velocity.y);
             }
 
         }
