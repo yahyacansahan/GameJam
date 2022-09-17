@@ -8,9 +8,12 @@ public class EtkileşimSc : MonoBehaviour
     [SerializeField] GameObject Ebutonu;
     [SerializeField] bool Speak = false;
     bool NpcAraund = false;
+    DialogueManager manager;
+    public Conversation convo;
 
     void Start()
     {
+        manager = FindObjectOfType<DialogueManager>();
         Ebutonu.SetActive(false);
 
     }
@@ -24,6 +27,9 @@ public class EtkileşimSc : MonoBehaviour
             {
                 this.gameObject.GetComponent<KoyChar>().IsSpeak = true;
                 Debug.Log("Dur kArdeş");
+
+               
+
                 Speak = true;
 
 
@@ -51,12 +57,37 @@ public class EtkileşimSc : MonoBehaviour
 
 
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Npc")
+        {
+            Ebutonu.SetActive(true);
+
+            if (Speak)
+            {
+                collision.gameObject.GetComponent<Tester>().StartConvo();
+                Debug.Log("Başladı");
+
+            }
+
+            NpcAraund = true;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Npc")
         {
             Ebutonu.SetActive(true);
+
+            if (Speak)
+            {
+                collision.gameObject.GetComponent<Tester>().StartConvo();
+                
+                Debug.Log("Başladı");
+                DialogueManager.StartConversation(convo);
+            }
+            
             NpcAraund = true;
         }
        
