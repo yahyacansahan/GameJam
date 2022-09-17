@@ -9,7 +9,6 @@ public class ResumeButtonScript : MonoBehaviour
     [SerializeField] Animator anim;
     [SerializeField] GameObject pauseMenu;
     [SerializeField] PauseMenu pauseResume;
-    [SerializeField] MenuButtonController buttonCont;
     void Update()
     {
         StartCoroutine(Resuming());
@@ -17,7 +16,7 @@ public class ResumeButtonScript : MonoBehaviour
 
     IEnumerator Resuming()
     {
-        if (menuCont.buttonIndex == Button›ndex && Input.GetAxis("Submit") == 1 || menuCont.buttonIndex == Button›ndex && Input.GetMouseButtonDown(0) && buttonCont.isCliced)
+        if (menuCont.buttonIndex == Button›ndex && Input.GetAxis("Submit") == 1 )
         {
             yield return new WaitForSeconds(0.6f);
             anim.SetBool("Selected", false);
