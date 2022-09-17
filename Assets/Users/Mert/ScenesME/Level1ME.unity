@@ -150,23 +150,11 @@ MonoBehaviour:
   anim: {fileID: 119451534}
   pauseMenu: {fileID: 571474102}
   pauseResume: {fileID: 998800159}
-  buttonCont: {fileID: 119451536}
 --- !u!95 &119451534 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5693190183478590969, guid: 1077fea3838caf9428539a22837c6781, type: 3}
   m_PrefabInstance: {fileID: 6478469486479690676}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &119451536 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4257346038618817137, guid: 1077fea3838caf9428539a22837c6781, type: 3}
-  m_PrefabInstance: {fileID: 6478469486479690676}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119451530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9cb65a000fe3e942a68be6cfa6c723c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &154699934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5693190183478590971, guid: 1077fea3838caf9428539a22837c6781, type: 3}
@@ -204,6 +192,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1651242039015914325}
+  - {fileID: 1400822458}
   m_Father: {fileID: 998800158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1404,6 +1393,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1400822457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1400822458}
+  m_Layer: 5
+  m_Name: ResumeButtons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1400822458
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400822457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 571474103}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1714584055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,23 +1500,11 @@ MonoBehaviour:
   menuCont: {fileID: 1651242039015914314}
   "Button\u0130ndex": 1
   anim: {fileID: 1866693060}
-  buttonCont: {fileID: 1866693061}
 --- !u!95 &1866693060 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5693190183478590969, guid: 1077fea3838caf9428539a22837c6781, type: 3}
   m_PrefabInstance: {fileID: 1651242038895508452}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1866693061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4257346038618817137, guid: 1077fea3838caf9428539a22837c6781, type: 3}
-  m_PrefabInstance: {fileID: 1651242038895508452}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866693056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9cb65a000fe3e942a68be6cfa6c723c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2001975364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1681,14 @@ PrefabInstance:
     - target: {fileID: 933738655860796916, guid: 1077fea3838caf9428539a22837c6781, type: 3}
       propertyPath: m_SizeDelta.x
       value: 359.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336456645932264596, guid: 1077fea3838caf9428539a22837c6781, type: 3}
+      propertyPath: controlingMenu
+      value: 
+      objectReference: {fileID: 1651242039015914314}
+    - target: {fileID: 3336456645932264596, guid: 1077fea3838caf9428539a22837c6781, type: 3}
+      propertyPath: thisButtonIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4257346038618817137, guid: 1077fea3838caf9428539a22837c6781, type: 3}
       propertyPath: animator
@@ -1872,6 +1893,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3336456645932264596, guid: 1077fea3838caf9428539a22837c6781, type: 3}
+      propertyPath: controlingMenu
+      value: 
+      objectReference: {fileID: 1651242039015914314}
     - target: {fileID: 4257346038618817137, guid: 1077fea3838caf9428539a22837c6781, type: 3}
       propertyPath: animator
       value: 
@@ -2003,7 +2028,6 @@ MonoBehaviour:
   menuCont: {fileID: 1651242039015914314}
   "Button\u0130ndex": 0
   anim: {fileID: 1651242039637368938}
-  buttonCont: {fileID: 1651242039637368939}
 --- !u!224 &1651242039637368936 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5693190183478590968, guid: 1077fea3838caf9428539a22837c6781, type: 3}
@@ -2014,17 +2038,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5693190183478590969, guid: 1077fea3838caf9428539a22837c6781, type: 3}
   m_PrefabInstance: {fileID: 1651242039637368930}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1651242039637368939 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4257346038618817137, guid: 1077fea3838caf9428539a22837c6781, type: 3}
-  m_PrefabInstance: {fileID: 1651242039637368930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154699934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9cb65a000fe3e942a68be6cfa6c723c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &3884597483929995072
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2587,6 +2600,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651242039015914325}
     m_Modifications:
+    - target: {fileID: 3336456645932264596, guid: 1077fea3838caf9428539a22837c6781, type: 3}
+      propertyPath: controlingMenu
+      value: 
+      objectReference: {fileID: 1651242039015914314}
+    - target: {fileID: 3336456645932264596, guid: 1077fea3838caf9428539a22837c6781, type: 3}
+      propertyPath: thisButtonIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4257346038618817137, guid: 1077fea3838caf9428539a22837c6781, type: 3}
       propertyPath: animator
       value: 
