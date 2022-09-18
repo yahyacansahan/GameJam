@@ -14,40 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allines:
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "Neden... Neden insanlar bu kadar k\xF6t\xFC. Beni lanetli olarak su\xE7lay\u0131p
-      her g\xFCn d\xF6v\xFCyorlar."
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Merhaba gen\xE7 \xE7ocu\u011Fum, g\xF6r\xFCyorum ki s\u0131k\u0131nt\u0131lar
-      \xE7ekiyorsun. "
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Endi\u015Felenmene gerek yok k\xFC\xE7\xFC\u011F\xFCm. Ben insanlara
-      yard\u0131m eden bir periyim\u2026 "
+    dialouge: Selam Knoxx!
+  - speaker: {fileID: 11400000, guid: 8b324fe655187ba4789a611ac894104d, type: 2}
+    dialouge: ...
+  - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
+    dialouge: "G\xF6r\xFCn\xFC\u015Fe g\xF6re yeni hedefin bu, yoksa niye \xE7ift\xE7i
+      birine u\u011Frayas\u0131n ki?"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "S-Sen ciddi misin? Beni d\xFCzeltecek misin\u2026"
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Ne yaz\u0131k ki evlad\u0131m seni d\xFCzeltemem ama\u2026"
+    dialouge: "*\u0130\xE7 Ses* Bu adam s\u0131rf g\xF6r\xFCn\xFC\u015F\xFCm y\xFCz\xFCnden
+      bana i\u015F ve yemek vermedi. S\u0131rf bu adam y\xFCz\xFCnden 3 ay a\xE7
+      kald\u0131m!"
+  - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
+    dialouge: "O zaman bir yalan uydur ve Knoxx'u ak\u015Fam \u015Fehir d\u0131\u015F\u0131na
+      \xE7ek..."
+  - speaker: {fileID: 11400000, guid: 8b324fe655187ba4789a611ac894104d, type: 2}
+    dialouge: "Ne istiyorsun s\xF6yle!"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: Ama?
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Sana bir g\xFC\xE7 verebilirim. Senin v\xFCcuduna bir \u015Fey olmad\u0131
-      sen g\xF6rd\xFC\u011F\xFCm en g\xFCzel insans\u0131n ama onlar\u2026 hepsi
-      onlar\u0131n su\xE7u."
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Seni k\xFC\xE7\xFCk g\xF6rd\xFCler onlar k\xF6t\xFC insanlar. Sence
-      de onlardan intikam alma vakti gelmedi mi? Sana \xE7ektirdiklerin den sonra? "
+    dialouge: "Beni sevmedi\u011Fini biliyorum ama \xE7ok g\xFCzel bir \u015Fey ke\u015Ffettim!"
+  - speaker: {fileID: 11400000, guid: 8b324fe655187ba4789a611ac894104d, type: 2}
+    dialouge: "Yine yan\u0131mda \xE7al\u0131\u015Fmak i\xE7in uydurdu\u011Fun yalanlar
+      m\u0131?"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "akl\u0131s\u0131n. Onlar pislikler bana bir hayvan gibi davrand\u0131."
+    dialouge: "Hay\u0131r hay\u0131r l\xFCtfen bana bi kez inan, nadir bir mantar
+      olan Truffle!"
+  - speaker: {fileID: 11400000, guid: 8b324fe655187ba4789a611ac894104d, type: 2}
+    dialouge: "Dalga ge\xE7miyorsun de\u011Fil mi? E\u011Fer b\xF6yle bir \u015Fey
+      bulduysan cidden seni yan\u0131ma alabilirim"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "Sadece bizim ya\u015Fl\u0131 moruk beni kollad\u0131\u2026 S\xF6yle
-      bana peri nas\u0131l intikam alabilirim. "
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Sana bir g\xFC\xE7 verece\u011Fim, bunun sayesinde k\xF6t\xFCleri
-      yok eden bir kahraman olacaks\u0131n!"
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Ak\u015Fam\u2026 \u0130ntikam vaktidir\u2026"
-  - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "\u2026 \u0130ntikam \u2026"
-  - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: Kabul ediyorum...
-  - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Aferin k\xFC\xE7\xFC\u011F\xFCm."
+    dialouge: "Ak\u015Fam \u015Fehir d\u0131\u015F\u0131nda benimle bulu\u015F Mantarlar\u0131
+      sana g\xF6sterece\u011Fim."
