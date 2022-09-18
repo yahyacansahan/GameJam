@@ -20669,6 +20669,17 @@ Transform:
   m_Father: {fileID: 111320351}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1368856977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2101557687, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
+  m_PrefabInstance: {fileID: 1119147174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1456116356
 GameObject:
   m_ObjectHideFlags: 0
@@ -21005,6 +21016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4860460327874963352, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
+      propertyPath: NightBorneSlider
+      value: 
+      objectReference: {fileID: 1368856977}
     - target: {fileID: 4860460329361855416, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
       propertyPath: m_Name
       value: TransFormer
@@ -21256,7 +21271,7 @@ MonoBehaviour:
   hero: {fileID: 1564991803}
   NighT: {fileID: 1506654368}
   SmoothSpeed: 0.125
-  offset: {x: 0, y: 2.5, z: -5}
+  offset: {x: 0, y: 2.5, z: -10}
 --- !u!4 &1881588367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5086374530472776863, guid: 190c50faa4761564f92f8e568dc2b1e6, type: 3}
