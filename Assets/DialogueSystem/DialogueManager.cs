@@ -7,6 +7,8 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI speakerName, dialouge, ButtonText;
     public Image speakerSprite;
+    KoyChar player;
+    EtkileþimSc etkileþimSc;
 
     private int currentIndex;
     private static DialogueManager instance;
@@ -15,7 +17,12 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typing;
     private void Awake()
     {
-        if(instance == null)
+        if (GameObject.Find("Player"))
+        {
+            player = GameObject.Find("Player").GetComponent<KoyChar>();
+            etkileþimSc = GameObject.Find("Player").GetComponent<EtkileþimSc>();
+        }
+        if (instance == null)
         {
             instance = this;
             anim = GetComponent<Animator>();
@@ -38,7 +45,7 @@ public class DialogueManager : MonoBehaviour
 
         instance.ReadNext();
     }
-    
+
     public void ReadNext()
     {
         if (currentIndex > currentConvo.GetLenght())
@@ -60,9 +67,11 @@ public class DialogueManager : MonoBehaviour
         speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
         currentIndex++;
 
-        if (currentIndex >= currentConvo.GetLenght())
+        if (currentIndex > currentConvo.GetLenght())
         {
             ButtonText.text = "X";
+            player.IsSpeak = false;
+            etkileþimSc.Speak = false;
         }
     }
 
@@ -80,7 +89,7 @@ public class DialogueManager : MonoBehaviour
 
             if (index == text.Length - 1)
             {
-                complete= true;
+                complete = true;
             }
         }
         typing = null;

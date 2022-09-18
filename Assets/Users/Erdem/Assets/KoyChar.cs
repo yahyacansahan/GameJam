@@ -7,16 +7,16 @@ public class KoyChar : MonoBehaviour
     [SerializeField] Rigidbody2D Rb;
     [SerializeField] Animator Animator;
     [SerializeField] float WalkSpeed;
-  public  bool IsSpeak = false;
+    public bool IsSpeak = false;
 
     void Start()
     {
-        Rb = GetComponent <Rigidbody2D>();
+        Rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
 
     }
 
-   
+
     void Update()
     {
 

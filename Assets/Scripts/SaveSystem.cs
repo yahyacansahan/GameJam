@@ -47,7 +47,7 @@ public class SaveSystem : MonoBehaviour
 
     public void Load()
     {
-        //playerData.SaveBox = PlayerPrefs.GetInt("SaveBox");
+        playerData.SaveBox = PlayerPrefs.GetInt("SaveBox");
         playerData.CurrentDay = PlayerPrefs.GetInt("CurrentDay" + playerData.SaveBox);
         playerData.Health = PlayerPrefs.GetFloat("Health" + playerData.SaveBox);
         playerData.Stamina = PlayerPrefs.GetFloat("Stamina" + playerData.SaveBox);

@@ -25,10 +25,8 @@ public class EndLevelSc : MonoBehaviour
 
     public void Deadthh()
     {
-
         Anime.Play("Death");
         StartCoroutine(Bekle());
-
     }
 
     void EndOfLevel()
@@ -39,6 +37,7 @@ public class EndLevelSc : MonoBehaviour
         playerData.CuttingEvent = 0;
         playerData.FishingEvent = 0;
         saveSystem.Save();
+        SceneManager.LoadScene("Köyleveli");
     }
 
     IEnumerator Bekle()
