@@ -21,7 +21,9 @@ public class SahneGecirici : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
            if( Input.GetKey(KeyCode.E)){
+                PlayerPrefs.SetInt("HangiLevel", 1);
                 SceneManager.LoadScene(sahne);
+                
 
             }
 

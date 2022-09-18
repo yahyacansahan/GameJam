@@ -9,7 +9,7 @@ public class SesOynatıcı : MonoBehaviour
     void Start()
     {
         Source = GetComponent<AudioSource>();
-        Source.PlayOneShot(Audio);
+      
     }
 
     // Update is called once per frame
@@ -17,4 +17,15 @@ public class SesOynatıcı : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "player")
+        {
+            Source.PlayOneShot(Audio);
+            Destroy(this.gameObject, 8f);
+
+        }
+    }
+
 }

@@ -9,12 +9,14 @@ public class GoNPCEvent : MonoBehaviour
     GameObject EventKeyGO;
     SaveSystem saveSystem;
     bool CanEvent;
+    NewBehaviourScript Nb;
     // Start is called before the first frame update
     void Start()
     {
         EventKeyGO = transform.Find("EventKeyGO").gameObject;
         EventKeyGO.SetActive(false);
         saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
+        Nb = GetComponent<NewBehaviourScript>();
     }
 
     // Update is called once per frame
@@ -44,7 +46,10 @@ public class GoNPCEvent : MonoBehaviour
         }
         else if (gameObject.name == "GoNight")
         {
-            SceneManager.LoadScene("GecisSahnesi");
+
+            Nb.hangiLevel();
+
+            //SceneManager.LoadScene("GecisSahnesi");
         }
     }
 

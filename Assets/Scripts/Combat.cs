@@ -185,7 +185,7 @@ public class Combat : MonoBehaviour
 
         foreach (Collider2D EndObj in EndOFlayer)
         {
-            EndObj.GetComponent<EndLevelSc>().Deadthh();
+            EndObj.GetComponent<levelEndNpc>().LevelEnd();
         }
     }
 
@@ -224,11 +224,7 @@ public class Combat : MonoBehaviour
 
             TakeDamage(10);
         }
-        if (collision.gameObject.tag == "LittleOnes")
-        {
-
-
-        }
+      
 
 
     }
