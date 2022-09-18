@@ -7,6 +7,7 @@ public class CuttingEvent : MonoBehaviour
 {
     public Transform WoodCutter;
     SaveSystem saveSystem;
+    Bars bars;
     PlayerData playerData;
     [SerializeField] RectTransform CatchArea;
     [SerializeField] Slider slider;
@@ -25,6 +26,7 @@ public class CuttingEvent : MonoBehaviour
         slider = GameObject.Find("CuttingSlider").GetComponent<Slider>();
         saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+        bars = GameObject.Find("Bars").GetComponent<Bars>();
         controller.Cutting = true;
         saveSystem.Load();
         Bad = 0;
@@ -129,15 +131,9 @@ public class CuttingEvent : MonoBehaviour
         }
         else if (Bad >= 2)
         {
-            if (playerData.Suphe + 30 < 100)
-            {
-                playerData.Suphe += 30;
-            }
-            else
-            {
-                //GameOver
-            }
+            playerData.Suphe += 30;
         }
+        bars.CalculateSuphe();
         Bad = 0;
         Good = 0;
         Cutting = false;

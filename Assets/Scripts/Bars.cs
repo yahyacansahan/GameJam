@@ -7,6 +7,7 @@ public class Bars : MonoBehaviour
 {
     Slider HealthBar, StaminaBar, SupheBar;
     PlayerData playerData;
+    [SerializeField] GameObject GameOverGO;
     Animator animator;
     public float Health, Stamina, Suphe;
     // Start is called before the first frame update
@@ -19,7 +20,10 @@ public class Bars : MonoBehaviour
         HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
-        animator = GameObject.Find("Player").GetComponent<Animator>();
+        if (GameObject.Find("Player"))
+        {
+            animator = GameObject.Find("Player").GetComponent<Animator>();
+        }
 
         Health = playerData.Health;
         HealthBar.maxValue = Health;
@@ -56,9 +60,9 @@ public class Bars : MonoBehaviour
         }
     }
 
-    void CalculateSuphe(float suphemiktari)
+    public void CalculateSuphe()
     {
-        Suphe += suphemiktari;
+        Suphe = playerData.Suphe;
 
         if (Suphe <= 0)
         {
@@ -66,8 +70,9 @@ public class Bars : MonoBehaviour
         }
         else if (Suphe >= 100)
         {
+            Debug.Log("girdi");
             Suphe = 100;
-            //gameover penceresi açýlacak
+            GameOverGO.SetActive(true);
         }
         SupheBar.value = Suphe;
     }
