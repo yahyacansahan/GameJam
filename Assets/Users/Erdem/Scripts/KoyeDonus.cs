@@ -17,8 +17,10 @@ public class KoyeDonus : MonoBehaviour
         Koylular.Add(GameObject.Find("Koylu6"));
         
         
-      Level=PlayerPrefs.GetString("girisYapildi");
-        NextLevel = PlayerPrefs.GetString(Level);
+      Level=PlayerPrefs.GetString("girisYapildi");//kutu bulundu
+
+        NextLevel = PlayerPrefs.GetString(Level);//level
+
         if (Level == "Level-2")
         {
 

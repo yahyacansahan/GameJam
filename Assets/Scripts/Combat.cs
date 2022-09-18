@@ -7,10 +7,13 @@ public class Combat : MonoBehaviour
     Controller controller;
    public Bars bars;
     Collider2D[] hitEnemies;
+    Collider2D[] littleOnes;
+
     Transform AttackPoint;
     Transform CreationPoint;
     float Damage;
     [SerializeField] LayerMask EnemyLayer;
+    [SerializeField] LayerMask LittleOneslayer;
     LayerMask EndOF;
     [SerializeField] GameObject FireBallGO;
     public bool Attackable, EnemyInCollider;
@@ -28,6 +31,7 @@ public class Combat : MonoBehaviour
         AttackPoint = gameObject.GetComponent<Transform>();
         EnemyLayer = LayerMask.GetMask("Enemy");
         CreationPoint = transform.Find("CreatPointAzazel");
+        LittleOneslayer = LayerMask.GetMask("LittleOnes");
 
         if (GameObject.Find("Bars"))
         {
@@ -36,6 +40,8 @@ public class Combat : MonoBehaviour
 
         Trans = FindObjectOfType<TransFormer>();
         Attackable = true;
+
+       
     }
 
     void Update()
@@ -71,6 +77,11 @@ public class Combat : MonoBehaviour
             }else if (Input.GetKeyDown(KeyCode.B))
             {
                 AttackEvent(KeyCode.B);
+            }else if(Input.GetKeyDown(KeyCode.E))
+            {
+                AttackEvent(KeyCode.E);
+
+
             }
         }
     }
@@ -114,6 +125,10 @@ public class Combat : MonoBehaviour
                     Stamina -= 50;
                 }
             
+            }else if (keyCode == KeyCode.E)
+            {
+                Absorbe();
+
             }
         }
     }
@@ -166,6 +181,24 @@ public class Combat : MonoBehaviour
 
     }
 
+
+    void Absorbe()
+    {
+        littleOnes= Physics2D.OverlapCircleAll(AttackPoint.position, .2f, LittleOneslayer);
+        {
+            foreach (Collider2D little  in littleOnes)
+            {
+                little.GetComponent<Kucukler>().Death();
+                Health += 15;
+                Stamina += 15;
+
+            }
+
+        }
+
+
+    }
+
     public void AttackEnd()
     {
         controller.Movable = true;
@@ -198,19 +231,5 @@ public class Combat : MonoBehaviour
     }
 
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "LittleOnes")
-        {
-            if (Input.GetKeyDown(KeyCode.E) && !collision.gameObject.GetComponent<Kucukler>().deadAlready)
-            {
-                
-                Health += 5;
-                Stamina += 5;
-                collision.gameObject.GetComponent<Kucukler>().Death();
-            }
-          
-
-        }
-    }
+   
 }
