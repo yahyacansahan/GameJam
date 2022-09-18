@@ -18,6 +18,6 @@ public class SureliGecis : MonoBehaviour
     IEnumerator bekleBiraz()
     {
         yield return new WaitForSeconds(7f);
-        SceneManager.LoadScene("Level-" + playerData.Level); ;
+        SceneManager.LoadScene("Köyleveli"); ;
     }
 }

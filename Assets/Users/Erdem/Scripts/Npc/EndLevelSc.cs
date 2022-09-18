@@ -8,7 +8,6 @@ public class EndLevelSc : MonoBehaviour
     Animator Anime;
     SaveSystem saveSystem;
     PlayerData playerData;
-    public string hangiLevel;
     void Start()
     {
         Anime = GetComponent<Animator>();
@@ -33,7 +32,7 @@ public class EndLevelSc : MonoBehaviour
     {
         playerData.CurrentDay = playerData.CurrentDay + 1;
         playerData.Level++;
-        playerData.Suphe += (playerData.CurrentDay / 5) * 30;
+        playerData.Suphe += playerData.CurrentDay  * 15;
         playerData.CuttingEvent = 0;
         playerData.FishingEvent = 0;
         saveSystem.Save();
