@@ -31,7 +31,7 @@ public class EndLevelSc : MonoBehaviour
 
     void EndOfLevel()
     {
-        playerData.CurrentDay++;
+        playerData.CurrentDay = playerData.CurrentDay + 1;
         playerData.Level++;
         playerData.Suphe += (playerData.CurrentDay / 5) * 30;
         playerData.CuttingEvent = 0;

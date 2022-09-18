@@ -15,7 +15,7 @@ public class SaveSystem : MonoBehaviour
         if (GameObject.FindWithTag("Player"))
         {
             Load();
-            playerData.Level = levelName.LevelPos;
+            //playerData.Level = levelName.LevelPos;
             Save();
         }
     }

@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3474156805973956720}
   - component: {fileID: 3474156805973956723}
   - component: {fileID: 3474156805973956722}
-  - component: {fileID: 3474156805973956721}
+  - component: {fileID: 3248936174666225197}
   - component: {fileID: 3474156805973956719}
   - component: {fileID: 3474156805973956718}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Girl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3474156805973956725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.67, y: 20.01, z: 0}
-  m_LocalScale: {x: 8.444822, y: 8.444822, z: 8.444822}
+  m_LocalScale: {x: 4.5233445, y: 4.5233445, z: 4.5233445}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,10 +76,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: -1587560969, guid: 6c1112daa10b92946a02a48f2795f454, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.15, y: 0.24}
@@ -108,7 +108,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3474156805973956721
+--- !u!114 &3248936174666225197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,11 +117,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3474156805973956725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9e86d00b67d19f4cbe31c453a4525d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1558145980df50945a7e767791173cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  Diyalog: 0
+  NpcSpeed: 3
+  Walking: 0
 --- !u!61 &3474156805973956719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,8 +164,8 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
