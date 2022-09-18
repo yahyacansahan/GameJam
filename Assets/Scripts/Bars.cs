@@ -14,13 +14,13 @@ public class Bars : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+     //   playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
 
-        if (GameObject.Find("SupheBar"))
+     /*   if (GameObject.Find("SupheBar"))
         {
             SupheBar = GameObject.Find("SupheBar").GetComponent<Slider>();
             CalculateSuphe();
-        }
+        } */
         if (GameObject.Find("HealthBar"))
         {
             HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
@@ -66,7 +66,7 @@ public class Bars : MonoBehaviour
         }
         else
         {
-            animator.Play("Death");
+        //    animator.Play("Death");
             StartCoroutine(GameOver());
         }
     }
@@ -90,7 +90,7 @@ public class Bars : MonoBehaviour
 
     IEnumerator GameOver()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         GameOverGO.SetActive(true);
     }
 }
