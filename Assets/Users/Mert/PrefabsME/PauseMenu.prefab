@@ -338,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2319869439108830775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1567,9 +1567,25 @@ PrefabInstance:
       propertyPath: LoadObject
       value: 
       objectReference: {fileID: 2319869439108830774}
+    - target: {fileID: 5868021943347024502, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868021943347024502, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868021943347024502, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.8125
+      objectReference: {fileID: 0}
     - target: {fileID: 5868021943850895817, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868021943850895817, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5868021943850895822, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
       propertyPath: m_Pivot.x
@@ -1654,6 +1670,14 @@ PrefabInstance:
     - target: {fileID: 5868021943850895822, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868021944329497287, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868021944329497287, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad83690c5ec4e0f4aa8c329e3df556e2, type: 3}
