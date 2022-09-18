@@ -25,7 +25,6 @@ public class FishingEvent : MonoBehaviour
         saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         controller.Fishing = true;
-        saveSystem.Load();
         Bad = 0;
         Good = 0;
     }
@@ -139,7 +138,11 @@ public class FishingEvent : MonoBehaviour
         controller.Fishing = false;
         controller.FishermanRB.constraints = RigidbodyConstraints2D.None;
         controller.FishermanRB.constraints = RigidbodyConstraints2D.FreezeRotation;
-        gameObject.SetActive(false);
+        playerData.FishingEvent = 1;
         saveSystem.Save();
+        saveSystem.Load();
+
+
+        gameObject.SetActive(false);
     }
 }
