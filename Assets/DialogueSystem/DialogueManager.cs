@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI speakerName, dialouge, ButtonText;
     public Image speakerSprite;
     KoyChar player;
-     EtkileşimSc etkileşim;
+    EtkileşimSc etkileşim;
 
     private int currentIndex;
     private static DialogueManager instance;

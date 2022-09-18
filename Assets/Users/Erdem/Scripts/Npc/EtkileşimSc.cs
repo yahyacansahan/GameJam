@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerDia : MonoBehaviour
+public class EtkileşimSc : MonoBehaviour
 {
     [SerializeField] LayerMask NpcLayer;
     [SerializeField] GameObject Ebutonu;
