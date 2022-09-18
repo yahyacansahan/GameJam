@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI speakerName, dialouge, ButtonText;
     public Image speakerSprite;
     KoyChar player;
-    EtkileþimSc etkileþimSc;
+     EtkileÅŸimSc etkileÅŸim;
 
     private int currentIndex;
     private static DialogueManager instance;
@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
         if (GameObject.Find("Player"))
         {
             player = GameObject.Find("Player").GetComponent<KoyChar>();
-            etkileþimSc = GameObject.Find("Player").GetComponent<EtkileþimSc>();
+            etkileÅŸim = GameObject.Find("Player").GetComponent<EtkileÅŸimSc>();
         }
         if (instance == null)
         {
@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour
         {
             ButtonText.text = "X";
             player.IsSpeak = false;
-            etkileþimSc.Speak = false;
+            etkileÅŸim.Speak = false;
         }
     }
 
