@@ -53,6 +53,6 @@ public class LoadingScenes : MonoBehaviour
     IEnumerator Tutorial()
     {
         yield return new WaitForSeconds(1);
-        //SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Tutorial");
     }
 }
