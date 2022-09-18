@@ -41,5 +41,5 @@ MonoBehaviour:
     dialouge: "\u2026 Intikam ...."
   - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
     dialouge: Evine git ve geceyi bekle, gece istediginiz insani yok edebilirsin!!
-  - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: ....
+  - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
+    dialouge: Gece geldigi zaman, herkesi yok et!
