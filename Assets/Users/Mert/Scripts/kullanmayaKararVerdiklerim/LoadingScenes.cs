@@ -28,9 +28,12 @@ public class LoadingScenes : MonoBehaviour
         if (controller.buttonIndex == buttonIndex && Input.GetAxis("Submit") == 1)
         {
 
+            SceneManager.LoadScene("Tutorial");
+
             if (PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == null || PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == 0)
             {
                 system.NewGame(buttonIndex);
+                Debug.Log("Sýfýrlandý");
                 StartCoroutine(Tutorial());
             }
             else
