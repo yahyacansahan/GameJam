@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Controller : MonoBehaviour
 {
@@ -12,6 +13,14 @@ public class Controller : MonoBehaviour
 
     public Vector3 Size;
 
+    [Header("Sesler")]
+    [SerializeField] AudioSource Source;
+    [SerializeField] GameObject ChildSfx;
+    [SerializeField] AudioClip  Jumpsfx;
+    [SerializeField] AudioClip Dashsfx;
+  
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +29,8 @@ public class Controller : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         PlayerCollider = gameObject.GetComponent<Collider2D>();
         Size = transform.localScale;
+        Source = GetComponent<AudioSource>();
+        ChildSfx = GameObject.Find("SoundFx");
     }
 
     // Update is called once per frame
@@ -35,9 +46,11 @@ public class Controller : MonoBehaviour
         if ((PlayerRB.velocity.x < -0.3f || PlayerRB.velocity.x > 0.3f) && !animator.GetBool("Jumping"))
         {
             animator.SetBool("isMoving", true);
+            Source.enabled = true;
         }
         else
         {
+            Source.enabled = false;
             animator.SetBool("isMoving", false);
         }
 
@@ -79,12 +92,15 @@ public class Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !isDash)
         {
             Jump();
+            ChildSfx.GetComponent<AudioSource>().PlayOneShot(Jumpsfx);
+
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isDash = true;
             Dash();
+            ChildSfx.GetComponent<AudioSource>().PlayOneShot(Dashsfx);
         }
 
         if (Input.GetKey(KeyCode.LeftControl))

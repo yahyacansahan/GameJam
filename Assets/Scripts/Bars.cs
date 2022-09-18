@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Bars : MonoBehaviour
 {
@@ -13,39 +14,47 @@ public class Bars : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+
         if (GameObject.Find("SupheBar"))
         {
             SupheBar = GameObject.Find("SupheBar").GetComponent<Slider>();
         }
-        HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
-        StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
-        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+        if (GameObject.Find("HealthBar"))
+        {
+            HealthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
+            Health = playerData.Health;
+            HealthBar.maxValue = Health;
+        }
+        if (GameObject.Find("StaminaBar"))
+        {
+            StaminaBar = GameObject.Find("StaminaBar").GetComponent<Slider>();
+            Stamina = playerData.Stamina;
+            StaminaBar.maxValue = Stamina;
+            StaminaBar.value = Stamina;
+        }
         if (GameObject.Find("Player"))
         {
             animator = GameObject.Find("Player").GetComponent<Animator>();
         }
-
-        Health = playerData.Health;
-        HealthBar.maxValue = Health;
-        Stamina = playerData.Stamina;
-        StaminaBar.maxValue = Stamina;
-        StaminaBar.value = Stamina;
-
-
+        CalculateSuphe();
     }
 
     void FixedUpdate()
     {
-        if (Stamina < 100)
+        if (SceneManager.GetActiveScene().name == "Level-1" || SceneManager.GetActiveScene().name == "Level-2" || SceneManager.GetActiveScene().name == "Level-3" || SceneManager.GetActiveScene().name == "Level-4" || SceneManager.GetActiveScene().name == "Level-5")
         {
-            Stamina += 0.1f;
-            StaminaBar.value = Stamina;
+            if (Stamina < 100)
+            {
+                Stamina += 0.1f;
+                StaminaBar.value = Stamina;
+            }
+            else
+            {
+                Stamina = 100;
+            }
+            CalculateHealth();
         }
-        else
-        {
-            Stamina = 100;
-        }
-        CalculateHealth();
     }
 
     void CalculateHealth()
@@ -56,7 +65,7 @@ public class Bars : MonoBehaviour
         }
         else
         {
-            animator.Play("Death");
+            //  animator.Play("Death");
         }
     }
 

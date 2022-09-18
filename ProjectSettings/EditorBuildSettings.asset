@@ -30,6 +30,8 @@ EditorBuildSettings:
     path: Assets/Leveller/Level-4.unity
     guid: ef3b1bb7001656e41a56a8138d749c9a
   - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
     path: Assets/Leveller/Level-5.unity
     guid: 37b2d9c046f6ca1489f5f2fe349a83ec
   - enabled: 1
