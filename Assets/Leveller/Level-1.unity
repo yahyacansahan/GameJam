@@ -316,6 +316,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 724958266, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 076190c2bb06a05468ac1c004f849597, type: 2}
     - target: {fileID: 4860460327874963352, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
       propertyPath: NightBorneSlider
       value: 
@@ -431,7 +435,7 @@ AudioSource:
   m_GameObject: {fileID: 91203446}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 076190c2bb06a05468ac1c004f849597, type: 2}
   m_audioClip: {fileID: 8300000, guid: 12512569448eba14c92a8814779eab3a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.373
