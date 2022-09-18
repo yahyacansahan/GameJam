@@ -20,8 +20,8 @@ MonoBehaviour:
     dialouge: "Merhaba gen\xE7 \xE7ocu\u011Fum, g\xF6r\xFCyorum ki s\u0131k\u0131nt\u0131lar
       \xE7ekiyorsun. "
   - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
-    dialouge: "Endi\u015Felenmene gerek yok k\xFC\xE7\xFC\u011F\xFCm. Ben insanlara
-      yard\u0131m eden bir periyim\u2026 "
+    dialouge: "Endi\u015Felenmene gerek yok evlad\u0131m. Ben insanlara yard\u0131m
+      eden bir periyim\u2026 "
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
     dialouge: "S-Sen ciddi misin? Beni d\xFCzeltecek misin\u2026"
   - speaker: {fileID: 11400000, guid: eaa68370d4e992745b22bc35b482c7f0, type: 2}
