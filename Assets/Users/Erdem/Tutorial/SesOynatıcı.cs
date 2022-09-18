@@ -6,11 +6,10 @@ public class SesOynatıcı : MonoBehaviour
 {
     AudioSource Source;
     [SerializeField] AudioClip Audio;
-    bool soundListened = false;
     void Start()
     {
         Source = GetComponent<AudioSource>();
-      
+        Source.PlayOneShot(Audio);
     }
 
     // Update is called once per frame
@@ -18,20 +17,4 @@ public class SesOynatıcı : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            if (!soundListened)
-            {
-                Source.PlayOneShot(Audio);
-                soundListened = true;
-                Destroy(this.gameObject, 20f);
-            }
-          
-
-        }
-    }
-
 }
