@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class FishingEvent : MonoBehaviour
 {
     public Transform Fisherman, CamPos;
+    SaveSystem saveSystem;
+    PlayerData playerData;
     [SerializeField] RectTransform CatchArea;
     [SerializeField] Slider slider;
     [SerializeField] Animator animator;
@@ -20,7 +22,10 @@ public class FishingEvent : MonoBehaviour
         controller = GameObject.Find("Fisherman").GetComponent<FishermanController>();
         CatchArea = GameObject.Find("CatchArea").GetComponent<RectTransform>();
         slider = GameObject.Find("FishingSlider").GetComponent<Slider>();
+        saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         controller.Fishing = true;
+        saveSystem.Load();
         Bad = 0;
         Good = 0;
     }
@@ -106,11 +111,25 @@ public class FishingEvent : MonoBehaviour
     {
         if (Good >= 3)
         {
-            //ödül
+            if (playerData.Suphe - 30 < 0)
+            {
+                playerData.Suphe = 0;
+            }
+            else
+            {
+                playerData.Suphe -= 30;
+            }
         }
         else if (Bad >= 2)
         {
-            //ceza 
+            if (playerData.Suphe + 30 > 100)
+            {
+                //GameOver
+            }
+            else
+            {
+                playerData.Suphe += 30;
+            }
         }
         Bad = 0;
         Good = 0;
@@ -121,5 +140,6 @@ public class FishingEvent : MonoBehaviour
         controller.FishermanRB.constraints = RigidbodyConstraints2D.None;
         controller.FishermanRB.constraints = RigidbodyConstraints2D.FreezeRotation;
         gameObject.SetActive(false);
+        saveSystem.Save();
     }
 }

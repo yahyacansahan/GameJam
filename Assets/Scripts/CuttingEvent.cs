@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class CuttingEvent : MonoBehaviour
 {
     public Transform WoodCutter;
+    SaveSystem saveSystem;
+    PlayerData playerData;
     [SerializeField] RectTransform CatchArea;
     [SerializeField] Slider slider;
-    [SerializeField] Animator animator,treeAnimator;
+    [SerializeField] Animator animator, treeAnimator;
     [SerializeField] WoodCutterController controller;
     public int Good = 0, Bad = 0;
     bool increase, Cutting;
@@ -21,7 +23,10 @@ public class CuttingEvent : MonoBehaviour
         controller = GameObject.Find("WoodCutter").GetComponent<WoodCutterController>();
         CatchArea = GameObject.Find("CatchArea").GetComponent<RectTransform>();
         slider = GameObject.Find("CuttingSlider").GetComponent<Slider>();
+        saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         controller.Cutting = true;
+        saveSystem.Load();
         Bad = 0;
         Good = 0;
     }
@@ -113,11 +118,25 @@ public class CuttingEvent : MonoBehaviour
     {
         if (Good >= 3)
         {
-            //ödül
+            if (playerData.Suphe - 30 < 0)
+            {
+                playerData.Suphe = 0;
+            }
+            else
+            {
+                playerData.Suphe -= 30;
+            }
         }
         else if (Bad >= 2)
         {
-            //ceza 
+            if (playerData.Suphe + 30 > 100)
+            {
+                //GameOver
+            }
+            else
+            {
+                playerData.Suphe += 30;
+            }
         }
         Bad = 0;
         Good = 0;
@@ -128,5 +147,6 @@ public class CuttingEvent : MonoBehaviour
         controller.WoodCutterRB.constraints = RigidbodyConstraints2D.None;
         controller.WoodCutterRB.constraints = RigidbodyConstraints2D.FreezeRotation;
         gameObject.SetActive(false);
+        saveSystem.Save();
     }
 }
