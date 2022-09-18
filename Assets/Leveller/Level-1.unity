@@ -316,17 +316,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 718362674, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-=======
-    - target: {fileID: 724958266, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 076190c2bb06a05468ac1c004f849597, type: 2}
->>>>>>> 070f4f4329e54d852801bccac93d9bcfc92e9126
     - target: {fileID: 4860460327874963352, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
       propertyPath: NightBorneSlider
       value: 
