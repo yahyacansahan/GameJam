@@ -401,9 +401,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5058418740105722867, guid: c97983c5c70f59f4d827e54f7bb79cce, type: 3}
+      propertyPath: Level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1908209048220792140, guid: c97983c5c70f59f4d827e54f7bb79cce, type: 3}
       propertyPath: m_Name
       value: SaveSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982232897481964441, guid: c97983c5c70f59f4d827e54f7bb79cce, type: 3}
+      propertyPath: LevelPos
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6334170031028125987, guid: c97983c5c70f59f4d827e54f7bb79cce, type: 3}
       propertyPath: m_RootOrder

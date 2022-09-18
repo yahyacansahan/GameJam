@@ -2843,6 +2843,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1530716151}
     m_Modifications:
     - target: {fileID: 1597376344633229112, guid: c839184c8cbefbf4aaff2a2209a3cff5, type: 3}
+      propertyPath: system
+      value: 
+      objectReference: {fileID: 2114002044}
+    - target: {fileID: 1597376344633229112, guid: c839184c8cbefbf4aaff2a2209a3cff5, type: 3}
       propertyPath: hangikutu
       value: ikincikutu
       objectReference: {fileID: 0}
@@ -4659,7 +4663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1530716151
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5523,6 +5527,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1530716151}
     m_Modifications:
     - target: {fileID: 1597376344633229112, guid: c839184c8cbefbf4aaff2a2209a3cff5, type: 3}
+      propertyPath: system
+      value: 
+      objectReference: {fileID: 2114002044}
+    - target: {fileID: 1597376344633229112, guid: c839184c8cbefbf4aaff2a2209a3cff5, type: 3}
       propertyPath: hangikutu
       value: ucuncukutu
       objectReference: {fileID: 0}
@@ -6361,7 +6369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5549171996045986126, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5549171996045986127, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: m_Pivot.x

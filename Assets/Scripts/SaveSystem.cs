@@ -5,14 +5,18 @@ using UnityEngine;
 public class SaveSystem : MonoBehaviour
 {
     PlayerData playerData;
+    LevelName levelName;
 
     // Start is called before the first frame update
     void Start()
     {
+        levelName = GetComponent<LevelName>();
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         if (GameObject.FindWithTag("Player"))
         {
             Load();
+            playerData.Level = levelName.LevelPos;
+            Save();
         }
     }
 
