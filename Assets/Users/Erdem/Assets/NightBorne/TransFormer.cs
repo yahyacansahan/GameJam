@@ -28,7 +28,7 @@ public class TransFormer : MonoBehaviour
             Go2.SetActive(true);
             Go2.GetComponent<NightBorneMovement>().NightBorneLifeTime = 100f;
             Go2.GetComponent<NightBorneMovement>().NightBorneSlider.gameObject.SetActive(true);
-            Go2.transform.position = Camera.transform.position + Vector3.up *.3f;
+            Go2.transform.position = Camera.transform.position + Vector3.up *.5f;
             Instantiate(Blast, Camera.transform.position , Quaternion.identity);
 
            
@@ -41,7 +41,7 @@ public class TransFormer : MonoBehaviour
         {
             Go1.SetActive(true);
             Go1.transform.position = Camera.transform.position+Vector3.up*2f;
-            Instantiate(Blast, Camera.transform.position + Vector3.up*.3f, Quaternion.identity);
+            Instantiate(Blast, Camera.transform.position + Vector3.up * .5f, Quaternion.identity);
             Go2.SetActive(false);
             Go2.GetComponent<NightBorneMovement>().NightBorneSlider.gameObject.SetActive(false);
             Situation = true;
