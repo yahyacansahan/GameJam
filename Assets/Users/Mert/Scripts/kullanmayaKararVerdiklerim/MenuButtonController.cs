@@ -8,6 +8,10 @@ public class MenuButtonController : MonoBehaviour
     [SerializeField] MenuController controlingMenu;
     [SerializeField] Animator animator;
 
+    private void Start()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
@@ -16,7 +20,6 @@ public class MenuButtonController : MonoBehaviour
             
             //seçildi animasyonunu baþlatýyor
             animator.SetBool("Selected", true);
-            
             
             //üstüne týklandý animasyonunu baþlatýyor
             Enterlandi();
