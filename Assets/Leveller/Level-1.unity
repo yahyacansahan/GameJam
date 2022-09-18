@@ -191,6 +191,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2334911047672526668, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334911048176135411, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334911048176135411, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334911048176135411, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334911049209025602, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334911049209025602, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3881112808048271605, guid: d5f7f3215da516d4ca6f75c337e440c0, type: 3}
       propertyPath: m_Name
       value: PauseMenu
@@ -37069,6 +37093,10 @@ PrefabInstance:
     - target: {fileID: 4774722513375113196, guid: 8474da1c8c988cb4cb69f79a870b59d0, type: 3}
       propertyPath: m_Name
       value: GameOverMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4774722513375113196, guid: 8474da1c8c988cb4cb69f79a870b59d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4774722513375113197, guid: 8474da1c8c988cb4cb69f79a870b59d0, type: 3}
       propertyPath: m_Pivot.x

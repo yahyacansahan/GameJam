@@ -19,29 +19,27 @@ public class LoadingScenes : MonoBehaviour
     {
         //hangiSahne = PlayerPrefs.GetString(hangikutu);
 
-        
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
     }
 
 
     void Update()
     {
-        if(controller.buttonIndex == buttonIndex && Input.GetAxis("Submit") == 1 )
+        if (controller.buttonIndex == buttonIndex && Input.GetAxis("Submit") == 1)
         {
 
             if (PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == null || PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == 0)
             {
                 system.NewGame(buttonIndex);
-                system.Save();
+                StartCoroutine(Tutorial());
             }
             else
             {
                 playerData.SaveBox = buttonIndex;
                 PlayerPrefs.SetInt("SaveBox", buttonIndex);
                 system.Load();
+                StartCoroutine(GeciseHazirlan());
             }
-
-            StartCoroutine(GeciseHazirlan());
         }
     }
 
@@ -52,6 +50,9 @@ public class LoadingScenes : MonoBehaviour
         SceneManager.LoadScene("GecisSahnesi");
     }
 
-    
-
+    IEnumerator Tutorial()
+    {
+        yield return new WaitForSeconds(1);
+        //SceneManager.LoadScene("Tutorial");
+    }
 }
