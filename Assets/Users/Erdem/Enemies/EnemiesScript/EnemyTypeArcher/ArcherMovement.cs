@@ -10,7 +10,6 @@ public class ArcherMovement : MonoBehaviour
     Vector3 LocalScale;
     bool CanAttack=true;
     bool Right = true;
-    bool Attacking = false;
 
     [Header("istatistikler")]
     [SerializeField] float RunSpeed;
@@ -99,9 +98,8 @@ public class ArcherMovement : MonoBehaviour
 
     void Attack()
     {
-        Attacking = true;
+
         Animator.Play("Attack");
-        StartCoroutine(attackbugSit());
 
     }
 
@@ -120,25 +118,13 @@ public class ArcherMovement : MonoBehaviour
             ok.GetComponent<oK>().Fırla(OkunHızı);
         }
         ok.GetComponent<oK>().Damage = Hasar;
-        Attacking = false;
+       
     }
 
     public void TekrarOkAt()
     {
         CanAttack = true;
-       
-    }
 
-    IEnumerator attackbugSit()
-    {
-
-
-        yield return new WaitForSeconds(3f);
-            if(Attacking == false && CanAttack == false)
-        {
-
-            CanAttack = true;
-        }
     }
 
 
@@ -156,7 +142,5 @@ public class ArcherMovement : MonoBehaviour
         }
 
     }
-
-
 
 }
