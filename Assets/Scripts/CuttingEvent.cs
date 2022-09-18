@@ -129,13 +129,13 @@ public class CuttingEvent : MonoBehaviour
         }
         else if (Bad >= 2)
         {
-            if (playerData.Suphe + 30 > 100)
+            if (playerData.Suphe + 30 < 100)
             {
-                //GameOver
+                playerData.Suphe += 30;
             }
             else
             {
-                playerData.Suphe += 30;
+                //GameOver
             }
         }
         Bad = 0;
@@ -146,7 +146,11 @@ public class CuttingEvent : MonoBehaviour
         controller.Cutting = false;
         controller.WoodCutterRB.constraints = RigidbodyConstraints2D.None;
         controller.WoodCutterRB.constraints = RigidbodyConstraints2D.FreezeRotation;
-        gameObject.SetActive(false);
+        playerData.CuttingEvent = 1;
         saveSystem.Save();
+        saveSystem.Load();
+
+
+        gameObject.SetActive(false);
     }
 }

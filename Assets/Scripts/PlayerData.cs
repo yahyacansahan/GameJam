@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    public int SaveBox,CurrentDay ,Level;
-    public float Health, Stamina,Suphe;
+    public int SaveBox, CurrentDay, Level, FishingEvent, CuttingEvent;
+    public float Health, Stamina, Suphe;
     // Start is called before the first frame update
     void Awake()
     {
@@ -16,7 +16,7 @@ public class PlayerData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /*public void takeDamage(float Damage)

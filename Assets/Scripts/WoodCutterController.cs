@@ -7,6 +7,8 @@ public class WoodCutterController : MonoBehaviour
 {
     public Rigidbody2D WoodCutterRB;
     Animator animator;
+    SaveSystem saveSystem;
+    PlayerData playerData;
     [SerializeField] CuttingEvent cuttingEvent;
     public bool Cutting, canCutting, goVillage;
     [SerializeField] float MovementSpeed;
@@ -16,6 +18,8 @@ public class WoodCutterController : MonoBehaviour
     {
         WoodCutterRB = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+        saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
     }
 
     // Update is called once per frame
@@ -58,9 +62,9 @@ public class WoodCutterController : MonoBehaviour
                 WoodCutterRB.velocity = new Vector2(0, WoodCutterRB.velocity.y);
             }
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) )
             {
-                if (canCutting)
+                if (canCutting && playerData.CuttingEvent == 0)
                 {
                     CuttingEventGO.SetActive(true);
                     CuttingEventGO.GetComponent<CuttingEvent>().CutEvent();

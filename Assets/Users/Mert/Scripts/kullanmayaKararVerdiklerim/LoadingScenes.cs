@@ -37,7 +37,7 @@ public class LoadingScenes : MonoBehaviour
             else
             {
                 playerData.SaveBox = buttonIndex;
-                system.Save();
+                PlayerPrefs.SetInt("SaveBox", buttonIndex);
                 system.Load();
             }
 
