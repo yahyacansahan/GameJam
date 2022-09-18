@@ -29,9 +29,10 @@ public class LoadingScenes : MonoBehaviour
         if(controller.buttonIndex == buttonIndex && Input.GetAxis("Submit") == 1 )
         {
 
-            if (PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == null)
+            if (PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == null || PlayerPrefs.GetInt("CurrentDay" + buttonIndex) == 0)
             {
                 system.NewGame(buttonIndex);
+                system.Save();
             }
             else
             {

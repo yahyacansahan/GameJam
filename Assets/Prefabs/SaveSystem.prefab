@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 211674938490414766}
   - component: {fileID: -5058418740105722867}
   - component: {fileID: 1982232897481964441}
+  - component: {fileID: 2114002042}
   m_Layer: 0
   m_Name: SaveSystem
   m_TagString: Untagged
@@ -77,3 +78,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelPos: 0
+--- !u!114 &2114002042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908209048220792140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37aea207c9d0104d831e1bad209642b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
