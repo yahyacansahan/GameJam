@@ -7,6 +7,7 @@ public class FishingEvent : MonoBehaviour
 {
     public Transform Fisherman, CamPos;
     SaveSystem saveSystem;
+    Bars bars;
     PlayerData playerData;
     [SerializeField] RectTransform CatchArea;
     [SerializeField] Slider slider;
@@ -24,6 +25,7 @@ public class FishingEvent : MonoBehaviour
         slider = GameObject.Find("FishingSlider").GetComponent<Slider>();
         saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+        bars = GameObject.Find("Bars").GetComponent<Bars>();
         controller.Fishing = true;
         Bad = 0;
         Good = 0;
@@ -121,15 +123,9 @@ public class FishingEvent : MonoBehaviour
         }
         else if (Bad >= 2)
         {
-            if (playerData.Suphe + 30 > 100)
-            {
-                //GameOver
-            }
-            else
-            {
-                playerData.Suphe += 30;
-            }
+            playerData.Suphe += 30;
         }
+        bars.CalculateSuphe();
         Bad = 0;
         Good = 0;
         Fishing = false;

@@ -112,7 +112,8 @@ public class Controller : MonoBehaviour
                 {
                     PlayerRB.velocity = new Vector2(MovementSpeed, PlayerRB.velocity.y);
                 }
-                gameObject.transform.localScale = new Vector3(1, 1, 1);
+                //gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+                gameObject.transform.localScale = new Vector3(Size.x, Size.y, Size.z);
             }
             else if (Input.GetKey(KeyCode.LeftArrow) && !isAttacking)
             {
@@ -124,7 +125,8 @@ public class Controller : MonoBehaviour
                 {
                     PlayerRB.velocity = new Vector2(-MovementSpeed, PlayerRB.velocity.y);
                 }
-                gameObject.transform.localScale = new Vector3(-1, 1, 1);
+                //gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+                gameObject.transform.localScale = new Vector3(-Size.x, Size.y, Size.z);
             }
             else if (!(Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
             {
