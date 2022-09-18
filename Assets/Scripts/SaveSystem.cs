@@ -15,9 +15,9 @@ public class SaveSystem : MonoBehaviour
         playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         if (GameObject.FindWithTag("Player"))
         {
-            Load();
+           // Load();
             //playerData.Level = levelName.LevelPos;
-            Save();
+           // Save();
         }
     }
 
