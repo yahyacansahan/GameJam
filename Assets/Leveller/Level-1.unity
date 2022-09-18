@@ -461,6 +461,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 718362675, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 076190c2bb06a05468ac1c004f849597, type: 2}
     - target: {fileID: 724958266, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
@@ -516,6 +520,10 @@ PrefabInstance:
     - target: {fileID: 4860460329361855418, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068419756381804917, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
+      propertyPath: DashSpeed
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5068419756381804936, guid: eded5283312b0ae428b4d60129ad2254, type: 3}
       propertyPath: m_SortingOrder
