@@ -9,9 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
 
     public static bool GameIsPaused = false;
-    [SerializeField] MainTimeControl timeControl;
     [SerializeField] int whichTime;
-    [SerializeField] Rigidbody2D playerRB;
     [SerializeField] Animator anim;
 
     private void Start()
@@ -38,8 +36,6 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         //Time.timeScale = 1f;
-        timeControl.times[whichTime] = 1;
-        playerRB.simulated = true;
         anim.SetBool("Selected", false);
         pauseMenuUI.SetActive(false);
         GameIsPaused = false;
@@ -47,10 +43,8 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        //Time.timeScale = 0f;
-        timeControl.times[whichTime] = 0;
+        Time.timeScale = 0.5f;
         StartCoroutine(waitASec());
-        playerRB.simulated = false;
         pauseMenuUI.SetActive(true);
         GameIsPaused = true;
         
