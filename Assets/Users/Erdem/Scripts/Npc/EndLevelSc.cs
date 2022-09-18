@@ -25,7 +25,7 @@ public class EndLevelSc : MonoBehaviour
 
     public void Deadthh()
     {
-        Anime.Play("Death");
+        //Anime.Play("Death");
         StartCoroutine(Bekle());
     }
 

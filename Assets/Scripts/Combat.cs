@@ -5,9 +5,10 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
     Controller controller;
-   public Bars bars;
+    public Bars bars;
     Collider2D[] hitEnemies;
     Collider2D[] littleOnes;
+    Collider2D[] EndOFlayer;
 
     Transform AttackPoint;
     Transform CreationPoint;
@@ -30,7 +31,7 @@ public class Combat : MonoBehaviour
 
     void Start()
     {
-        EndOF = 31;
+        EndOF = LayerMask.GetMask("levelEnd");
         controller = gameObject.GetComponent<Controller>();
         AttackPoint = gameObject.GetComponent<Transform>();
         EnemyLayer = LayerMask.GetMask("Enemy");
@@ -78,10 +79,12 @@ public class Combat : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.C))
             {
                 AttackEvent(KeyCode.C);
-            }else if (Input.GetKeyDown(KeyCode.B))
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
             {
                 AttackEvent(KeyCode.B);
-            }else if(Input.GetKeyDown(KeyCode.E))
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
             {
                 AttackEvent(KeyCode.E);
 
@@ -108,7 +111,7 @@ public class Combat : MonoBehaviour
                     Trans.ShapeShift();
                     ChildSfx.GetComponent<AudioSource>().PlayOneShot(SpelllSfx);
                 }
-               
+
 
             }
             else if (keyCode == KeyCode.X)
@@ -120,7 +123,8 @@ public class Combat : MonoBehaviour
             {
                 controller.animator.Play("Attack3");
                 Damage = 10;
-            }else if (keyCode == KeyCode.B)
+            }
+            else if (keyCode == KeyCode.B)
             {
                 if (Stamina > 50)
                 {
@@ -129,8 +133,9 @@ public class Combat : MonoBehaviour
                     CrateAzazel();
                     Stamina -= 50;
                 }
-            
-            }else if (keyCode == KeyCode.E)
+
+            }
+            else if (keyCode == KeyCode.E)
             {
                 Absorbe();
 
@@ -171,21 +176,17 @@ public class Combat : MonoBehaviour
                 else
                 {
                     enemy.GetComponent<NewEnemy>().TakeDamage(Damage * bars.Stamina / 20);
-                 //   bars.Stamina = 0;
+                    //   bars.Stamina = 0;
                 }
             }
         }
 
-        Collider2D[] EndOFlayer= Physics2D.OverlapCircleAll(AttackPoint.position, .2f, EndOF);
+        EndOFlayer = Physics2D.OverlapCircleAll(AttackPoint.position, .2f, EndOF);
 
-        foreach(Collider2D EndObj in EndOFlayer)
+        foreach (Collider2D EndObj in EndOFlayer)
         {
             EndObj.GetComponent<EndLevelSc>().Deadthh();
-
-
         }
-
-
     }
 
 
@@ -194,7 +195,7 @@ public class Combat : MonoBehaviour
         ChildSfx.GetComponent<AudioSource>().PlayOneShot(Attacksfx);
         littleOnes = Physics2D.OverlapCircleAll(AttackPoint.position, .2f, LittleOneslayer);
         {
-            foreach (Collider2D little  in littleOnes)
+            foreach (Collider2D little in littleOnes)
             {
                 little.GetComponent<Kucukler>().Death();
                 Health += 15;
@@ -214,7 +215,7 @@ public class Combat : MonoBehaviour
 
     public void GameOver()
     {
-        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -234,10 +235,10 @@ public class Combat : MonoBehaviour
 
     public void CrateAzazel()
     {
-        Instantiate(Azazel, CreationPoint.position,Quaternion.identity);
+        Instantiate(Azazel, CreationPoint.position, Quaternion.identity);
 
     }
 
 
-   
+
 }
