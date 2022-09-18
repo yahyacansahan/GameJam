@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     string gecisLevel = "";
 
-    int Level = PlayerPrefs.GetInt("HangiLevel");
+    int Level;
 
     void Start()
     {
