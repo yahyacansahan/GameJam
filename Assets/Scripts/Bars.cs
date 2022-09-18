@@ -19,6 +19,7 @@ public class Bars : MonoBehaviour
         if (GameObject.Find("SupheBar"))
         {
             SupheBar = GameObject.Find("SupheBar").GetComponent<Slider>();
+            CalculateSuphe();
         }
         if (GameObject.Find("HealthBar"))
         {
@@ -37,7 +38,7 @@ public class Bars : MonoBehaviour
         {
             animator = GameObject.Find("Player").GetComponent<Animator>();
         }
-        CalculateSuphe();
+        
     }
 
     void FixedUpdate()

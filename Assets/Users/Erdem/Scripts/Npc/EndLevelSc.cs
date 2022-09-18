@@ -8,7 +8,6 @@ public class EndLevelSc : MonoBehaviour
     Animator Anime;
     SaveSystem saveSystem;
     PlayerData playerData;
-    public string hangiLevel;
     void Start()
     {
         Anime = GetComponent<Animator>();
