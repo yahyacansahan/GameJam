@@ -6,7 +6,7 @@ public class EtkileşimSc : MonoBehaviour
 {
     [SerializeField] LayerMask NpcLayer;
     [SerializeField] GameObject Ebutonu;
-    [SerializeField] bool Speak = false;
+    [SerializeField] public bool Speak = false;
     bool NpcAraund = false;
     DialogueManager manager;
     public Conversation convo;
@@ -28,14 +28,14 @@ public class EtkileşimSc : MonoBehaviour
                 this.gameObject.GetComponent<KoyChar>().IsSpeak = true;
                 Debug.Log("Dur kArdeş");
 
-               
+
 
                 Speak = true;
 
 
             }
 
-            else if (Speak && Input.GetKeyDown(KeyCode.X))
+            else if (Speak && Input.GetKeyDown(KeyCode.E))
             {
                 this.gameObject.GetComponent<KoyChar>().IsSpeak = false;
                 Debug.Log("yürü kardeş");
@@ -45,7 +45,7 @@ public class EtkileşimSc : MonoBehaviour
             }
 
         }
-       
+
 
     }
 
@@ -83,18 +83,16 @@ public class EtkileşimSc : MonoBehaviour
             if (Speak)
             {
                 collision.gameObject.GetComponent<Tester>().StartConvo();
-                
+
                 Debug.Log("Başladı");
                 DialogueManager.StartConversation(convo);
             }
-            
+
             NpcAraund = true;
         }
-       
+
 
     }
-
-
 
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -104,7 +102,7 @@ public class EtkileşimSc : MonoBehaviour
             NpcAraund = false;
 
         }
-       
+
     }
 }
 

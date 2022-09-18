@@ -28,6 +28,8 @@ public class SaveSystem : MonoBehaviour
         playerData.Stamina = 100;
         playerData.Level = 1;
         playerData.Suphe = 0;
+        playerData.FishingEvent = 0;
+        playerData.CuttingEvent = 0;
         Save();
     }
 
@@ -39,6 +41,8 @@ public class SaveSystem : MonoBehaviour
         PlayerPrefs.SetFloat("Stamina" + playerData.SaveBox, playerData.Stamina);
         PlayerPrefs.SetInt("Level" + playerData.SaveBox, playerData.Level);
         PlayerPrefs.SetFloat("Suphe" + playerData.SaveBox, playerData.Suphe);
+        PlayerPrefs.SetInt("FishingEvent" + playerData.SaveBox, playerData.FishingEvent);
+        PlayerPrefs.SetInt("CuttingEvent" + playerData.SaveBox, playerData.CuttingEvent);
     }
 
     public void Load()
@@ -48,6 +52,8 @@ public class SaveSystem : MonoBehaviour
         playerData.Health = PlayerPrefs.GetFloat("Health" + playerData.SaveBox);
         playerData.Stamina = PlayerPrefs.GetFloat("Stamina" + playerData.SaveBox);
         playerData.Level = PlayerPrefs.GetInt("Level" + playerData.SaveBox);
-        playerData.Suphe = PlayerPrefs.GetInt("Suphe" + playerData.SaveBox);
+        playerData.Suphe = PlayerPrefs.GetFloat("Suphe" + playerData.SaveBox);
+        playerData.FishingEvent = PlayerPrefs.GetInt("FishingEvent" + playerData.SaveBox);
+        playerData.CuttingEvent = PlayerPrefs.GetInt("CuttingEvent" + playerData.SaveBox);
     }
 }

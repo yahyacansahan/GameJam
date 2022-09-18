@@ -7,14 +7,19 @@ public class FishermanController : MonoBehaviour
     public Rigidbody2D FishermanRB;
     [SerializeField] GameObject FishingEventGO;
     Animator animator;
+    SaveSystem saveSystem;
+    PlayerData playerData;
     [SerializeField] float MovementSpeed;
-    public bool Fishing,canFishing,goVillage;
+    public bool Fishing, canFishing, goVillage;
 
     // Start is called before the first frame update
     void Start()
     {
+        saveSystem = GameObject.Find("SaveSystem").GetComponent<SaveSystem>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
         FishermanRB = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+        saveSystem.Load();
     }
 
     // Update is called once per frame
@@ -26,7 +31,7 @@ public class FishermanController : MonoBehaviour
 
     void Checker()
     {
-        if ((FishermanRB.velocity.x < -0.3f || FishermanRB.velocity.x > 0.3f) )
+        if ((FishermanRB.velocity.x < -0.3f || FishermanRB.velocity.x > 0.3f))
         {
             animator.SetBool("isMoving", true);
         }
@@ -38,7 +43,7 @@ public class FishermanController : MonoBehaviour
 
     void KeyEvent()
     {
-        if(!Fishing)
+        if (!Fishing)
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -57,28 +62,28 @@ public class FishermanController : MonoBehaviour
                 FishermanRB.velocity = new Vector2(0, FishermanRB.velocity.y);
             }
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) )
             {
-                if(canFishing)
+                if (canFishing && playerData.FishingEvent == 0)
                 {
                     FishingEventGO.SetActive(true);
                     FishingEventGO.GetComponent<FishingEvent>().FishEvent();
                 }
-                else if(goVillage)
+                else if (goVillage)
                 {
                     SceneManager.LoadScene("Köyleveli");
                 }
-            } 
-        }   
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.tag == "Fishing")
+        if (collision.tag == "Fishing")
         {
             canFishing = true;
         }
-        if(collision.tag == "goVillage")
+        if (collision.tag == "goVillage")
         {
             goVillage = true;
         }
