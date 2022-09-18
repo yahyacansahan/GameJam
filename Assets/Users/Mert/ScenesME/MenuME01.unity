@@ -1419,8 +1419,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lutfen oyunu oynarken menu icerisinde \"w\" , \"s\" ve yukari asag\u0131
-    yon ok tuslarini kullaniniz."
+  m_text: Lutfen oyunu oynarken menu icerisinde "w" , "s" ve yukari asagi yon ok
+    tuslarini kullaniniz.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d8dfb5f83d922f84ab8370a435d428c8, type: 2}
   m_sharedMaterial: {fileID: -5540362812825704394, guid: d8dfb5f83d922f84ab8370a435d428c8, type: 2}

@@ -20,7 +20,7 @@ public class ResumeButtonScript : MonoBehaviour
         {
             yield return new WaitForSeconds(0.6f);
             anim.SetBool("Selected", false);
-            //Time.timeScale = 1f;
+            Time.timeScale = 1f;
             pauseResume.Resume();
             pauseMenu.SetActive(false);
         }
