@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveSystem : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class SaveSystem : MonoBehaviour
         if (GameObject.FindWithTag("Player"))
         {
             Load();
-            playerData.Level = levelName.LevelPos;
+            //playerData.Level = levelName.LevelPos;
             Save();
         }
     }
@@ -31,6 +32,7 @@ public class SaveSystem : MonoBehaviour
         playerData.FishingEvent = 0;
         playerData.CuttingEvent = 0;
         Save();
+        
     }
 
     public void Save()

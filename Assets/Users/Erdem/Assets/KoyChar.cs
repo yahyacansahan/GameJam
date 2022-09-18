@@ -38,23 +38,19 @@ public class KoyChar : MonoBehaviour
                 Animator.SetBool("Walk", false);
             }
 
-            if (Rb.velocity.x > -.1f)
+            if (Rb.velocity.x > .1f)
             {
                 // transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 transform.gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
-            else
+            else if(Rb.velocity.x < -.1f)
             {
                 //  transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 transform.gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-
-
-
         }
         else
         {
-
             Rb.velocity = new Vector3(0, 0, 0);
             Animator.SetBool("Walk", false);
         }

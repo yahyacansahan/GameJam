@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4963556325147381034}
   - component: {fileID: 4963556325147381035}
   - component: {fileID: 4963556325147381028}
+  - component: {fileID: 7118315428215558736}
   - component: {fileID: 4963556325147381039}
   - component: {fileID: 4963556325147381032}
-  - component: {fileID: 4963556325147381033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4963556325147381029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.2, y: 20, z: 0}
-  m_LocalScale: {x: 9.6532, y: 9.6532, z: 9.6532}
+  m_LocalScale: {x: 4.358759, y: 4.358759, z: 4.358759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,10 +76,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: -2053299733, guid: d3c038c4394722043a9ea0229cc2b5c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.15, y: 0.25}
@@ -108,6 +108,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7118315428215558736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4963556325147381029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1558145980df50945a7e767791173cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NpcSpeed: 0
+  Walking: 0
 --- !u!61 &4963556325147381039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,22 +164,8 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &4963556325147381033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4963556325147381029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b0ad29abdd21264781e8580e7b3bfbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 3
-  Diyalog: 0
+  m_Constraints: 4

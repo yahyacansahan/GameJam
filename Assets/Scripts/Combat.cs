@@ -176,7 +176,7 @@ public class Combat : MonoBehaviour
                 else
                 {
                     enemy.GetComponent<NewEnemy>().TakeDamage(Damage * bars.Stamina / 20);
-                    //   bars.Stamina = 0;
+                    bars.Stamina = 0;
                 }
             }
         }

@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 998137680932921906}
   - component: {fileID: 998137680932921907}
   - component: {fileID: 998137680932921904}
-  - component: {fileID: 998137680932921911}
-  m_Layer: 0
+  - component: {fileID: 2024723971}
+  - component: {fileID: 8300334632563244426}
+  m_Layer: 3
   m_Name: Old_man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 998137680932921905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.940001, y: 8.17, z: 0}
-  m_LocalScale: {x: 11.754137, y: 11.754137, z: 11.754137}
+  m_LocalScale: {x: 5.1962442, y: 5.1962442, z: 5.1962442}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 104477255, guid: 14e5476d65f096e4192fc7ba216a8a03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -117,7 +118,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 998137680932921905}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -150,12 +151,12 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &998137680932921911
+  m_Constraints: 4
+--- !u!114 &2024723971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,8 +165,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 998137680932921905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51c8149bdd68ee43b44a05ffc1025c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 60069a9386489154f8aa909d9e89c772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  Diyalog: 0
+  convo: {fileID: 11400000, guid: 403d322743ebe7c4c8c806f7f073676e, type: 2}
+--- !u!114 &8300334632563244426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998137680932921905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1558145980df50945a7e767791173cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NpcSpeed: 0
+  Walking: 0

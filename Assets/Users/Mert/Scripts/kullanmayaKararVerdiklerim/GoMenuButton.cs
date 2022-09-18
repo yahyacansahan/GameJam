@@ -18,6 +18,7 @@ public class GoMenuButton : MonoBehaviour
         if (menuCont.buttonIndex == Button›ndex && Input.GetAxis("Submit") == 1 )
         {
             yield return new WaitForSeconds(0.6f);
+            Time.timeScale = 1f;
             anim.SetBool("Selected", false);
             SceneManager.LoadScene("MenuME01");
         }

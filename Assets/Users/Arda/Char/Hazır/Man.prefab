@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4508704232023804775}
   - component: {fileID: 4508704232023804772}
   - component: {fileID: 4508704232023804773}
+  - component: {fileID: 2899308484294495665}
   - component: {fileID: 4508704232023804778}
   - component: {fileID: 4508704232023804779}
-  - component: {fileID: 4508704232023804774}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4508704232023804776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.190001, y: 14.67, z: 0}
-  m_LocalScale: {x: 11.237, y: 11.237, z: 11.237}
+  m_LocalScale: {x: 4.87811, y: 4.87811, z: 4.87811}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 33
   m_Sprite: {fileID: 872647851, guid: a7626925cd1ffa84cb8d4ce5e10fcb17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,6 +108,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2899308484294495665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508704232023804776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1558145980df50945a7e767791173cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NpcSpeed: 0
+  Walking: 0
 --- !u!61 &4508704232023804778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,22 +164,8 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &4508704232023804774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4508704232023804776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a52ba077caaa9146b440667d390b3dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 3
-  Diyalog: 0
+  m_Constraints: 4

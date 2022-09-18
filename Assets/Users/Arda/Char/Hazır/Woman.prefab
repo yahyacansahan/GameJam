@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7960727403113342754}
   - component: {fileID: 7960727403113342783}
   - component: {fileID: 7960727403113342782}
-  - component: {fileID: 7960727403113342780}
-  m_Layer: 0
+  - component: {fileID: 2355861395371876911}
+  m_Layer: 3
   m_Name: Woman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7960727403113342757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.54, y: 15.02, z: 0}
-  m_LocalScale: {x: 10.827, y: 10.827, z: 10.827}
+  m_LocalScale: {x: 4.8815293, y: 4.8815293, z: 4.8815293}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,10 +76,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: -797274110, guid: b60f0a2fa0c0d2842bbba7f07b9127d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.33}
@@ -150,12 +150,12 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &7960727403113342780
+  m_Constraints: 4
+--- !u!114 &2355861395371876911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7960727403113342757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcfaa8e0361272a44a03ffa3ddbfda43, type: 3}
+  m_Script: {fileID: 11500000, guid: 1558145980df50945a7e767791173cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  Diyalog: 0
+  NpcSpeed: 0
+  Walking: 0

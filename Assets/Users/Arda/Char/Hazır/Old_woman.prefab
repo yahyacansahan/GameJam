@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8038147328205650507}
   - component: {fileID: 8038147328205650506}
   - component: {fileID: 8038147328205650509}
-  - component: {fileID: 8038147328205650486}
-  m_Layer: 0
+  - component: {fileID: 421853579849013535}
+  m_Layer: 3
   m_Name: Old_woman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8038147328205650508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5899997, y: 8.070001, z: 0}
-  m_LocalScale: {x: 12.154631, y: 12.154631, z: 12.154631}
+  m_LocalScale: {x: 5.398866, y: 5.398866, z: 5.398866}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: -644861802, guid: e315656e64dc5cc47b5ec53c0c1087a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8038147328205650508}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -154,8 +154,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &8038147328205650486
+  m_Constraints: 4
+--- !u!114 &421853579849013535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8038147328205650508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcfaa8e0361272a44a03ffa3ddbfda43, type: 3}
+  m_Script: {fileID: 11500000, guid: 1558145980df50945a7e767791173cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  Diyalog: 0
+  NpcSpeed: 0
+  Walking: 0

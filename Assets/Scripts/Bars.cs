@@ -65,7 +65,8 @@ public class Bars : MonoBehaviour
         }
         else
         {
-            //  animator.Play("Death");
+            animator.Play("Death");
+            StartCoroutine(GameOver());
         }
     }
 
@@ -84,5 +85,11 @@ public class Bars : MonoBehaviour
             GameOverGO.SetActive(true);
         }
         SupheBar.value = Suphe;
+    }
+
+    IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(3);
+        GameOverGO.SetActive(true);
     }
 }
