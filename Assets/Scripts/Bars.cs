@@ -14,7 +14,7 @@ public class Bars : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     //   playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
+        playerData = GameObject.Find("SaveSystem").GetComponent<PlayerData>();
 
      /*   if (GameObject.Find("SupheBar"))
         {
@@ -43,8 +43,7 @@ public class Bars : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (SceneManager.GetActiveScene().name == "Level-1" || SceneManager.GetActiveScene().name == "Level-2" || SceneManager.GetActiveScene().name == "Level-3" || SceneManager.GetActiveScene().name == "Level-4" || SceneManager.GetActiveScene().name == "Level-5")
-        {
+      
             if (Stamina < 100)
             {
                 Stamina += 0.1f;
@@ -55,7 +54,7 @@ public class Bars : MonoBehaviour
                 Stamina = 100;
             }
             CalculateHealth();
-        }
+       
     }
 
     void CalculateHealth()

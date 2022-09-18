@@ -224,6 +224,11 @@ public class Combat : MonoBehaviour
 
             TakeDamage(10);
         }
+        if (collision.gameObject.tag == "Death")
+        {
+
+            TakeDamage(19999);
+        }
       
 
 

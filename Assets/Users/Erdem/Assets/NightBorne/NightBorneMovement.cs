@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NightBorneMovement : MonoBehaviour
 {
@@ -172,6 +173,11 @@ public class NightBorneMovement : MonoBehaviour
         {
 
             NightBorneTakeDamage(15);
+        }
+        if (collision.gameObject.tag == "Death")
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
