@@ -36633,65 +36633,9 @@ PrefabInstance:
       propertyPath: GameOverGO
       value: 
       objectReference: {fileID: 1821532473}
-    - target: {fileID: -606425017973492708, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: GameOverCanvas
-      value: 
-      objectReference: {fileID: 1821532472}
-    - target: {fileID: 1070273357, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070273357, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557686, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 2101557687, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_Value
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: 1561720522352764850, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
       propertyPath: m_Name
       value: Bars
-      objectReference: {fileID: 0}
-    - target: {fileID: 6634046204696963705, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6634046204696963705, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6792545179330853967, guid: f11ef49e927b65c44929bd7cbf9cc47b, type: 3}
       propertyPath: m_RootOrder
@@ -37134,11 +37078,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8474da1c8c988cb4cb69f79a870b59d0, type: 3}
---- !u!223 &1821532472 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 939153204561146656, guid: 8474da1c8c988cb4cb69f79a870b59d0, type: 3}
-  m_PrefabInstance: {fileID: 1821532471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1821532473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4774722513375113196, guid: 8474da1c8c988cb4cb69f79a870b59d0, type: 3}

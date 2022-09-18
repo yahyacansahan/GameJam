@@ -7,7 +7,7 @@ public class SahneGecirici : MonoBehaviour
     [SerializeField] string sahne;
     void Start()
     {
-        
+        PlayerPrefs.SetInt("HangiLevel", 1);
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class SahneGecirici : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
            if( Input.GetKey(KeyCode.E)){
-                PlayerPrefs.SetInt("HangiLevel", 1);
+                
                 SceneManager.LoadScene(sahne);
                 
 

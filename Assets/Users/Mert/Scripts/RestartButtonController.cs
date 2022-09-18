@@ -19,7 +19,7 @@ public class RestartButtonController : MonoBehaviour
         if (menuCont.buttonIndex == ButtonÝndex && Input.GetAxis("Submit") == 1)
         {
             yield return new WaitForSeconds(0.6f);
-            SceneManager.LoadScene("GecisSahnesi");
+            SceneManager.LoadScene("Köyleveli");
         }
     }
 }

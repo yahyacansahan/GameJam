@@ -11,15 +11,16 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
-        
+
+        Level = PlayerPrefs.GetInt("HangiLevel");
 
 
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
+    { 
+        Debug.Log(Level);  
     }
 
     public void hangiLevel ()
