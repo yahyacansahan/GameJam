@@ -21,31 +21,6 @@ public class EtkileşimSc : MonoBehaviour
 
     void Update()
     {
-        if (NpcAraund)
-        {
-            if (Input.GetKeyDown(KeyCode.E) && !Speak)
-            {
-                this.gameObject.GetComponent<KoyChar>().IsSpeak = true;
-                Debug.Log("Dur kArdeş");
-
-
-
-                Speak = true;
-
-
-            }
-
-            else if (Speak && Input.GetKeyDown(KeyCode.E))
-            {
-                this.gameObject.GetComponent<KoyChar>().IsSpeak = false;
-                Debug.Log("yürü kardeş");
-                Speak = false;
-
-
-            }
-
-        }
-
 
     }
 
@@ -59,7 +34,7 @@ public class EtkileşimSc : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Npc")
+        if (collision.gameObject.tag == "Player")
         {
             Ebutonu.SetActive(true);
 
@@ -69,14 +44,12 @@ public class EtkileşimSc : MonoBehaviour
                 Debug.Log("Başladı");
 
             }
-
-            NpcAraund = true;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Npc")
+        if (collision.gameObject.tag == "Player")
         {
             Ebutonu.SetActive(true);
 
@@ -87,22 +60,8 @@ public class EtkileşimSc : MonoBehaviour
                 Debug.Log("Başladı");
                 DialogueManager.StartConversation(convo);
             }
-
-            NpcAraund = true;
-        }
+       }
 
 
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Npc")
-        {
-            Ebutonu.SetActive(false);
-            NpcAraund = false;
-
-        }
-
     }
-}
-
