@@ -11342,6 +11342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1807320039}
   - component: {fileID: 1807320040}
+  - component: {fileID: 1807320041}
   m_Layer: 0
   m_Name: bgrd_tree5
   m_TagString: Untagged
@@ -11357,7 +11358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807320038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.5, y: -7.8, z: -0.40269378}
+  m_LocalPosition: {x: -9.5, y: -7.8, z: -0.4026938}
   m_LocalScale: {x: 8.7782, y: 8.7782, z: 8.7782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11416,6 +11417,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1807320041
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807320038}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c0ca5c9c716ee2e498b66c60307c160b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1987782137
 PrefabInstance:
   m_ObjectHideFlags: 0

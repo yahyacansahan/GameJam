@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -80,6 +80,18 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -89,7 +101,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -10849,11 +10861,11 @@ TextureImporter:
       other_and_decorative_180: 207138936
       other_and_decorative_208: -635025653
       other_and_decorative_34: -857976354
-      other_and_decorative_11: -1762455135
+      other_and_decorative_114: -1417671280
       other_and_decorative_292: 578049987
       other_and_decorative_415: 2123914664
       other_and_decorative_80: 1582760384
-      other_and_decorative_114: -1417671280
+      other_and_decorative_11: -1762455135
       other_and_decorative_57: 274774959
       other_and_decorative_448: -294664064
       other_and_decorative_340: 1700729442
@@ -10876,9 +10888,9 @@ TextureImporter:
       other_and_decorative_201: -2086732023
       other_and_decorative_8: -133777590
       other_and_decorative_461: 329243370
-      other_and_decorative_373: -247248214
-      other_and_decorative_206: -2029837263
       other_and_decorative_508: -138398445
+      other_and_decorative_206: -2029837263
+      other_and_decorative_373: -247248214
       other_and_decorative_382: -147434290
       other_and_decorative_42: 1007636587
       other_and_decorative_123: 521363324
@@ -10898,12 +10910,12 @@ TextureImporter:
       other_and_decorative_372: -1130444770
       other_and_decorative_13: 345946974
       other_and_decorative_345: -1840960953
+      other_and_decorative_487: 402539971
       other_and_decorative_54: -1073017579
       other_and_decorative_90: -527197541
       other_and_decorative_445: -170571955
       other_and_decorative_410: 668019849
       other_and_decorative_147: 1210381315
-      other_and_decorative_487: 402539971
       other_and_decorative_239: 522970144
       other_and_decorative_477: -1372831206
       other_and_decorative_36: 435377510
@@ -10932,31 +10944,31 @@ TextureImporter:
       other_and_decorative_299: -1186990324
       other_and_decorative_321: 652566668
       other_and_decorative_6: 2095637616
-      other_and_decorative_227: -225030492
+      other_and_decorative_432: 1903613662
       other_and_decorative_30: 1721046239
-      other_and_decorative_52: 269860961
-      other_and_decorative_195: 774038120
-      other_and_decorative_248: 778752026
+      other_and_decorative_254: 2004942068
+      other_and_decorative_227: -225030492
+      other_and_decorative_481: -1109289264
       other_and_decorative_67: 179904784
       other_and_decorative_99: 1999768257
-      other_and_decorative_254: 2004942068
       other_and_decorative_479: -272859993
+      other_and_decorative_52: 269860961
       other_and_decorative_465: 927910948
       other_and_decorative_218: 956725610
-      other_and_decorative_481: -1109289264
       other_and_decorative_475: 838028863
-      other_and_decorative_432: 1903613662
+      other_and_decorative_248: 778752026
       other_and_decorative_128: 1084810860
       other_and_decorative_450: 1475029001
       other_and_decorative_275: -29900764
       other_and_decorative_495: -567077421
       other_and_decorative_98: 2019421340
       other_and_decorative_280: -1969009997
-      other_and_decorative_335: -1967782080
       other_and_decorative_484: -586347269
-      other_and_decorative_390: 1041671785
       other_and_decorative_490: -780335512
+      other_and_decorative_335: -1967782080
+      other_and_decorative_195: 774038120
       other_and_decorative_222: 346799353
+      other_and_decorative_390: 1041671785
       other_and_decorative_411: 847915356
       other_and_decorative_278: 1655327308
       other_and_decorative_87: -1150018993
@@ -11089,17 +11101,17 @@ TextureImporter:
       other_and_decorative_50: -1775554887
       other_and_decorative_20: -67489948
       other_and_decorative_191: 241334371
-      other_and_decorative_126: -774941947
-      other_and_decorative_258: -1644732579
       other_and_decorative_247: 1750692626
-      other_and_decorative_306: 1733816829
+      other_and_decorative_258: -1644732579
       other_and_decorative_379: 1296751132
-      other_and_decorative_26: 1266992432
+      other_and_decorative_126: -774941947
+      other_and_decorative_306: 1733816829
+      other_and_decorative_385: 1174727227
+      other_and_decorative_307: -133362099
       other_and_decorative_78: 405214757
       other_and_decorative_367: -2047198618
+      other_and_decorative_26: 1266992432
       other_and_decorative_349: -322854942
-      other_and_decorative_365: 509892509
-      other_and_decorative_307: -133362099
       other_and_decorative_398: -1273272004
       other_and_decorative_105: -1191594613
       other_and_decorative_354: -1781795572
@@ -11107,7 +11119,6 @@ TextureImporter:
       other_and_decorative_164: 946239056
       other_and_decorative_406: 1600647106
       other_and_decorative_21: -383429697
-      other_and_decorative_385: 1174727227
       other_and_decorative_447: 87590167
       other_and_decorative_165: -1871349537
       other_and_decorative_75: -1853263781
@@ -11116,13 +11127,14 @@ TextureImporter:
       other_and_decorative_323: 406866623
       other_and_decorative_88: 1265386605
       other_and_decorative_92: -1086609721
-      other_and_decorative_444: 828846978
+      other_and_decorative_365: 509892509
+      other_and_decorative_459: -1027413971
       other_and_decorative_235: 1686209495
+      other_and_decorative_444: 828846978
       other_and_decorative_408: -916926829
       other_and_decorative_485: -2080194620
       other_and_decorative_113: 1397844065
       other_and_decorative_509: 15823481
-      other_and_decorative_459: -1027413971
       other_and_decorative_176: -1096921084
       other_and_decorative_452: 139414427
       other_and_decorative_151: -985094292
@@ -11153,20 +11165,20 @@ TextureImporter:
       other_and_decorative_219: 705451694
       other_and_decorative_230: 2100729402
       other_and_decorative_462: -2093214209
-      other_and_decorative_150: 1447851582
-      other_and_decorative_413: -367021575
       other_and_decorative_505: -902837111
-      other_and_decorative_143: -637985915
-      other_and_decorative_286: 2035872362
-      other_and_decorative_152: -747474470
-      other_and_decorative_357: -105893579
-      other_and_decorative_435: -626943798
-      other_and_decorative_25: 1120192419
+      other_and_decorative_413: -367021575
+      other_and_decorative_150: 1447851582
       other_and_decorative_463: -987328185
+      other_and_decorative_152: -747474470
+      other_and_decorative_435: -626943798
+      other_and_decorative_143: -637985915
+      other_and_decorative_25: 1120192419
       other_and_decorative_498: 1798288698
       other_and_decorative_124: -758461485
-      other_and_decorative_274: -2124782205
+      other_and_decorative_286: 2035872362
       other_and_decorative_171: -767287956
+      other_and_decorative_274: -2124782205
+      other_and_decorative_357: -105893579
       other_and_decorative_69: 289039531
       other_and_decorative_478: -1732301546
       other_and_decorative_314: -472398806
