@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 63111025}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: CreatPointAzazel
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -61,7 +61,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5068419756381804938}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &718362675
 AudioSource:
@@ -72,7 +72,7 @@ AudioSource:
   m_GameObject: {fileID: 718362673}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 076190c2bb06a05468ac1c004f849597, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.064
@@ -482,6 +482,63 @@ MonoBehaviour:
   Go2: {fileID: 4860460327874963330}
   Camera: {fileID: 0}
   Blast: {fileID: 7418792836025603069, guid: 684312a951e23b840a6538a71940a984, type: 3}
+--- !u!1001 &865871115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5068419756381804938}
+    m_Modifications:
+    - target: {fileID: 3083198042341283470, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_Name
+      value: Glow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083198042341283471, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3d51ba30453adc45a86bb6c1262dd89, type: 3}
 --- !u!1001 &1404235511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -597,7 +654,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 6576e41ba18fcc34eb3a18ab02da9900, type: 3}
     - target: {fileID: 370832289437286694, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: DashSpeed
-      value: 25
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286694, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: MovementSpeed
@@ -633,11 +690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.44
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286873, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -677,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286875, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_SortingOrder
-      value: 60
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 370832289437286876, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_Name
@@ -686,6 +743,14 @@ PrefabInstance:
     - target: {fileID: 370832289437286876, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 370832290130631217, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620843487523740106, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7416443370299247405, guid: edb0e95aa1faf234ca84f229cc792911, type: 3}
@@ -725,7 +790,7 @@ AudioSource:
   m_GameObject: {fileID: 5068419756381804943}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 076190c2bb06a05468ac1c004f849597, type: 2}
   m_audioClip: {fileID: 8300000, guid: 06982784cdd34f04ba5779f31016b0c5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.049
