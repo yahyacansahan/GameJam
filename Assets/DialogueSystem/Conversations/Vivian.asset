@@ -14,37 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allines:
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "Selamlar han\u0131mefendi"
+    dialouge: Selamlar hanimefendi.
   - speaker: {fileID: 11400000, guid: af74baa0660214544a7dd979726f7094, type: 2}
-    dialouge: ...
+    dialouge: ....
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: Cidden cevap bile vermeyecek misin! Neden?
+    dialouge: Cidden cevap bile vermeyecek misin! Neden??
   - speaker: {fileID: 11400000, guid: af74baa0660214544a7dd979726f7094, type: 2}
-    dialouge: "Senin gibi eksik biri... Git ba\u015F\u0131mdan"
+    dialouge: "Senin gibi eksik biri.... Git ba\u015F\u0131mdan!!"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "Neden... Neden b\xF6yle davran\u0131yorsun ben sana zarar m\u0131
-      verdim?"
+    dialouge: Neden.... Neden boyle davraniyorsun ben sana zarar mi verdim??
   - speaker: {fileID: 11400000, guid: af74baa0660214544a7dd979726f7094, type: 2}
-    dialouge: "Senin varl\u0131\u011F\u0131n ba\u015Fl\u0131 ba\u015F\u0131na bir
-      zarar."
+    dialouge: "Senin varligi\u0131n basli basina bir zarar.."
   - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
-    dialouge: OROSPU!
+    dialouge: OROSPU!!
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: Hey sakin ol.
+    dialouge: Hey sakin ol..
   - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
-    dialouge: Merak etme beni sadece sen duyabilirsin.
+    dialouge: Merak etme beni sadece sen duyabilirsin..
   - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
-    dialouge: "\u0130nsanlar asla ve asla derinlere inmez. G\xF6rd\xFCkleri \u015Feyi
-      yarg\u0131larlar..."
+    dialouge: Insanlar asla ve asla derinlere inmez. Gordukleri seyi yargilarlar....
   - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
-    dialouge: "B\xF6yle insanlar\u0131 \xF6ld\xFCrmek iyilik say\u0131l\u0131r degil
-      mi? *K\u0131k\u0131rt\u0131*"
+    dialouge: "Boyle insanlar\u0131 oldurmek iyilik say\u0131l\u0131r degil mi??"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "Evet... B\xF6yle insanlar \xF6lmeli!"
+    dialouge: "Evet... B\xF6yle insanlar \xF6lmeli!!"
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: "\u2026 \u0130ntikam \u2026"
+    dialouge: "\u2026 Intikam ...."
   - speaker: {fileID: 11400000, guid: 92673f882e46bcc4eadd574aa486eefb, type: 2}
-    dialouge: "Vivian her ak\u015Fam ormanda \xE7i\xE7ek almaya \xE7\u0131kar. Belki
-      bu ak\u015Fam ba\u015F\u0131na talihsiz bir kaza gelir..."
+    dialouge: Evine git ve geceyi bekle, gece istediginiz insani yok edebilirsin!!
   - speaker: {fileID: 11400000, guid: 7c83fa83ee6c6224ca325c7bfc8abc10, type: 2}
-    dialouge: ...
+    dialouge: ....
