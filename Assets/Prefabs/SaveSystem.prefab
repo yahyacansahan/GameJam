@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6334170031028125987}
   - component: {fileID: 211674938490414766}
   - component: {fileID: -5058418740105722867}
+  - component: {fileID: 1982232897481964441}
   m_Layer: 0
   m_Name: SaveSystem
   m_TagString: Untagged
@@ -63,3 +64,16 @@ MonoBehaviour:
   Health: 0
   Stamina: 0
   Suphe: 0
+--- !u!114 &1982232897481964441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908209048220792140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b585aa3140abb94e8546ada9a31a159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelPos: 0

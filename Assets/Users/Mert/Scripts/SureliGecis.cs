@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class SureliGecis : MonoBehaviour
 {
-    string girisYapilanKutu;
+    public PlayerData playerData;
+    public SaveSystem system;
     //[SerializeField] string loadingSceneName;
     // Start is called before the first frame update
     void Start()
     {
+        system.Load();
         StartCoroutine(bekleBiraz());
     }
 
     IEnumerator bekleBiraz()
     {
-        girisYapilanKutu = PlayerPrefs.GetString("girisYapildi");
-        Debug.Log(PlayerPrefs.GetString("girisYapildi") + " " + PlayerPrefs.GetString(girisYapilanKutu));
         yield return new WaitForSeconds(7f);
-        SceneManager.LoadScene(PlayerPrefs.GetString(girisYapilanKutu));
+        SceneManager.LoadScene("Level-" + playerData.Level); ;
     }
 }
