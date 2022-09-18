@@ -56,7 +56,7 @@ public class Bars : MonoBehaviour
         }
         else
         {
-            animator.Play("Death");
+          //  animator.Play("Death");
         }
     }
 

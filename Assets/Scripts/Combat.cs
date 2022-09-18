@@ -22,6 +22,10 @@ public class Combat : MonoBehaviour
 
 
     [SerializeField] GameObject Azazel;
+    [SerializeField] GameObject ChildSfx;
+    [SerializeField] AudioClip Attacksfx;
+    [SerializeField] AudioClip SpelllSfx;
+    [SerializeField] AudioClip hitbysfx;
 
 
     void Start()
@@ -41,7 +45,7 @@ public class Combat : MonoBehaviour
         Trans = FindObjectOfType<TransFormer>();
         Attackable = true;
 
-       
+        ChildSfx = GameObject.Find("SoundFx");
     }
 
     void Update()
@@ -102,7 +106,7 @@ public class Combat : MonoBehaviour
                     Stamina -= 70;
 
                     Trans.ShapeShift();
-                    
+                    ChildSfx.GetComponent<AudioSource>().PlayOneShot(SpelllSfx);
                 }
                
 
@@ -120,6 +124,7 @@ public class Combat : MonoBehaviour
             {
                 if (Stamina > 50)
                 {
+                    ChildSfx.GetComponent<AudioSource>().PlayOneShot(SpelllSfx);
                     controller.animator.Play("Attack1");
                     CrateAzazel();
                     Stamina -= 50;
@@ -138,7 +143,7 @@ public class Combat : MonoBehaviour
         Health -= Damage;
         bars.Health = this.Health;
         transform.GetComponent<Animator>().Play("TakeDamage");
-
+        ChildSfx.GetComponent<AudioSource>().PlayOneShot(hitbysfx);
         controller.Movable = true;
 
     }
@@ -150,7 +155,8 @@ public class Combat : MonoBehaviour
 
     public void Attack()
     {
-        hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, .2f, EnemyLayer);
+        ChildSfx.GetComponent<AudioSource>().PlayOneShot(Attacksfx);
+        hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, 2.2f, EnemyLayer);
 
         foreach (Collider2D enemy in hitEnemies)
         {
@@ -159,6 +165,7 @@ public class Combat : MonoBehaviour
                 if (bars.Stamina >= 20)
                 {
                     enemy.GetComponent<NewEnemy>().TakeDamage(Damage);
+                    Stamina -= Damage;
                     bars.Stamina -= Damage;
                 }
                 else
@@ -184,7 +191,8 @@ public class Combat : MonoBehaviour
 
     void Absorbe()
     {
-        littleOnes= Physics2D.OverlapCircleAll(AttackPoint.position, .2f, LittleOneslayer);
+        ChildSfx.GetComponent<AudioSource>().PlayOneShot(Attacksfx);
+        littleOnes = Physics2D.OverlapCircleAll(AttackPoint.position, .2f, LittleOneslayer);
         {
             foreach (Collider2D little  in littleOnes)
             {

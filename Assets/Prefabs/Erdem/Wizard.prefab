@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2074764307162940425}
   - component: {fileID: 2074764307162940426}
   - component: {fileID: 2074764307162940427}
-  - component: {fileID: 2074764307162940428}
   - component: {fileID: 2074764307162940439}
   - component: {fileID: 2074764307162940438}
+  - component: {fileID: 835078043}
   m_Layer: 8
   m_Name: Wizard
   m_TagString: Untagged
@@ -127,37 +127,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &2074764307162940428
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074764307162940429}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07489422, y: -0.064681366}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.31, y: 1.9}
-    newSize: {x: 2.31, y: 1.9}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.38998634, y: 0.7902049}
-  m_EdgeRadius: 0
 --- !u!114 &2074764307162940439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,11 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e123dc30bae486e4b805690fe3db3ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MagicBallSpeed: 5
-  RunSpeed: 5
-  Farketmemenzili: 24.28
-  AttackMenzili: 14.1
-  damage: 10
+  MagicBallSpeed: 4
+  RunSpeed: 1.5
+  Farketmemenzili: 10
+  AttackMenzili: 4
+  damage: 20
   WizardEnerGyBall: {fileID: 438843364799552145, guid: d20e5b47d8909e546b9d5b4a91e092c0, type: 3}
   WizardAttackPoint: {fileID: 0}
 --- !u!114 &2074764307162940438
@@ -196,6 +170,22 @@ MonoBehaviour:
   BloodParticle: {fileID: 0}
   slashParticle: {fileID: 1703215404528453631, guid: 43afa430bd6c2c4448a97b5240827434, type: 3}
   ExpParticle: {fileID: 0}
+--- !u!70 &835078043
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074764307162940429}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 3e64d43f91e63374c9520ab5d2181915, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.042569216, y: -0.052028798}
+  m_Size: {x: 0.3707486, y: 0.84373724}
+  m_Direction: 0
 --- !u!1 &2074764308629280539
 GameObject:
   m_ObjectHideFlags: 0
