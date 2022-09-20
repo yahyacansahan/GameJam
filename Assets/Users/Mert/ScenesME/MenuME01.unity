@@ -1613,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuCont: {fileID: 2100809840}
-  "Button\u0130ndex": 0
+  "Button\xDDndex": 0
   anim: {fileID: 109718047}
 --- !u!95 &109718047 stripped
 Animator:
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuCont: {fileID: 2100809840}
-  "Button\u0130ndex": 1
+  "Button\xDDndex": 0
   load: {fileID: 273506572}
   anim: {fileID: 273506574}
 --- !u!114 &273506572
@@ -2948,7 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuCont: {fileID: 2100809840}
-  "Button\u0130ndex": 2
+  "Button\xDDndex": 0
   load: {fileID: 446036210}
   anim: {fileID: 446036212}
 --- !u!114 &446036210
@@ -5718,7 +5718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4397708423721802422, guid: 59eca9179a53426408fa8faef55025d1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4397708423721802423, guid: 59eca9179a53426408fa8faef55025d1, type: 3}
       propertyPath: m_Pivot.x
@@ -5845,6 +5845,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 255728255}
     m_Modifications:
+    - target: {fileID: 144353546278343099, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_text
+      value: CIKIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 144353547011820093, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_text
+      value: Ayarlar
+      objectReference: {fileID: 0}
     - target: {fileID: 631464972991077720, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -5925,13 +5933,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5549171995963275885, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_text
+      value: Yeni Oyun
+      objectReference: {fileID: 0}
     - target: {fileID: 5549171996045986126, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: m_Name
       value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 5549171996045986126, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5549171996045986127, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: m_Pivot.x
@@ -6029,6 +6041,22 @@ PrefabInstance:
       propertyPath: buttonIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5549171996188535513, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 395
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549171996188535514, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_text
+      value: Shadow Of Deamon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549171996188535514, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f3e1a816fbb85e4cba7b35865ee6c99, type: 2}
+    - target: {fileID: 5549171996188535514, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1579977333068102295, guid: 7f3e1a816fbb85e4cba7b35865ee6c99, type: 2}
     - target: {fileID: 6710606522302362678, guid: f5787d2bd5855dd46a9f6cb197bf82f3, type: 3}
       propertyPath: menuCont
       value: 
